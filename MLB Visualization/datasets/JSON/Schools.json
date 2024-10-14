@@ -1,0 +1,8451 @@
+[
+  {
+    "schoolID": "abilchrist",
+    "name_full": "Abilene Christian University",
+    "city": "Abilene",
+    "state": "TX",
+    "country": "USA"
+  },
+  {
+    "schoolID": "adelphi",
+    "name_full": "Adelphi University",
+    "city": "Garden City",
+    "state": "NY",
+    "country": "USA"
+  },
+  {
+    "schoolID": "adrianmi",
+    "name_full": "Adrian College",
+    "city": "Adrian",
+    "state": "MI",
+    "country": "USA"
+  },
+  {
+    "schoolID": "akron",
+    "name_full": "University of Akron",
+    "city": "Akron",
+    "state": "OH",
+    "country": "USA"
+  },
+  {
+    "schoolID": "alabama",
+    "name_full": "University of Alabama",
+    "city": "Tuscaloosa",
+    "state": "AL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "alabamaam",
+    "name_full": "Alabama A&M University",
+    "city": "Normal",
+    "state": "AL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "alabamast",
+    "name_full": "Alabama State University",
+    "city": "Montgomery",
+    "state": "AL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "albanyst",
+    "name_full": "Albany State University",
+    "city": "Albany",
+    "state": "GA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "albertsnid",
+    "name_full": "Albertson College",
+    "city": "Caldwell",
+    "state": "ID",
+    "country": "USA"
+  },
+  {
+    "schoolID": "albevil",
+    "name_full": "Bevill State Community College",
+    "city": "Sumiton",
+    "state": "AL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "albionmi",
+    "name_full": "Albion College",
+    "city": "Albion",
+    "state": "MI",
+    "country": "USA"
+  },
+  {
+    "schoolID": "albrightpa",
+    "name_full": "Albright College",
+    "city": "Reading",
+    "state": "PA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "alcalho",
+    "name_full": "Calhoun Community College",
+    "city": "Decatur",
+    "state": "AL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "alchatt",
+    "name_full": "Chattahoochee Valley Community College",
+    "city": "Phenix City",
+    "state": "AL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "alcornst",
+    "name_full": "Alcorn State University",
+    "city": "Lorman",
+    "state": "MS",
+    "country": "USA"
+  },
+  {
+    "schoolID": "alenter",
+    "name_full": "Enterprise-Ozark Community College",
+    "city": "Enterprise",
+    "state": "AL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "alfaulk",
+    "name_full": "Faulkner University",
+    "city": "Montgomery",
+    "state": "AL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "alfscco",
+    "name_full": "Faulkner State College",
+    "city": "Bay Minette",
+    "state": "AL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "algadsd",
+    "name_full": "Gadsden State Community College",
+    "city": "Gadsden",
+    "state": "AL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "aljeffd",
+    "name_full": "Jefferson Davis Community College",
+    "city": "Brewton",
+    "state": "AL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "allegheny",
+    "name_full": "Allegheny College",
+    "city": "Meadville",
+    "state": "PA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "allurle",
+    "name_full": "Lurleen B Wallace Community College",
+    "city": "Andalusia",
+    "state": "AL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "almami",
+    "name_full": "Alma College",
+    "city": "Alma",
+    "state": "MI",
+    "country": "USA"
+  },
+  {
+    "schoolID": "almario",
+    "name_full": "Marion Military Institute",
+    "city": "Marion",
+    "state": "AL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "almiles",
+    "name_full": "Miles College",
+    "city": "Fairfield",
+    "state": "AL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "alnorth",
+    "name_full": "Northwest-Shoals Community College",
+    "city": "Muscle Shoals",
+    "state": "AL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "alsuscc",
+    "name_full": "Southern Union State Community College",
+    "city": "Wadley",
+    "state": "AL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "alverniapa",
+    "name_full": "Alvernia College",
+    "city": "Reading",
+    "state": "PA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "alwsdot",
+    "name_full": "Wallace State Community College (Dothan)",
+    "city": "Dothan",
+    "state": "AL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "alwshan",
+    "name_full": "Wallace State Community College (Hanceville)",
+    "city": "Hanceville",
+    "state": "AL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "american",
+    "name_full": "American University",
+    "city": "Washington",
+    "state": "DC",
+    "country": "USA"
+  },
+  {
+    "schoolID": "amerintl",
+    "name_full": "American International University",
+    "city": "Springfield",
+    "state": "MA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "amherstma",
+    "name_full": "Amherst College",
+    "city": "Amherst",
+    "state": "MA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "andersonsc",
+    "name_full": "Anderson College",
+    "city": "Anderson",
+    "state": "SC",
+    "country": "USA"
+  },
+  {
+    "schoolID": "appalst",
+    "name_full": "Appalachian State University",
+    "city": "Boone",
+    "state": "NC",
+    "country": "USA"
+  },
+  {
+    "schoolID": "aquinasmi",
+    "name_full": "Aquinas College",
+    "city": "Grand Rapids",
+    "state": "MI",
+    "country": "USA"
+  },
+  {
+    "schoolID": "arftsmi",
+    "name_full": "University of Arkansas-Fort Smith",
+    "city": "Fort Smith",
+    "state": "AR",
+    "country": "USA"
+  },
+  {
+    "schoolID": "arizona",
+    "name_full": "University of Arizona",
+    "city": "Tucson",
+    "state": "AZ",
+    "country": "USA"
+  },
+  {
+    "schoolID": "arizonast",
+    "name_full": "Arizona State University",
+    "city": "Tempe",
+    "state": "AZ",
+    "country": "USA"
+  },
+  {
+    "schoolID": "arkansas",
+    "name_full": "University of Arkansas",
+    "city": "Fayetteville",
+    "state": "AR",
+    "country": "USA"
+  },
+  {
+    "schoolID": "arkansaslr",
+    "name_full": "University of Arkansas at Little Rock",
+    "city": "Little Rock",
+    "state": "AR",
+    "country": "USA"
+  },
+  {
+    "schoolID": "arkansaspb",
+    "name_full": "University of Arkansas at Pine Bluff",
+    "city": "Pine Bluff",
+    "state": "AR",
+    "country": "USA"
+  },
+  {
+    "schoolID": "arkansasst",
+    "name_full": "Arkansas State University",
+    "city": "Jonesboro",
+    "state": "AR",
+    "country": "USA"
+  },
+  {
+    "schoolID": "arkmont",
+    "name_full": "University of Arkansas at Monticello",
+    "city": "Monticello",
+    "state": "AR",
+    "country": "USA"
+  },
+  {
+    "schoolID": "arktech",
+    "name_full": "Arkansas Tech University",
+    "city": "Russellville",
+    "state": "AR",
+    "country": "USA"
+  },
+  {
+    "schoolID": "armstratl",
+    "name_full": "Armstrong Atlantic State University",
+    "city": "Savannah",
+    "state": "GA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "army",
+    "name_full": "United States Military Academy",
+    "city": "West Point",
+    "state": "NY",
+    "country": "USA"
+  },
+  {
+    "schoolID": "arnorth",
+    "name_full": "North Arkansas College",
+    "city": "Bentonville",
+    "state": "AR",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ashland",
+    "name_full": "Ashland University",
+    "city": "Ashland",
+    "state": "OH",
+    "country": "USA"
+  },
+  {
+    "schoolID": "athensst",
+    "name_full": "Athens State University",
+    "city": "Athens",
+    "state": "AL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "auburn",
+    "name_full": "Auburn University",
+    "city": "Auburn",
+    "state": "AL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "auburnmont",
+    "name_full": "Auburn University at Montgomery",
+    "city": "Montgomery",
+    "state": "AL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "augsburgmn",
+    "name_full": "Augsburg College",
+    "city": "Minneapolis",
+    "state": "MN",
+    "country": "USA"
+  },
+  {
+    "schoolID": "austincol",
+    "name_full": "Austin College",
+    "city": "Sherman",
+    "state": "TX",
+    "country": "USA"
+  },
+  {
+    "schoolID": "austinpeay",
+    "name_full": "Austin Peay State University",
+    "city": "Clarksville",
+    "state": "TN",
+    "country": "USA"
+  },
+  {
+    "schoolID": "azcentr",
+    "name_full": "Central Arizona College",
+    "city": "Coolidge",
+    "state": "AZ",
+    "country": "USA"
+  },
+  {
+    "schoolID": "azchand",
+    "name_full": "Chandler-Gilbert Community College",
+    "city": "Chandler",
+    "state": "AZ",
+    "country": "USA"
+  },
+  {
+    "schoolID": "azcochi",
+    "name_full": "Cochise Community College",
+    "city": "Douglas",
+    "state": "AZ",
+    "country": "USA"
+  },
+  {
+    "schoolID": "azmescc",
+    "name_full": "Mesa Community College",
+    "city": "Mesa",
+    "state": "AZ",
+    "country": "USA"
+  },
+  {
+    "schoolID": "azphoen",
+    "name_full": "Phoenix College",
+    "city": "Phoenix",
+    "state": "AZ",
+    "country": "USA"
+  },
+  {
+    "schoolID": "azpimcc",
+    "name_full": "Pima Community College",
+    "city": "Tucson",
+    "state": "AZ",
+    "country": "USA"
+  },
+  {
+    "schoolID": "azscott",
+    "name_full": "Scottsdale Community College",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "country": "USA"
+  },
+  {
+    "schoolID": "azsouth",
+    "name_full": "South Mountain Community College",
+    "city": "Phoenix",
+    "state": "AZ",
+    "country": "USA"
+  },
+  {
+    "schoolID": "azusapac",
+    "name_full": "Azusa Pacific University",
+    "city": "Azusa",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "azweste",
+    "name_full": "Arizona Western College",
+    "city": "Yuma",
+    "state": "AZ",
+    "country": "USA"
+  },
+  {
+    "schoolID": "azyavap",
+    "name_full": "Yavapai College",
+    "city": "Prescott",
+    "state": "AZ",
+    "country": "USA"
+  },
+  {
+    "schoolID": "baconeok",
+    "name_full": "Bacone College",
+    "city": "Muskogee",
+    "state": "OK",
+    "country": "USA"
+  },
+  {
+    "schoolID": "bakerks",
+    "name_full": "Baker University",
+    "city": "Baldwin City",
+    "state": "KS",
+    "country": "USA"
+  },
+  {
+    "schoolID": "baldwalloh",
+    "name_full": "Baldwin-Wallace College",
+    "city": "Berea",
+    "state": "OH",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ballst",
+    "name_full": "Ball State University",
+    "city": "Muncie",
+    "state": "IN",
+    "country": "USA"
+  },
+  {
+    "schoolID": "bartonnc",
+    "name_full": "Barton College",
+    "city": "Wilson",
+    "state": "NC",
+    "country": "USA"
+  },
+  {
+    "schoolID": "baruchcuny",
+    "name_full": "Bernard M Baruch College",
+    "city": "New York",
+    "state": "NY",
+    "country": "USA"
+  },
+  {
+    "schoolID": "batesme",
+    "name_full": "Bates College",
+    "city": "Lewiston",
+    "state": "ME",
+    "country": "USA"
+  },
+  {
+    "schoolID": "baylor",
+    "name_full": "Baylor University",
+    "city": "Waco",
+    "state": "TX",
+    "country": "USA"
+  },
+  {
+    "schoolID": "belmont",
+    "name_full": "Belmont University",
+    "city": "Nashville",
+    "state": "TN",
+    "country": "USA"
+  },
+  {
+    "schoolID": "belmontab",
+    "name_full": "Belmont Abbey College",
+    "city": "Belmont",
+    "state": "NC",
+    "country": "USA"
+  },
+  {
+    "schoolID": "beloitwi",
+    "name_full": "Beloit College",
+    "city": "Beloit",
+    "state": "WI",
+    "country": "USA"
+  },
+  {
+    "schoolID": "benedctnks",
+    "name_full": "Benedictine College",
+    "city": "Atchison",
+    "state": "KS",
+    "country": "USA"
+  },
+  {
+    "schoolID": "bethanywv",
+    "name_full": "Bethany College",
+    "city": "Bethany",
+    "state": "WV",
+    "country": "USA"
+  },
+  {
+    "schoolID": "bethcook",
+    "name_full": "Bethune-Cookman College",
+    "city": "Daytona Beach",
+    "state": "FL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "betheltn",
+    "name_full": "Bethel College",
+    "city": "McKenzie",
+    "state": "TN",
+    "country": "USA"
+  },
+  {
+    "schoolID": "biolaca",
+    "name_full": "Biola University",
+    "city": "La Mirada",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "birmsouth",
+    "name_full": "Birmingham-Southern College",
+    "city": "Birmingham",
+    "state": "AL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "blackbrnil",
+    "name_full": "Blackburn College",
+    "city": "Carlinville",
+    "state": "IL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "bloomsburg",
+    "name_full": "Bloomsburg University of Pennsylvania",
+    "city": "Bloomsburg",
+    "state": "PA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "bluefield",
+    "name_full": "Bluefield College",
+    "city": "Bluefield",
+    "state": "VA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "boisest",
+    "name_full": "Boise State University",
+    "city": "Boise",
+    "state": "ID",
+    "country": "USA"
+  },
+  {
+    "schoolID": "bostoncoll",
+    "name_full": "Boston College",
+    "city": "Chestnut Hill",
+    "state": "MA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "bostonuniv",
+    "name_full": "Boston University",
+    "city": "Boston",
+    "state": "MA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "bowdoinme",
+    "name_full": "Bowdoin College",
+    "city": "Brunswick",
+    "state": "ME",
+    "country": "USA"
+  },
+  {
+    "schoolID": "bowlgreen",
+    "name_full": "Bowling Green State University",
+    "city": "Bowling Green",
+    "state": "OH",
+    "country": "USA"
+  },
+  {
+    "schoolID": "bradley",
+    "name_full": "Bradley University",
+    "city": "Peoria",
+    "state": "IL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "brandeisma",
+    "name_full": "Brandeis University",
+    "city": "Waltham",
+    "state": "MA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "brdgwatrva",
+    "name_full": "Bridgewater College",
+    "city": "Bridgewater",
+    "state": "VA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "brewparker",
+    "name_full": "Brewton-Parker College",
+    "city": "Mount Vernon",
+    "state": "GA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "bridgeport",
+    "name_full": "University of Bridgeport",
+    "city": "Bridgeport",
+    "state": "CT",
+    "country": "USA"
+  },
+  {
+    "schoolID": "bridgwtrst",
+    "name_full": "Bridgewater State College",
+    "city": "Bridgewater",
+    "state": "MA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "brklyncuny",
+    "name_full": "Brooklyn College",
+    "city": "The City University of New York",
+    "state": "Brooklyn",
+    "country": "NY"
+  },
+  {
+    "schoolID": "brown",
+    "name_full": "Brown University",
+    "city": "Providence",
+    "state": "RI",
+    "country": "USA"
+  },
+  {
+    "schoolID": "bryant",
+    "name_full": "Bryant College",
+    "city": "Smithfield",
+    "state": "RI",
+    "country": "USA"
+  },
+  {
+    "schoolID": "bucknell",
+    "name_full": "Bucknell University",
+    "city": "Lewisburg",
+    "state": "PA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "buenavista",
+    "name_full": "Buena Vista University",
+    "city": "Storm Lake",
+    "state": "IA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "buffalost",
+    "name_full": "Buffalo State College",
+    "city": "Buffalo",
+    "state": "NY",
+    "country": "USA"
+  },
+  {
+    "schoolID": "butler",
+    "name_full": "Butler University",
+    "city": "Indianapolis",
+    "state": "IN",
+    "country": "USA"
+  },
+  {
+    "schoolID": "byu",
+    "name_full": "Brigham Young University",
+    "city": "Provo",
+    "state": "UT",
+    "country": "USA"
+  },
+  {
+    "schoolID": "caallan",
+    "name_full": "Allan Hancock College",
+    "city": "Santa Maria",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "caameri",
+    "name_full": "American River College",
+    "city": "Sacramento",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "caantel",
+    "name_full": "Antelope Valley College",
+    "city": "Lancaster",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "cabakjc",
+    "name_full": "Bakersfield College",
+    "city": "Bakersfield",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "cabarst",
+    "name_full": "Barstow Community College",
+    "city": "Barstow",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "cabutte",
+    "name_full": "Butte College",
+    "city": "Oroville",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "cacabri",
+    "name_full": "Cabrillo College",
+    "city": "Aptos",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "cacanad",
+    "name_full": "Canada College",
+    "city": "Redwood City",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "cacanyo",
+    "name_full": "College of the Canyons",
+    "city": "Santa Clarita",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "cacerri",
+    "name_full": "Cerritos College",
+    "city": "Norwalk",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "cachabo",
+    "name_full": "Chabot College",
+    "city": "Hayward",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "cachaff",
+    "name_full": "Chaffey College",
+    "city": "Rancho Cucamonga",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "cacitru",
+    "name_full": "Citrus College",
+    "city": "Glendora",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "cacompt",
+    "name_full": "Compton Community College",
+    "city": "Compton",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "cacontr",
+    "name_full": "Contra Costa College",
+    "city": "San Pablo",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "cacosum",
+    "name_full": "Cosumnes River College",
+    "city": "Sacramento",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "cacsmat",
+    "name_full": "College of San Mateo",
+    "city": "San Mateo",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "cacuest",
+    "name_full": "Cuesta College",
+    "city": "San Luis Obispo",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "cacypre",
+    "name_full": "Cypress College",
+    "city": "Cypress",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "cadeanz",
+    "name_full": "DeAnza College",
+    "city": "Cupertino",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "cadiabl",
+    "name_full": "Diablo Valley College",
+    "city": "Pleasant Hill",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "caelajc",
+    "name_full": "East Los Angeles College",
+    "city": "Monterey Park",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "caelcam",
+    "name_full": "El Camino College",
+    "city": "Torrance",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "cafeath",
+    "name_full": "Feather River College",
+    "city": "Quincy",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "cafooth",
+    "name_full": "Foothill College",
+    "city": "Los Altos Hills",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "cafrecc",
+    "name_full": "Fresno City College",
+    "city": "Fresno",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "cafrepa",
+    "name_full": "Fresno Pacific University",
+    "city": "Fresno",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "cafulle",
+    "name_full": "Fullerton College",
+    "city": "Fullerton",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "cagavil",
+    "name_full": "Gavilan College",
+    "city": "Gilroy",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "caglend",
+    "name_full": "Glendale Community College",
+    "city": "Glendale",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "cagolde",
+    "name_full": "Golden West College",
+    "city": "Huntington Beach",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "caharbo",
+    "name_full": "Los Angeles Harbor College",
+    "city": "Wilmington",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "cahartn",
+    "name_full": "Hartnell College",
+    "city": "Salinas",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "caimper",
+    "name_full": "Imperial Valley College",
+    "city": "Imperial",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "calacco",
+    "name_full": "Los Angeles City College",
+    "city": "Los Angeles",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "calamjc",
+    "name_full": "Los Angeles Mission College",
+    "city": "Sylmar",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "calaney",
+    "name_full": "Laney College",
+    "city": "Oakland",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "calasse",
+    "name_full": "Lassen College",
+    "city": "Susanville",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "calavco",
+    "name_full": "Los Angeles Valley College",
+    "city": "Los Angeles",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "california",
+    "name_full": "University of California",
+    "city": "Berkeley",
+    "state": "Berkeley",
+    "country": "CA"
+  },
+  {
+    "schoolID": "calipa",
+    "name_full": "California University of Pennsylvania",
+    "city": "California",
+    "state": "PA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "calobcc",
+    "name_full": "Long Beach City College",
+    "city": "Long Beach",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "calpoly",
+    "name_full": "California Polytechnic State University",
+    "city": "San Luis Obispo",
+    "state": "San Luis Obispo",
+    "country": "CA"
+  },
+  {
+    "schoolID": "calpolypom",
+    "name_full": "California Polytechnic State University",
+    "city": "Pomona",
+    "state": "Pomona",
+    "country": "CA"
+  },
+  {
+    "schoolID": "calstfull",
+    "name_full": "California State University Fullerton",
+    "city": "Fullerton",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "calstla",
+    "name_full": "California State University Los Angeles",
+    "city": "Los Angeles",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "calstnorth",
+    "name_full": "California State University Northridge",
+    "city": "Los Angeles",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "calutheran",
+    "name_full": "California Lutheran University",
+    "city": "Thousand Oaks",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "camarin",
+    "name_full": "College of Marin",
+    "city": "Kentfield",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "camendo",
+    "name_full": "Mendocino College",
+    "city": "Ukiah",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "camenlo",
+    "name_full": "Menlo College",
+    "city": "Atherton",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "camerce",
+    "name_full": "Merced College",
+    "city": "Merced",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "cameronok",
+    "name_full": "Cameron University",
+    "city": "Lawton",
+    "state": "OK",
+    "country": "USA"
+  },
+  {
+    "schoolID": "camerri",
+    "name_full": "Merritt College",
+    "city": "Oakland",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "camirac",
+    "name_full": "MiraCosta College",
+    "city": "Oceanside",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "camissi",
+    "name_full": "Mission College",
+    "city": "Santa Clara",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "camodes",
+    "name_full": "Modesto Junior College",
+    "city": "Modesto",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "camoorp",
+    "name_full": "Moorpark College",
+    "city": "Moorpark",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "campbell",
+    "name_full": "Campbell University",
+    "city": "Buies Creek",
+    "state": "NC",
+    "country": "USA"
+  },
+  {
+    "schoolID": "campjco",
+    "name_full": "Monterey Peninsula College",
+    "city": "Monterey",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "camsajc",
+    "name_full": "Mount San Antonio College",
+    "city": "Walnut",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "camsjjc",
+    "name_full": "Mount San Jacinto College",
+    "city": "San Jacinto",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "canapav",
+    "name_full": "Napa Valley College",
+    "city": "Napa",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "canisius",
+    "name_full": "Canisius College",
+    "city": "Buffalo",
+    "state": "NY",
+    "country": "USA"
+  },
+  {
+    "schoolID": "caorang",
+    "name_full": "Orange Coast College",
+    "city": "Costa Mesa",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "capalom",
+    "name_full": "Palomar College",
+    "city": "San Marcos",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "capasad",
+    "name_full": "Pasadena City College",
+    "city": "Pasadena",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "capierc",
+    "name_full": "Los Angeles Pierce College",
+    "city": "Woodland Hills",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "caporte",
+    "name_full": "Porterville College",
+    "city": "Porterville",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "caranch",
+    "name_full": "Rancho Santiago College",
+    "city": "Santa Ana",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "caredwo",
+    "name_full": "College of the Redwoods",
+    "city": "Eureka",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "careedl",
+    "name_full": "Reedley College",
+    "city": "Reedley",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "carioho",
+    "name_full": "Rio Hondo College",
+    "city": "Whittier",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "carivcc",
+    "name_full": "Riverside Community College",
+    "city": "Riverside",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "carkansas",
+    "name_full": "University of Central Arkansas",
+    "city": "Conway",
+    "state": "AR",
+    "country": "USA"
+  },
+  {
+    "schoolID": "carsnewm",
+    "name_full": "Carson-Newman College",
+    "city": "Jefferson City",
+    "state": "TN",
+    "country": "USA"
+  },
+  {
+    "schoolID": "carthagewi",
+    "name_full": "Carthage College",
+    "city": "Kenosha",
+    "state": "WI",
+    "country": "USA"
+  },
+  {
+    "schoolID": "casacra",
+    "name_full": "Sacramento City College",
+    "city": "Sacramento",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "casaddl",
+    "name_full": "Saddleback College",
+    "city": "Mission Viejo",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "casajco",
+    "name_full": "Santa Ana College",
+    "city": "Santa Ana",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "casanbe",
+    "name_full": "California State University San Bernardino",
+    "city": "San Bernardino",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "casbcco",
+    "name_full": "Santa Barbara City College",
+    "city": "Santa Barbara",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "casbvjc",
+    "name_full": "San Bernardino Valley College",
+    "city": "San Bernardino",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "casdmjc",
+    "name_full": "San Diego Mesa College",
+    "city": "San Diego",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "casequo",
+    "name_full": "College of the Sequoias",
+    "city": "Visalia",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "casewestrn",
+    "name_full": "Case Western Reserve University",
+    "city": "Cleveland",
+    "state": "OH",
+    "country": "USA"
+  },
+  {
+    "schoolID": "casfcco",
+    "name_full": "City College of San Francisco",
+    "city": "San Francisco",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "cashast",
+    "name_full": "Shasta College",
+    "city": "Redding",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "casierr",
+    "name_full": "Sierra College",
+    "city": "Rocklin",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "casiski",
+    "name_full": "College of the Siskiyous",
+    "city": "Weed",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "casjcco",
+    "name_full": "San Jose City College",
+    "city": "San Jose",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "casjdjc",
+    "name_full": "San Joaquin Delta College",
+    "city": "Stockton",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "caskyli",
+    "name_full": "Skyline JC",
+    "city": "San Bruno",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "casmjco",
+    "name_full": "Santa Monica College",
+    "city": "Santa Monica",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "casolan",
+    "name_full": "Solano Community College",
+    "city": "Fairfield",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "casrjco",
+    "name_full": "Santa Rosa Junior College",
+    "city": "Santa Rosa",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "caswjco",
+    "name_full": "Southwestern College",
+    "city": "Chula Vista",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "catafjc",
+    "name_full": "Taft College",
+    "city": "Taft",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "catawba",
+    "name_full": "Catawba College",
+    "city": "Salisbury",
+    "state": "NC",
+    "country": "USA"
+  },
+  {
+    "schoolID": "catholic",
+    "name_full": "Catholic University of America",
+    "city": "Washington",
+    "state": "DC",
+    "country": "USA"
+  },
+  {
+    "schoolID": "caventu",
+    "name_full": "Ventura College",
+    "city": "Ventura",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "cawhjco",
+    "name_full": "West Hills College",
+    "city": "Coalinga",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "cawlajc",
+    "name_full": "West Los Angeles College",
+    "city": "Culver City",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "cawvjco",
+    "name_full": "West Valley College",
+    "city": "Saratoga",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "cconnst",
+    "name_full": "Central Connecticut State University",
+    "city": "New Britain",
+    "state": "CT",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ccri",
+    "name_full": "Community College of Rhode Island",
+    "city": "Warwick",
+    "state": "RI",
+    "country": "USA"
+  },
+  {
+    "schoolID": "centenary",
+    "name_full": "Centenary College of Louisiana",
+    "city": "Shreveport",
+    "state": "LA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "centok",
+    "name_full": "University of Central Oklahoma",
+    "city": "Edmond",
+    "state": "OK",
+    "country": "USA"
+  },
+  {
+    "schoolID": "centralst",
+    "name_full": "Central State University",
+    "city": "Wilberforce",
+    "state": "OH",
+    "country": "USA"
+  },
+  {
+    "schoolID": "centreky",
+    "name_full": "Centre College",
+    "city": "Danville",
+    "state": "KY",
+    "country": "USA"
+  },
+  {
+    "schoolID": "cflorida",
+    "name_full": "University of Central Florida",
+    "city": "Orlando",
+    "state": "FL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "chapmanca",
+    "name_full": "Chapman University",
+    "city": "Orange",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "charleston",
+    "name_full": "College of Charleston",
+    "city": "Charleston",
+    "state": "SC",
+    "country": "USA"
+  },
+  {
+    "schoolID": "charleswv",
+    "name_full": "University of Charleston",
+    "city": "Charleston",
+    "state": "WV",
+    "country": "USA"
+  },
+  {
+    "schoolID": "charlotte",
+    "name_full": "University of North Carolina at Charlotte",
+    "city": "Charlotte",
+    "state": "NC",
+    "country": "USA"
+  },
+  {
+    "schoolID": "charlsouth",
+    "name_full": "Charleston Southern University",
+    "city": "Charleston",
+    "state": "SC",
+    "country": "USA"
+  },
+  {
+    "schoolID": "chicago",
+    "name_full": "University of Chicago",
+    "city": "Chicago",
+    "state": "IL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "chicagost",
+    "name_full": "Chicago State University",
+    "city": "Chicago",
+    "state": "IL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "chicost",
+    "name_full": "California State University Chico",
+    "city": "Chico",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "cincy",
+    "name_full": "University of Cincinnati",
+    "city": "Cincinnati",
+    "state": "OH",
+    "country": "USA"
+  },
+  {
+    "schoolID": "citadel",
+    "name_full": "The Citadel",
+    "city": "Charleston",
+    "state": "SC",
+    "country": "USA"
+  },
+  {
+    "schoolID": "clarion",
+    "name_full": "Clarion University of Pennsylvania",
+    "city": "Clarion",
+    "state": "PA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "clarksonny",
+    "name_full": "Clarkson University",
+    "city": "Potsdam",
+    "state": "NY",
+    "country": "USA"
+  },
+  {
+    "schoolID": "clemson",
+    "name_full": "Clemson University",
+    "city": "Clemson",
+    "state": "SC",
+    "country": "USA"
+  },
+  {
+    "schoolID": "clevst",
+    "name_full": "Cleveland State University",
+    "city": "Cleveland",
+    "state": "OH",
+    "country": "USA"
+  },
+  {
+    "schoolID": "clrmuddscr",
+    "name_full": "Claremont McKenna College",
+    "city": "Claremont",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "cmichigan",
+    "name_full": "Central Michigan University",
+    "city": "Mount Pleasant",
+    "state": "MI",
+    "country": "USA"
+  },
+  {
+    "schoolID": "cmissouri",
+    "name_full": "University of Central Missouri",
+    "city": "Warrensburg",
+    "state": "MO",
+    "country": "USA"
+  },
+  {
+    "schoolID": "cncrdiacol",
+    "name_full": "Concordia College-Moorhead",
+    "city": "Moorhead",
+    "state": "MN",
+    "country": "USA"
+  },
+  {
+    "schoolID": "coastcar",
+    "name_full": "Coastal Carolina University",
+    "city": "Conway",
+    "state": "SC",
+    "country": "USA"
+  },
+  {
+    "schoolID": "coftlew",
+    "name_full": "Fort Lewis College",
+    "city": "Durango",
+    "state": "CO",
+    "country": "USA"
+  },
+  {
+    "schoolID": "colamar",
+    "name_full": "Lamar Community College",
+    "city": "Lamar",
+    "state": "CO",
+    "country": "USA"
+  },
+  {
+    "schoolID": "colbyme",
+    "name_full": "Colby College",
+    "city": "Waterville",
+    "state": "ME",
+    "country": "USA"
+  },
+  {
+    "schoolID": "colgate",
+    "name_full": "Colgate University",
+    "city": "Hamilton",
+    "state": "NY",
+    "country": "USA"
+  },
+  {
+    "schoolID": "colocollege",
+    "name_full": "Colorado College",
+    "city": "Colorado Springs",
+    "state": "CO",
+    "country": "USA"
+  },
+  {
+    "schoolID": "colorado",
+    "name_full": "University of Colorado",
+    "city": "Boulder",
+    "state": "CO",
+    "country": "USA"
+  },
+  {
+    "schoolID": "coloradost",
+    "name_full": "Colorado State University",
+    "city": "Fort Collins",
+    "state": "CO",
+    "country": "USA"
+  },
+  {
+    "schoolID": "columbia",
+    "name_full": "Columbia University",
+    "city": "New York",
+    "state": "NY",
+    "country": "USA"
+  },
+  {
+    "schoolID": "comines",
+    "name_full": "Colorado School of Mines",
+    "city": "Golden",
+    "state": "CO",
+    "country": "USA"
+  },
+  {
+    "schoolID": "concordny",
+    "name_full": "Concordia College-Bronxville",
+    "city": "Bronxville",
+    "state": "NY",
+    "country": "USA"
+  },
+  {
+    "schoolID": "concrdiamn",
+    "name_full": "Concordia University-St. Paul",
+    "city": "St. Paul",
+    "state": "MN",
+    "country": "USA"
+  },
+  {
+    "schoolID": "concrdiatx",
+    "name_full": "Concordia University at Austin",
+    "city": "Austin",
+    "state": "TX",
+    "country": "USA"
+  },
+  {
+    "schoolID": "cornell",
+    "name_full": "Cornell University",
+    "city": "Ithaca",
+    "state": "NY",
+    "country": "USA"
+  },
+  {
+    "schoolID": "cornellia",
+    "name_full": "Cornell College",
+    "city": "Mount Vernon",
+    "state": "IA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "costpue",
+    "name_full": "Colorado State University-Pueblo",
+    "city": "Pueblo",
+    "state": "CO",
+    "country": "USA"
+  },
+  {
+    "schoolID": "cotrini",
+    "name_full": "Trinidad State Junior College",
+    "city": "Trinidad",
+    "state": "CO",
+    "country": "USA"
+  },
+  {
+    "schoolID": "crdstritch",
+    "name_full": "Cardinal Stritch University",
+    "city": "Milwaukee",
+    "state": "WI",
+    "country": "USA"
+  },
+  {
+    "schoolID": "creighton",
+    "name_full": "Creighton University",
+    "city": "Omaha",
+    "state": "NE",
+    "country": "USA"
+  },
+  {
+    "schoolID": "crngmellon",
+    "name_full": "Carnegie Mellon University",
+    "city": "Pittsburgh",
+    "state": "PA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "csdomhills",
+    "name_full": "California State University Dominguez Hills",
+    "city": "Carson",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "cshayward",
+    "name_full": "California State University East Bay",
+    "city": "Hayward",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "csstanisl",
+    "name_full": "California State University Stanislaus",
+    "city": "Turlock",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ctconap",
+    "name_full": "University of Connecticut at Avery Point",
+    "city": "Groton",
+    "state": "CT",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ctmitch",
+    "name_full": "Mitchell College",
+    "city": "New London",
+    "state": "CT",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ctnorwa",
+    "name_full": "Norwalk Community College",
+    "city": "Norwalk",
+    "state": "CT",
+    "country": "USA"
+  },
+  {
+    "schoolID": "cumbrlndtn",
+    "name_full": "Cumberland University",
+    "city": "Lebanon",
+    "state": "TN",
+    "country": "USA"
+  },
+  {
+    "schoolID": "cwashngton",
+    "name_full": "Central Washington University",
+    "city": "Ellensburg",
+    "state": "WA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "cwpost",
+    "name_full": "Long Island University",
+    "city": "C W Post Campus",
+    "state": "Brookville",
+    "country": "NY"
+  },
+  {
+    "schoolID": "dallasbapt",
+    "name_full": "Dallas Baptist University",
+    "city": "Dallas",
+    "state": "TX",
+    "country": "USA"
+  },
+  {
+    "schoolID": "dartmouth",
+    "name_full": "Dartmouth College",
+    "city": "Hanover",
+    "state": "NH",
+    "country": "USA"
+  },
+  {
+    "schoolID": "davidson",
+    "name_full": "Davidson College",
+    "city": "Davidson",
+    "state": "NC",
+    "country": "USA"
+  },
+  {
+    "schoolID": "daviselkins",
+    "name_full": "Davis and Elkins College",
+    "city": "Elkins",
+    "state": "WV",
+    "country": "USA"
+  },
+  {
+    "schoolID": "dayton",
+    "name_full": "University of Dayton",
+    "city": "Dayton",
+    "state": "OH",
+    "country": "USA"
+  },
+  {
+    "schoolID": "dcbenfr",
+    "name_full": "Benjamin Franklin University",
+    "city": "Washington",
+    "state": "DC",
+    "country": "USA"
+  },
+  {
+    "schoolID": "debrand",
+    "name_full": "Brandywine Junior College",
+    "city": "Wilmington",
+    "state": "DE",
+    "country": "USA"
+  },
+  {
+    "schoolID": "dedelaw",
+    "name_full": "Delaware Technical and Community College",
+    "city": "Dover",
+    "state": "DE",
+    "country": "USA"
+  },
+  {
+    "schoolID": "delaware",
+    "name_full": "University of Delaware",
+    "city": "Newark",
+    "state": "DE",
+    "country": "USA"
+  },
+  {
+    "schoolID": "delawarest",
+    "name_full": "Delaware State University",
+    "city": "Dover",
+    "state": "DE",
+    "country": "USA"
+  },
+  {
+    "schoolID": "deltast",
+    "name_full": "Delta State University",
+    "city": "Cleveland",
+    "state": "MS",
+    "country": "USA"
+  },
+  {
+    "schoolID": "denisonoh",
+    "name_full": "Denison University",
+    "city": "Granville",
+    "state": "OH",
+    "country": "USA"
+  },
+  {
+    "schoolID": "denver",
+    "name_full": "University of Denver",
+    "city": "Denver",
+    "state": "CO",
+    "country": "USA"
+  },
+  {
+    "schoolID": "depaul",
+    "name_full": "DePaul University",
+    "city": "Chicago",
+    "state": "IL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "depauwin",
+    "name_full": "DePauw University",
+    "city": "Greencastle",
+    "state": "IN",
+    "country": "USA"
+  },
+  {
+    "schoolID": "detroit",
+    "name_full": "University of Detroit Mercy",
+    "city": "Detroit",
+    "state": "MI",
+    "country": "USA"
+  },
+  {
+    "schoolID": "dickinson",
+    "name_full": "Dickinson College",
+    "city": "Carlisle",
+    "state": "PA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "dominican",
+    "name_full": "Dominican College",
+    "city": "Orangeburg",
+    "state": "NY",
+    "country": "USA"
+  },
+  {
+    "schoolID": "drake",
+    "name_full": "Drake University",
+    "city": "Des Moines",
+    "state": "IA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "dubuque",
+    "name_full": "University of Dubuque",
+    "city": "Dubuque",
+    "state": "IA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "duke",
+    "name_full": "Duke University",
+    "city": "Durham",
+    "state": "NC",
+    "country": "USA"
+  },
+  {
+    "schoolID": "duquesne",
+    "name_full": "Duquesne University",
+    "city": "Pittsburgh",
+    "state": "PA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ecarolina",
+    "name_full": "East Carolina University",
+    "city": "Greenville",
+    "state": "NC",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ecentralok",
+    "name_full": "East Central University",
+    "city": "Ada",
+    "state": "OK",
+    "country": "USA"
+  },
+  {
+    "schoolID": "eckerd",
+    "name_full": "Eckerd College",
+    "city": "St. Petersburg",
+    "state": "FL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "econnst",
+    "name_full": "Eastern Connecticut State University",
+    "city": "Willimantic",
+    "state": "CT",
+    "country": "USA"
+  },
+  {
+    "schoolID": "edinboro",
+    "name_full": "Edinboro University of Pennsylvania",
+    "city": "Edinboro",
+    "state": "PA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "eillinois",
+    "name_full": "Eastern Illinois University",
+    "city": "Charleston",
+    "state": "IL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ekentucky",
+    "name_full": "Eastern Kentucky University",
+    "city": "Richmond",
+    "state": "KY",
+    "country": "USA"
+  },
+  {
+    "schoolID": "elizbthtwn",
+    "name_full": "Elizabethtown College",
+    "city": "Elizabethtown",
+    "state": "PA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "elon",
+    "name_full": "Elon University",
+    "city": "Elon",
+    "state": "NC",
+    "country": "USA"
+  },
+  {
+    "schoolID": "emichigan",
+    "name_full": "Eastern Michigan University",
+    "city": "Ypsilanti",
+    "state": "MI",
+    "country": "USA"
+  },
+  {
+    "schoolID": "emoryga",
+    "name_full": "Emory University",
+    "city": "Atlanta",
+    "state": "GA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "emoryhenry",
+    "name_full": "Emory and Henry College",
+    "city": "Emory",
+    "state": "VA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "emporiast",
+    "name_full": "Emporia State University",
+    "city": "Emporia",
+    "state": "KS",
+    "country": "USA"
+  },
+  {
+    "schoolID": "erskine",
+    "name_full": "Erskine College",
+    "city": "Due West",
+    "state": "SC",
+    "country": "USA"
+  },
+  {
+    "schoolID": "estroud",
+    "name_full": "East Stroudsburg University of Pennsylvania",
+    "city": "East Stroudsburg",
+    "state": "PA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "etennst",
+    "name_full": "East Tennessee State University",
+    "city": "Johnson City",
+    "state": "TN",
+    "country": "USA"
+  },
+  {
+    "schoolID": "etxbaptist",
+    "name_full": "East Texas Baptist University",
+    "city": "Marshall",
+    "state": "TX",
+    "country": "USA"
+  },
+  {
+    "schoolID": "eurekail",
+    "name_full": "Eureka College",
+    "city": "Eureka",
+    "state": "IL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "eutah",
+    "name_full": "College of Eastern Utah",
+    "city": "Price",
+    "state": "UT",
+    "country": "USA"
+  },
+  {
+    "schoolID": "evansville",
+    "name_full": "University of Evansville",
+    "city": "Evansville",
+    "state": "IN",
+    "country": "USA"
+  },
+  {
+    "schoolID": "fairfield",
+    "name_full": "Fairfield University",
+    "city": "Fairfield",
+    "state": "CT",
+    "country": "USA"
+  },
+  {
+    "schoolID": "fairldick",
+    "name_full": "Fairleigh Dickinson University",
+    "city": "Metropolitan Campus",
+    "state": "Teaneck",
+    "country": "NJ"
+  },
+  {
+    "schoolID": "fayetvilst",
+    "name_full": "Fayetteville State University",
+    "city": "Fayetteville",
+    "state": "NC",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ferrisst",
+    "name_full": "Ferris State University",
+    "city": "Big Rapids",
+    "state": "MI",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ferrumva",
+    "name_full": "Ferrum College",
+    "city": "Ferrum",
+    "state": "VA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "flagler",
+    "name_full": "Flagler College",
+    "city": "St. Augustine",
+    "state": "FL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "flatlantic",
+    "name_full": "Florida Atlantic University",
+    "city": "Boca Raton",
+    "state": "FL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "flbarry",
+    "name_full": "Barry University",
+    "city": "Miami Shores",
+    "state": "FL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "flbreva",
+    "name_full": "Brevard Community College",
+    "city": "Cocoa",
+    "state": "FL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "flbrowa",
+    "name_full": "Broward Community College",
+    "city": "Fort Lauderdale",
+    "state": "FL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "flcentr",
+    "name_full": "Central Florida Community College",
+    "city": "Ocala",
+    "state": "FL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "flchipo",
+    "name_full": "Chipola College",
+    "city": "Marianna",
+    "state": "FL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "fldayto",
+    "name_full": "Daytona Beach Community College",
+    "city": "Daytona Beach",
+    "state": "FL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "flediso",
+    "name_full": "Edison College",
+    "city": "Fort Myers",
+    "state": "FL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "flflajc",
+    "name_full": "Florida College",
+    "city": "Jacksonville",
+    "state": "FL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "flgateway",
+    "name_full": "Florida Gateway College",
+    "city": "Lake City",
+    "state": "FL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "flgccco",
+    "name_full": "Gulf Coast Community College",
+    "city": "Panama City",
+    "state": "FL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "flgulfc",
+    "name_full": "Florida Gulf Coast University",
+    "city": "Fort Myers",
+    "state": "FL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "flhills",
+    "name_full": "Hillsborough Community College",
+    "city": "Tampa",
+    "state": "FL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "flindia",
+    "name_full": "Indian River Community College",
+    "city": "Fort Pierce",
+    "state": "FL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "flinternat",
+    "name_full": "Florida International University",
+    "city": "Miami",
+    "state": "FL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "fllynnu",
+    "name_full": "Lynn University",
+    "city": "Boca Raton",
+    "state": "FL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "flmanat",
+    "name_full": "State College of Florida",
+    "city": "Manatee-Sarasota",
+    "state": "Bradenton",
+    "country": "FL"
+  },
+  {
+    "schoolID": "flmdkjc",
+    "name_full": "Miami-Dade College",
+    "city": "Kendall Campus",
+    "state": "Miami",
+    "country": "FL"
+  },
+  {
+    "schoolID": "flmdnjc",
+    "name_full": "Miami-Dade College",
+    "city": "North Campus",
+    "state": "Miami",
+    "country": "FL"
+  },
+  {
+    "schoolID": "flmdwjc",
+    "name_full": "Miami-Dade College",
+    "city": "Wolfson Campus",
+    "state": "Miami",
+    "country": "FL"
+  },
+  {
+    "schoolID": "flnfcco",
+    "name_full": "North Florida Community College",
+    "city": "Madison",
+    "state": "FL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "flnovas",
+    "name_full": "Nova Southeastern University",
+    "city": "Fort Lauderdale",
+    "state": "FL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "flnwfsc",
+    "name_full": "Northwest Florida State College",
+    "city": "Niceville",
+    "state": "FL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "flokalo",
+    "name_full": "Okaloosa-Walton College",
+    "city": "Niceville",
+    "state": "FL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "florida",
+    "name_full": "University of Florida",
+    "city": "Gainesville",
+    "state": "FL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "floridaam",
+    "name_full": "Florida Agricultural and Mechanical University",
+    "city": "Tallahassee",
+    "state": "FL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "floridast",
+    "name_full": "Florida State University",
+    "city": "Tallahassee",
+    "state": "FL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "flpalme",
+    "name_full": "Palmer College",
+    "city": "DeFuniak Springs",
+    "state": "FL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "flpasco",
+    "name_full": "Pasco-Hernando Community College",
+    "city": "New Port Richey",
+    "state": "FL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "flpbaun",
+    "name_full": "Palm Beach Atlantic University",
+    "city": "West Palm Beach",
+    "state": "FL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "flpensa",
+    "name_full": "Pensacola Junior College",
+    "city": "Pensacola",
+    "state": "FL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "flpolkc",
+    "name_full": "Polk Community College",
+    "city": "Winter Haven",
+    "state": "FL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "flsanta",
+    "name_full": "Santa Fe Community College",
+    "city": "Gainesville",
+    "state": "FL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "flsjrcc",
+    "name_full": "St. Johns River Community College",
+    "city": "Palatka",
+    "state": "FL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "flsouthern",
+    "name_full": "Florida Southern College",
+    "city": "Lakeland",
+    "state": "FL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "flstpet",
+    "name_full": "St. Petersburg College",
+    "city": "St. Petersburg",
+    "state": "FL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "fltalla",
+    "name_full": "Tallahassee Community College",
+    "city": "Tallahassee",
+    "state": "FL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "fltech",
+    "name_full": "Florida Institute of Technology",
+    "city": "Melbourne",
+    "state": "FL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "flvalen",
+    "name_full": "Valencia Community College",
+    "city": "Orlando",
+    "state": "FL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "fordham",
+    "name_full": "Fordham University",
+    "city": "New York",
+    "state": "NY",
+    "country": "USA"
+  },
+  {
+    "schoolID": "forthays",
+    "name_full": "Fort Hays State University",
+    "city": "Hays",
+    "state": "KS",
+    "country": "USA"
+  },
+  {
+    "schoolID": "franklinin",
+    "name_full": "Franklin College",
+    "city": "Franklin",
+    "state": "IN",
+    "country": "USA"
+  },
+  {
+    "schoolID": "frankmarsh",
+    "name_full": "Franklin and Marshall College",
+    "city": "Lancaster",
+    "state": "PA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "freedhrdmn",
+    "name_full": "Freed-Hardeman University",
+    "city": "Henderson",
+    "state": "TN",
+    "country": "USA"
+  },
+  {
+    "schoolID": "fresnost",
+    "name_full": "California State University Fresno",
+    "city": "Fresno",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "friendsks",
+    "name_full": "Friends University",
+    "city": "Wichita",
+    "state": "KS",
+    "country": "USA"
+  },
+  {
+    "schoolID": "furman",
+    "name_full": "Furman University",
+    "city": "Greenville",
+    "state": "SC",
+    "country": "USA"
+  },
+  {
+    "schoolID": "gaberry",
+    "name_full": "Berry College",
+    "city": "Mount Berry",
+    "state": "GA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "gacoast",
+    "name_full": "Coastal Georgia Community College",
+    "city": "Brunswick",
+    "state": "GA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "gacollege",
+    "name_full": "Georgia College and State University",
+    "city": "Milledgeville",
+    "state": "GA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "gacolum",
+    "name_full": "Columbus State University",
+    "city": "Columbus",
+    "state": "GA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "gagpjco",
+    "name_full": "Georgia Perimeter College",
+    "city": "Covington",
+    "state": "GA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "gallaudet",
+    "name_full": "Gallaudet University",
+    "city": "Washington",
+    "state": "DC",
+    "country": "USA"
+  },
+  {
+    "schoolID": "gamiddl",
+    "name_full": "Middle Georgia College",
+    "city": "Cochran",
+    "state": "GA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "gannon",
+    "name_full": "Gannon University",
+    "city": "Erie",
+    "state": "PA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "gardwebb",
+    "name_full": "Gardner-Webb University",
+    "city": "Boiling Springs",
+    "state": "NC",
+    "country": "USA"
+  },
+  {
+    "schoolID": "gasgajc",
+    "name_full": "South Georgia College",
+    "city": "Douglas",
+    "state": "GA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "gaswestern",
+    "name_full": "Georgia Southwestern State University",
+    "city": "Americus",
+    "state": "GA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "gatech",
+    "name_full": "Georgia Institute of Technology",
+    "city": "Atlanta",
+    "state": "GA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "genevapa",
+    "name_full": "Geneva College",
+    "city": "Beaver Falls",
+    "state": "PA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "georgefox",
+    "name_full": "George Fox University",
+    "city": "Newberg",
+    "state": "OR",
+    "country": "USA"
+  },
+  {
+    "schoolID": "georgemas",
+    "name_full": "George Mason University",
+    "city": "Fairfax",
+    "state": "VA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "georgetown",
+    "name_full": "Georgetown University",
+    "city": "Washington",
+    "state": "DC",
+    "country": "USA"
+  },
+  {
+    "schoolID": "georgewash",
+    "name_full": "George Washington University",
+    "city": "Washington",
+    "state": "DC",
+    "country": "USA"
+  },
+  {
+    "schoolID": "georgia",
+    "name_full": "University of Georgia",
+    "city": "Athens",
+    "state": "GA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "georgiasou",
+    "name_full": "Georgia Southern University",
+    "city": "Statesboro",
+    "state": "GA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "georgiast",
+    "name_full": "Georgia State University",
+    "city": "Atlanta",
+    "state": "GA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "georgtwnky",
+    "name_full": "Georgetown College",
+    "city": "Georgetown",
+    "state": "KY",
+    "country": "USA"
+  },
+  {
+    "schoolID": "gettysburg",
+    "name_full": "Gettysburg College",
+    "city": "Gettysburg",
+    "state": "PA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "glenvilst",
+    "name_full": "Glenville State College",
+    "city": "Glenville",
+    "state": "WV",
+    "country": "USA"
+  },
+  {
+    "schoolID": "gonzaga",
+    "name_full": "Gonzaga University",
+    "city": "Spokane",
+    "state": "WA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "grambling",
+    "name_full": "Grambling State University",
+    "city": "Grambling",
+    "state": "LA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "grandview",
+    "name_full": "Grand View College",
+    "city": "Des Moines",
+    "state": "IA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "grcanyon",
+    "name_full": "Grand Canyon University",
+    "city": "Phoenix",
+    "state": "AZ",
+    "country": "USA"
+  },
+  {
+    "schoolID": "grinnellia",
+    "name_full": "Grinnell College",
+    "city": "Grinnell",
+    "state": "IA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "grossmont",
+    "name_full": "Grossmont College",
+    "city": "El Cajon",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "grovecity",
+    "name_full": "Grove City College",
+    "city": "Grove City",
+    "state": "PA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "grvalleyst",
+    "name_full": "Grand Valley State University",
+    "city": "Allendale",
+    "state": "MI",
+    "country": "USA"
+  },
+  {
+    "schoolID": "guilfordnc",
+    "name_full": "Guilford College",
+    "city": "Greensboro",
+    "state": "NC",
+    "country": "USA"
+  },
+  {
+    "schoolID": "hamlinemn",
+    "name_full": "Hamline University",
+    "city": "St. Paul",
+    "state": "MN",
+    "country": "USA"
+  },
+  {
+    "schoolID": "hampsydney",
+    "name_full": "Hampden-Sydney College",
+    "city": "Hampden-Sydney",
+    "state": "VA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "harding",
+    "name_full": "Harding University",
+    "city": "Searcy",
+    "state": "AR",
+    "country": "USA"
+  },
+  {
+    "schoolID": "hardinsimm",
+    "name_full": "Hardin-Simmons University",
+    "city": "Abilene",
+    "state": "TX",
+    "country": "USA"
+  },
+  {
+    "schoolID": "hartford",
+    "name_full": "University of Hartford",
+    "city": "West Hartford",
+    "state": "CT",
+    "country": "USA"
+  },
+  {
+    "schoolID": "hartwickny",
+    "name_full": "Hartwick College",
+    "city": "Oneonta",
+    "state": "NY",
+    "country": "USA"
+  },
+  {
+    "schoolID": "harvard",
+    "name_full": "Harvard University",
+    "city": "Cambridge",
+    "state": "MA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "haskellks",
+    "name_full": "Haskell Indian Nations University",
+    "city": "Lawrence",
+    "state": "KS",
+    "country": "USA"
+  },
+  {
+    "schoolID": "hawaii",
+    "name_full": "University of Hawaii at Manoa",
+    "city": "Honolulu",
+    "state": "HI",
+    "country": "USA"
+  },
+  {
+    "schoolID": "hawaiihilo",
+    "name_full": "University of Hawaii at Hilo",
+    "city": "Hilo",
+    "state": "HI",
+    "country": "USA"
+  },
+  {
+    "schoolID": "hawaiipac",
+    "name_full": "Hawaii Pacific University",
+    "city": "Honolulu",
+    "state": "HI",
+    "country": "USA"
+  },
+  {
+    "schoolID": "heidelberg",
+    "name_full": "Heidelberg College",
+    "city": "Tiffin",
+    "state": "OH",
+    "country": "USA"
+  },
+  {
+    "schoolID": "hendrixar",
+    "name_full": "Hendrix College",
+    "city": "Conway",
+    "state": "AR",
+    "country": "USA"
+  },
+  {
+    "schoolID": "hendrsonst",
+    "name_full": "Henderson State University",
+    "city": "Arkadelphia",
+    "state": "AR",
+    "country": "USA"
+  },
+  {
+    "schoolID": "highpoint",
+    "name_full": "High Point University",
+    "city": "High Point",
+    "state": "NC",
+    "country": "USA"
+  },
+  {
+    "schoolID": "hillsdale",
+    "name_full": "Hillsdale College",
+    "city": "Hillsdale",
+    "state": "MI",
+    "country": "USA"
+  },
+  {
+    "schoolID": "hiramoh",
+    "name_full": "Hiram College",
+    "city": "Hiram",
+    "state": "OH",
+    "country": "USA"
+  },
+  {
+    "schoolID": "hobartny",
+    "name_full": "Hobart and William Smith Colleges",
+    "city": "Geneva",
+    "state": "NY",
+    "country": "USA"
+  },
+  {
+    "schoolID": "hofstra",
+    "name_full": "Hofstra University",
+    "city": "Hempstead",
+    "state": "NY",
+    "country": "USA"
+  },
+  {
+    "schoolID": "holycross",
+    "name_full": "College of the Holy Cross",
+    "city": "Worcester",
+    "state": "MA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "hopemi",
+    "name_full": "Hope College",
+    "city": "Holland",
+    "state": "MI",
+    "country": "USA"
+  },
+  {
+    "schoolID": "houstnbapt",
+    "name_full": "Houston Baptist University",
+    "city": "Houston",
+    "state": "TX",
+    "country": "USA"
+  },
+  {
+    "schoolID": "houston",
+    "name_full": "University of Houston",
+    "city": "Houston",
+    "state": "TX",
+    "country": "USA"
+  },
+  {
+    "schoolID": "howard",
+    "name_full": "Howard University",
+    "city": "Washington",
+    "state": "DC",
+    "country": "USA"
+  },
+  {
+    "schoolID": "howrdpayne",
+    "name_full": "Howard Payne University",
+    "city": "Brownwood",
+    "state": "TX",
+    "country": "USA"
+  },
+  {
+    "schoolID": "humboldtst",
+    "name_full": "Humboldt State University",
+    "city": "Arcata",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "huntercuny",
+    "name_full": "Hunter College",
+    "city": "The City University of New York",
+    "state": "New York",
+    "country": "NY"
+  },
+  {
+    "schoolID": "iadesmo",
+    "name_full": "Des Moines University",
+    "city": "Des Moines",
+    "state": "IA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "iadmacc",
+    "name_full": "Des Moines Area Community College",
+    "city": "Boone",
+    "state": "IA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "iaellsw",
+    "name_full": "Ellsworth College",
+    "city": "Iowa Falls",
+    "state": "IA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "iahighl",
+    "name_full": "Highland Park College",
+    "city": "Des Moines",
+    "state": "IA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "iaindia",
+    "name_full": "Indian Hills Community College",
+    "city": "Centerville",
+    "state": "IA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "iakirkw",
+    "name_full": "Kirkwood Community College",
+    "city": "Cedar Rapids",
+    "state": "IA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "iaparso",
+    "name_full": "Parsons College",
+    "city": "Fairfield",
+    "state": "IA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "iaseccs",
+    "name_full": "Southeastern Iowa Community College",
+    "city": "Keokuk Campus",
+    "state": "Keokuk",
+    "country": "IA"
+  },
+  {
+    "schoolID": "iasimps",
+    "name_full": "Simpson College",
+    "city": "Indianola",
+    "state": "IA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "iawescc",
+    "name_full": "Iowa Western Community College",
+    "city": "Council Bluffs",
+    "state": "IA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "iawesleyan",
+    "name_full": "Iowa Wesleyan College",
+    "city": "Mount Pleasant",
+    "state": "IA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "idaho",
+    "name_full": "University of Idaho",
+    "city": "Moscow",
+    "state": "ID",
+    "country": "USA"
+  },
+  {
+    "schoolID": "idahost",
+    "name_full": "Idaho State University",
+    "city": "Pocatello",
+    "state": "ID",
+    "country": "USA"
+  },
+  {
+    "schoolID": "idbyuid",
+    "name_full": "Brigham Young University-Idaho",
+    "city": "Rexburg",
+    "state": "ID",
+    "country": "USA"
+  },
+  {
+    "schoolID": "idcosid",
+    "name_full": "College of Southern Idaho",
+    "city": "Twin Falls",
+    "state": "ID",
+    "country": "USA"
+  },
+  {
+    "schoolID": "idnidjc",
+    "name_full": "North Idaho College",
+    "city": "Coeur d'Alene",
+    "state": "ID",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ilaugus",
+    "name_full": "Augustana College",
+    "city": "Rock Island",
+    "state": "IL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ilcenjc",
+    "name_full": "Illinois Central College",
+    "city": "East Peoria",
+    "state": "IL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ilcollege",
+    "name_full": "Illinois College",
+    "city": "Jacksonville",
+    "state": "IL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ildixon",
+    "name_full": "Dixon College",
+    "city": "Dixon",
+    "state": "IL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ildupag",
+    "name_full": "College of DuPage",
+    "city": "Glen Ellyn",
+    "state": "IL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ilelmhu",
+    "name_full": "Elmhurst College",
+    "city": "Elmhurst",
+    "state": "IL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ilharpe",
+    "name_full": "William Rainey Harper College",
+    "city": "Palatine",
+    "state": "IL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ilkanka",
+    "name_full": "Kankakee Community College",
+    "city": "Kankakee",
+    "state": "IL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ilkaska",
+    "name_full": "Kaskaskia College",
+    "city": "Arcola",
+    "state": "IL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ilkenne",
+    "name_full": "Kennedy-King College",
+    "city": "Chicago",
+    "state": "IL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ilkishw",
+    "name_full": "Kishwaukee College",
+    "city": "Malta",
+    "state": "IL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "illakel",
+    "name_full": "Lake Land College",
+    "city": "Mattoon",
+    "state": "IL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "illchicago",
+    "name_full": "University of Illinois at Chicago",
+    "city": "Chicago",
+    "state": "IL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "illewis",
+    "name_full": "Lewis & Clark Community College",
+    "city": "Godfrey",
+    "state": "IL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "illinco",
+    "name_full": "Lincoln College",
+    "city": "Lincoln",
+    "state": "IL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "illinois",
+    "name_full": "University of Illinois at Urbana-Champaign",
+    "city": "Champaign",
+    "state": "IL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "illinoisst",
+    "name_full": "Illinois State University",
+    "city": "Normal",
+    "state": "IL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "illogan",
+    "name_full": "John A Logan College",
+    "city": "Carterville",
+    "state": "IL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "illomba",
+    "name_full": "Lombard College",
+    "city": "Galesburg",
+    "state": "IL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "illtjco",
+    "name_full": "Lincoln Trail College",
+    "city": "Robinson",
+    "state": "IL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ilmcken",
+    "name_full": "McKendree University",
+    "city": "Lebanon",
+    "state": "IL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ilmorai",
+    "name_full": "Moraine Valley Community College",
+    "city": "Palos Hills",
+    "state": "IL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ilmount",
+    "name_full": "Mount Morris College",
+    "city": "Mount Morris",
+    "state": "IL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ilolney",
+    "name_full": "Olney Central College",
+    "city": "Olney",
+    "state": "IL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ilparkl",
+    "name_full": "Parkland College",
+    "city": "Champaign",
+    "state": "IL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ilseijc",
+    "name_full": "Southeastern Illinois College",
+    "city": "Harrisburg",
+    "state": "IL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ilshurt",
+    "name_full": "Shurtleff College",
+    "city": "Alton",
+    "state": "IL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ilssjco",
+    "name_full": "South Suburban College",
+    "city": "South Holland",
+    "state": "IL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ilstvia",
+    "name_full": "St. Viator College",
+    "city": "Bourbonnais",
+    "state": "IL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ilsvcco",
+    "name_full": "Sauk Valley Community College",
+    "city": "Dixon",
+    "state": "IL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ilswijc",
+    "name_full": "Southwestern Illinois College",
+    "city": "Belleville",
+    "state": "IL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "iltrito",
+    "name_full": "Triton College",
+    "city": "River Grove",
+    "state": "IL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "iltruma",
+    "name_full": "Harry S Truman College",
+    "city": "Chicago",
+    "state": "IL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ilwabas",
+    "name_full": "Wabash Valley College",
+    "city": "Mount Carmel",
+    "state": "IL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ilwesleyan",
+    "name_full": "Illinois Wesleyan University",
+    "city": "Bloomington",
+    "state": "IL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ilwrigh",
+    "name_full": "Wilbur Wright College",
+    "city": "Chicago",
+    "state": "IL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "inander",
+    "name_full": "Anderson University",
+    "city": "Anderson",
+    "state": "IN",
+    "country": "USA"
+  },
+  {
+    "schoolID": "inbethel",
+    "name_full": "Bethel College",
+    "city": "Mishawaka",
+    "state": "IN",
+    "country": "USA"
+  },
+  {
+    "schoolID": "incante",
+    "name_full": "Canterbury College",
+    "city": "Danville",
+    "state": "IN",
+    "country": "USA"
+  },
+  {
+    "schoolID": "inconco",
+    "name_full": "Concordia Theological Seminary",
+    "city": "Fort Wayne",
+    "state": "IN",
+    "country": "USA"
+  },
+  {
+    "schoolID": "indiana",
+    "name_full": "Indiana University-Bloomington",
+    "city": "Bloomington",
+    "state": "IN",
+    "country": "USA"
+  },
+  {
+    "schoolID": "indianapa",
+    "name_full": "Indiana University of Pennsylvania",
+    "city": "Indiana",
+    "state": "PA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "indianast",
+    "name_full": "Indiana State University",
+    "city": "Terre Haute",
+    "state": "IN",
+    "country": "USA"
+  },
+  {
+    "schoolID": "indpolis",
+    "name_full": "University of Indianapolis",
+    "city": "Indianapolis",
+    "state": "IN",
+    "country": "USA"
+  },
+  {
+    "schoolID": "inhanov",
+    "name_full": "Hanover College",
+    "city": "Hanover",
+    "state": "IN",
+    "country": "USA"
+  },
+  {
+    "schoolID": "inindwe",
+    "name_full": "Indiana Wesleyan University",
+    "city": "Marion",
+    "state": "IN",
+    "country": "USA"
+  },
+  {
+    "schoolID": "inintec",
+    "name_full": "Indiana Institute of Technology",
+    "city": "Fort Wayne",
+    "state": "IN",
+    "country": "USA"
+  },
+  {
+    "schoolID": "invince",
+    "name_full": "Vincennes University",
+    "city": "Vincennes",
+    "state": "IN",
+    "country": "USA"
+  },
+  {
+    "schoolID": "iona",
+    "name_full": "Iona College",
+    "city": "New Rochelle",
+    "state": "NY",
+    "country": "USA"
+  },
+  {
+    "schoolID": "iowa",
+    "name_full": "University of Iowa",
+    "city": "Iowa City",
+    "state": "IA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "iowast",
+    "name_full": "Iowa State University",
+    "city": "Ames",
+    "state": "IA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ithacany",
+    "name_full": "Ithaca College",
+    "city": "Ithaca",
+    "state": "NY",
+    "country": "USA"
+  },
+  {
+    "schoolID": "jacksonst",
+    "name_full": "Jackson State University",
+    "city": "Jackson",
+    "state": "MS",
+    "country": "USA"
+  },
+  {
+    "schoolID": "jacksonvil",
+    "name_full": "Jacksonville University",
+    "city": "Jacksonville",
+    "state": "FL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "jamesmad",
+    "name_full": "James Madison University",
+    "city": "Harrisonburg",
+    "state": "VA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "jksonvilst",
+    "name_full": "Jacksonville State University",
+    "city": "Jacksonville",
+    "state": "AL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "johnbrwnar",
+    "name_full": "John Brown University",
+    "city": "Siloam Springs",
+    "state": "AR",
+    "country": "USA"
+  },
+  {
+    "schoolID": "johnshpkns",
+    "name_full": "Johns Hopkins University",
+    "city": "Baltimore",
+    "state": "MD",
+    "country": "USA"
+  },
+  {
+    "schoolID": "juniatapa",
+    "name_full": "Juniata College",
+    "city": "Huntingdon",
+    "state": "PA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "kalamazoo",
+    "name_full": "Kalamazoo College",
+    "city": "Kalamazoo",
+    "state": "MI",
+    "country": "USA"
+  },
+  {
+    "schoolID": "kansas",
+    "name_full": "University of Kansas",
+    "city": "Lawrence",
+    "state": "KS",
+    "country": "USA"
+  },
+  {
+    "schoolID": "kansasst",
+    "name_full": "Kansas State University",
+    "city": "Manhattan",
+    "state": "KS",
+    "country": "USA"
+  },
+  {
+    "schoolID": "keenest",
+    "name_full": "Keene State College",
+    "city": "Keene",
+    "state": "NH",
+    "country": "USA"
+  },
+  {
+    "schoolID": "kennesawst",
+    "name_full": "Kennesaw State University",
+    "city": "Kennesaw",
+    "state": "GA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "kentst",
+    "name_full": "Kent State University",
+    "city": "Kent",
+    "state": "OH",
+    "country": "USA"
+  },
+  {
+    "schoolID": "kentucky",
+    "name_full": "University of Kentucky",
+    "city": "Lexington",
+    "state": "KY",
+    "country": "USA"
+  },
+  {
+    "schoolID": "kentuckyst",
+    "name_full": "Kentucky State University",
+    "city": "Frankfort",
+    "state": "KY",
+    "country": "USA"
+  },
+  {
+    "schoolID": "kenyonoh",
+    "name_full": "Kenyon College",
+    "city": "Gambier",
+    "state": "OH",
+    "country": "USA"
+  },
+  {
+    "schoolID": "knoxil",
+    "name_full": "Knox College",
+    "city": "Galesburg",
+    "state": "IL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ksbarto",
+    "name_full": "Barton County Community College",
+    "city": "Great Bend",
+    "state": "KS",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ksbutle",
+    "name_full": "Butler County Community College",
+    "city": "El Dorado",
+    "state": "KS",
+    "country": "USA"
+  },
+  {
+    "schoolID": "kscloud",
+    "name_full": "Cloud County Community College",
+    "city": "Concordia",
+    "state": "KS",
+    "country": "USA"
+  },
+  {
+    "schoolID": "kscowle",
+    "name_full": "Cowley County Community College",
+    "city": "Arkansas City",
+    "state": "KS",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ksftsco",
+    "name_full": "Fort Scott Community College",
+    "city": "Fort Scott",
+    "state": "KS",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ksgarde",
+    "name_full": "Garden City Community College",
+    "city": "Garden City",
+    "state": "KS",
+    "country": "USA"
+  },
+  {
+    "schoolID": "kshutch",
+    "name_full": "Hutchinson Community College",
+    "city": "Hutchinson",
+    "state": "KS",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ksindep",
+    "name_full": "Independence Community College",
+    "city": "Independence",
+    "state": "KS",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ksjohns",
+    "name_full": "Johnson County Community College",
+    "city": "Overland Park",
+    "state": "KS",
+    "country": "USA"
+  },
+  {
+    "schoolID": "kskccco",
+    "name_full": "Kansas City Kansas Community College",
+    "city": "Kansas City",
+    "state": "KS",
+    "country": "USA"
+  },
+  {
+    "schoolID": "kslabet",
+    "name_full": "Labette Community College",
+    "city": "Parsons",
+    "state": "KS",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ksneosh",
+    "name_full": "Neosho County Community College",
+    "city": "Chanute",
+    "state": "KS",
+    "country": "USA"
+  },
+  {
+    "schoolID": "kspratt",
+    "name_full": "Pratt Community College",
+    "city": "Pratt",
+    "state": "KS",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ksstmaC",
+    "name_full": "St. Mary's College",
+    "city": "St. Mary's",
+    "state": "KS",
+    "country": "USA"
+  },
+  {
+    "schoolID": "kutztown",
+    "name_full": "Kutztown University of Pennsylvania",
+    "city": "Kutztown",
+    "state": "PA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "kybella",
+    "name_full": "Bellarmine College",
+    "city": "Louisville",
+    "state": "KY",
+    "country": "USA"
+  },
+  {
+    "schoolID": "kysomer",
+    "name_full": "Somerset Community College",
+    "city": "Somerset",
+    "state": "KY",
+    "country": "USA"
+  },
+  {
+    "schoolID": "kystcat",
+    "name_full": "St. Catherine College",
+    "city": "St. Catherine",
+    "state": "KY",
+    "country": "USA"
+  },
+  {
+    "schoolID": "kywesleyan",
+    "name_full": "Kentucky Wesleyan College",
+    "city": "Owensboro",
+    "state": "KY",
+    "country": "USA"
+  },
+  {
+    "schoolID": "kywkycc",
+    "name_full": "West Kentucky Community and Technical College",
+    "city": "Paducah",
+    "state": "KY",
+    "country": "USA"
+  },
+  {
+    "schoolID": "labossi",
+    "name_full": "Bossier Parish Community College",
+    "city": "Bossier City",
+    "state": "LA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "lacollege",
+    "name_full": "Louisiana College",
+    "city": "Pineville",
+    "state": "LA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ladelga",
+    "name_full": "Delgado Community College",
+    "city": "New Orleans",
+    "state": "LA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "lafayette",
+    "name_full": "Lafayette College",
+    "city": "Easton",
+    "state": "PA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "lakeforest",
+    "name_full": "Lake Forest College",
+    "city": "Lake Forest",
+    "state": "IL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "lamar",
+    "name_full": "Lamar University",
+    "city": "Beaumont",
+    "state": "TX",
+    "country": "USA"
+  },
+  {
+    "schoolID": "lambuthtn",
+    "name_full": "Lambuth University",
+    "city": "Jackson",
+    "state": "TN",
+    "country": "USA"
+  },
+  {
+    "schoolID": "lanecol",
+    "name_full": "Lane College",
+    "city": "Jackson",
+    "state": "TN",
+    "country": "USA"
+  },
+  {
+    "schoolID": "lasalle",
+    "name_full": "LaSalle University",
+    "city": "Philadelphia",
+    "state": "PA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "latech",
+    "name_full": "Louisiana Tech University",
+    "city": "Ruston",
+    "state": "LA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "laverneca",
+    "name_full": "University of La Verne",
+    "city": "La Verne",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "lebvalley",
+    "name_full": "Lebanon Valley College",
+    "city": "Annville",
+    "state": "PA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "lee",
+    "name_full": "Lee University",
+    "city": "Cleveland",
+    "state": "TN",
+    "country": "USA"
+  },
+  {
+    "schoolID": "lehigh",
+    "name_full": "Lehigh University",
+    "city": "Bethlehem",
+    "state": "PA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "lemoyne",
+    "name_full": "LeMoyne College",
+    "city": "Syracuse",
+    "state": "NY",
+    "country": "USA"
+  },
+  {
+    "schoolID": "lemoynowen",
+    "name_full": "LeMoyne-Owen College",
+    "city": "Memphis",
+    "state": "TN",
+    "country": "USA"
+  },
+  {
+    "schoolID": "lenoirrhyn",
+    "name_full": "Lenoir-Rhyne College",
+    "city": "Hickory",
+    "state": "NC",
+    "country": "USA"
+  },
+  {
+    "schoolID": "lewclarkor",
+    "name_full": "Lewis and Clark College",
+    "city": "Portland",
+    "state": "OR",
+    "country": "USA"
+  },
+  {
+    "schoolID": "lewclarkst",
+    "name_full": "Lewis-Clark State College",
+    "city": "Lewiston",
+    "state": "ID",
+    "country": "USA"
+  },
+  {
+    "schoolID": "lewisil",
+    "name_full": "Lewis University",
+    "city": "Romeoville",
+    "state": "IL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "liberty",
+    "name_full": "Liberty University",
+    "city": "Lynchburg",
+    "state": "VA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "lincolnlandcc",
+    "name_full": "Lincoln Land Community College",
+    "city": "Springfield",
+    "state": "IL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "lincolnmem",
+    "name_full": "Lincoln Memorial University",
+    "city": "Harrogate",
+    "state": "TN",
+    "country": "USA"
+  },
+  {
+    "schoolID": "lincolnmo",
+    "name_full": "Lincoln University",
+    "city": "Jefferson City",
+    "state": "MO",
+    "country": "USA"
+  },
+  {
+    "schoolID": "linfieldor",
+    "name_full": "Linfield College",
+    "city": "McMinnville",
+    "state": "OR",
+    "country": "USA"
+  },
+  {
+    "schoolID": "lipscomb",
+    "name_full": "Lipscomb University",
+    "city": "Nashville",
+    "state": "TN",
+    "country": "USA"
+  },
+  {
+    "schoolID": "lockhaven",
+    "name_full": "Lock Haven University of Pennsylvania",
+    "city": "Lock Haven",
+    "state": "PA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "longbeach",
+    "name_full": "California State University Long Beach",
+    "city": "Long Beach",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "longisland",
+    "name_full": "Long Island University",
+    "city": "Brooklyn Campus",
+    "state": "Brooklyn",
+    "country": "NY"
+  },
+  {
+    "schoolID": "longwoodva",
+    "name_full": "Longwood University",
+    "city": "Farmville",
+    "state": "VA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "lorasia",
+    "name_full": "Loras College",
+    "city": "Dubuque",
+    "state": "IA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "louisville",
+    "name_full": "University of Louisville",
+    "city": "Louisville",
+    "state": "KY",
+    "country": "USA"
+  },
+  {
+    "schoolID": "loyolachi",
+    "name_full": "Loyola University Chicago",
+    "city": "Chicago",
+    "state": "IL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "loyolamary",
+    "name_full": "Loyola Marymount University",
+    "city": "Los Angeles",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "loyolamd",
+    "name_full": "Loyola College in Maryland",
+    "city": "Baltimore",
+    "state": "MD",
+    "country": "USA"
+  },
+  {
+    "schoolID": "loyolano",
+    "name_full": "Loyola University New Orleans",
+    "city": "New Orleans",
+    "state": "LA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "lsu",
+    "name_full": "Louisiana State University",
+    "city": "Baton Rouge",
+    "state": "LA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "lubbchrist",
+    "name_full": "Lubbock Christian University",
+    "city": "Lubbock",
+    "state": "TX",
+    "country": "USA"
+  },
+  {
+    "schoolID": "lutheria",
+    "name_full": "Luther College",
+    "city": "Decorah",
+    "state": "IA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "lycomingpa",
+    "name_full": "Lycoming College",
+    "city": "Williamsport",
+    "state": "PA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "lynchbrgva",
+    "name_full": "Lynchburg College",
+    "city": "Lynchburg",
+    "state": "VA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "maassum",
+    "name_full": "Assumption College",
+    "city": "Worcester",
+    "state": "MA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "macmurryil",
+    "name_full": "MacMurray College",
+    "city": "Jacksonville",
+    "state": "IL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "macollege",
+    "name_full": "Massachusetts College of Liberal Arts",
+    "city": "North Adams",
+    "state": "MA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "madeajc",
+    "name_full": "Dean College",
+    "city": "Franklin",
+    "state": "MA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "maemers",
+    "name_full": "Emerson College",
+    "city": "Boston",
+    "state": "MA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "maine",
+    "name_full": "University of Maine at Orono",
+    "city": "Orono",
+    "state": "ME",
+    "country": "USA"
+  },
+  {
+    "schoolID": "malowete",
+    "name_full": "Lowell Technological Institute",
+    "city": "Lowell",
+    "state": "MA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "mamassa",
+    "name_full": "Massasoit Community College",
+    "city": "Brockton",
+    "state": "MA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "mamerri",
+    "name_full": "Merrimack College",
+    "city": "North Andover",
+    "state": "MA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "mamiddl",
+    "name_full": "Middlesex Community College",
+    "city": "Bedford",
+    "state": "MA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "manchester",
+    "name_full": "Manchester College",
+    "city": "North Manchester",
+    "state": "IN",
+    "country": "USA"
+  },
+  {
+    "schoolID": "manecco",
+    "name_full": "Northern Essex Community College",
+    "city": "Haverhill",
+    "state": "MA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "manhattan",
+    "name_full": "Manhattan College",
+    "city": "New York",
+    "state": "NY",
+    "country": "USA"
+  },
+  {
+    "schoolID": "mankatost",
+    "name_full": "Minnesota State University",
+    "city": "Mankato",
+    "state": "Mankato",
+    "country": "MN"
+  },
+  {
+    "schoolID": "manscco",
+    "name_full": "North Shore Community College",
+    "city": "Danvers",
+    "state": "MA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "mansfield",
+    "name_full": "Mansfield University of Pennsylvania",
+    "city": "Mansfield",
+    "state": "PA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "maquins",
+    "name_full": "Quinsigamond Community College",
+    "city": "Worcester",
+    "state": "MA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "mariettaoh",
+    "name_full": "Marietta College",
+    "city": "Marietta",
+    "state": "OH",
+    "country": "USA"
+  },
+  {
+    "schoolID": "marquette",
+    "name_full": "Marquette University",
+    "city": "Milwaukee",
+    "state": "WI",
+    "country": "USA"
+  },
+  {
+    "schoolID": "marshall",
+    "name_full": "Marshall University",
+    "city": "Huntington",
+    "state": "WV",
+    "country": "USA"
+  },
+  {
+    "schoolID": "maryhrdbay",
+    "name_full": "University of Mary Hardin-Baylor",
+    "city": "Belton",
+    "state": "TX",
+    "country": "USA"
+  },
+  {
+    "schoolID": "maryland",
+    "name_full": "University of Maryland",
+    "city": "College Park",
+    "state": "MD",
+    "country": "USA"
+  },
+  {
+    "schoolID": "masslowell",
+    "name_full": "University of Massachusetts Lowell",
+    "city": "Lowell",
+    "state": "MA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "mastersca",
+    "name_full": "The Master's College",
+    "city": "Santa Clarita",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "mcdaniel",
+    "name_full": "McDaniel College",
+    "city": "Westminster",
+    "state": "MD",
+    "country": "USA"
+  },
+  {
+    "schoolID": "mcmgccc",
+    "name_full": "Mississippi Gulf Coast Community College",
+    "city": "Perkinston",
+    "state": "MS",
+    "country": "USA"
+  },
+  {
+    "schoolID": "mcneese",
+    "name_full": "McNeese State University",
+    "city": "Lake Charles",
+    "state": "LA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "mdaacco",
+    "name_full": "Anne Arundel Community College",
+    "city": "Arnold",
+    "state": "MD",
+    "country": "USA"
+  },
+  {
+    "schoolID": "mdbalcc",
+    "name_full": "Baltimore City Community College",
+    "city": "Baltimore",
+    "state": "MD",
+    "country": "USA"
+  },
+  {
+    "schoolID": "mdbalti",
+    "name_full": "University of Baltimore",
+    "city": "Baltimore",
+    "state": "MD",
+    "country": "USA"
+  },
+  {
+    "schoolID": "mdccbcc",
+    "name_full": "Community College of Baltimore County",
+    "city": "Catonsville Campus",
+    "state": "Catonsville",
+    "country": "MD"
+  },
+  {
+    "schoolID": "mdccbce",
+    "name_full": "Community College of Baltimore County",
+    "city": "Essex Campus",
+    "state": "Essex",
+    "country": "MD"
+  },
+  {
+    "schoolID": "mdcecil",
+    "name_full": "Cecil Community College",
+    "city": "North East",
+    "state": "MD",
+    "country": "USA"
+  },
+  {
+    "schoolID": "mdcolsm",
+    "name_full": "College of Southern Maryland",
+    "city": "La Plata",
+    "state": "MD",
+    "country": "USA"
+  },
+  {
+    "schoolID": "mdfrost",
+    "name_full": "Frostburg State University",
+    "city": "Frostburg",
+    "state": "MD",
+    "country": "USA"
+  },
+  {
+    "schoolID": "mdgarre",
+    "name_full": "Garrett Community College",
+    "city": "McHenry",
+    "state": "MD",
+    "country": "USA"
+  },
+  {
+    "schoolID": "mdhager",
+    "name_full": "Hagerstown Community College",
+    "city": "Hagerstown",
+    "state": "MD",
+    "country": "USA"
+  },
+  {
+    "schoolID": "mdmdbal",
+    "name_full": "University of Maryland Baltimore",
+    "city": "Baltimore",
+    "state": "MD",
+    "country": "USA"
+  },
+  {
+    "schoolID": "mdmontg",
+    "name_full": "Montgomery College",
+    "city": "Rockville Campus",
+    "state": "Rockville",
+    "country": "MD"
+  },
+  {
+    "schoolID": "mdrockh",
+    "name_full": "Rock Hill College",
+    "city": "Ellicott City",
+    "state": "MD",
+    "country": "USA"
+  },
+  {
+    "schoolID": "mdstjoh",
+    "name_full": "St. John's College",
+    "city": "Annapolis",
+    "state": "MD",
+    "country": "USA"
+  },
+  {
+    "schoolID": "memphis",
+    "name_full": "University of Memphis",
+    "city": "Memphis",
+    "state": "TN",
+    "country": "USA"
+  },
+  {
+    "schoolID": "meramec",
+    "name_full": "St. Louis Community College",
+    "city": "Meramec Campus",
+    "state": "Kirkwood",
+    "country": "MO"
+  },
+  {
+    "schoolID": "mercer",
+    "name_full": "Mercer University",
+    "city": "Macon",
+    "state": "GA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "mercyhurst",
+    "name_full": "Mercyhurst College",
+    "city": "Erie",
+    "state": "PA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "mericke",
+    "name_full": "Ricker College",
+    "city": "Houlton",
+    "state": "ME",
+    "country": "USA"
+  },
+  {
+    "schoolID": "mesast",
+    "name_full": "Mesa State College",
+    "city": "Grand Junction",
+    "state": "CO",
+    "country": "USA"
+  },
+  {
+    "schoolID": "messiah",
+    "name_full": "Messiah College",
+    "city": "Grantham",
+    "state": "PA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "mestjos",
+    "name_full": "St. Joseph's College",
+    "city": "Standish",
+    "state": "ME",
+    "country": "USA"
+  },
+  {
+    "schoolID": "mewestb",
+    "name_full": "Westbrook College",
+    "city": "Portland",
+    "state": "ME",
+    "country": "USA"
+  },
+  {
+    "schoolID": "miamidade",
+    "name_full": "Miami-Dade College",
+    "city": "Miami",
+    "state": "FL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "miamifl",
+    "name_full": "University of Miami",
+    "city": "Coral Gables",
+    "state": "FL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "miamioh",
+    "name_full": "Miami University of Ohio",
+    "city": "Oxford",
+    "state": "OH",
+    "country": "USA"
+  },
+  {
+    "schoolID": "michigan",
+    "name_full": "University of Michigan",
+    "city": "Ann Arbor",
+    "state": "MI",
+    "country": "USA"
+  },
+  {
+    "schoolID": "michiganst",
+    "name_full": "Michigan State University",
+    "city": "East Lansing",
+    "state": "MI",
+    "country": "USA"
+  },
+  {
+    "schoolID": "middlbryvt",
+    "name_full": "Middlebury College",
+    "city": "Middlebury",
+    "state": "VT",
+    "country": "USA"
+  },
+  {
+    "schoolID": "midetrte",
+    "name_full": "Detroit Institute of Technology",
+    "city": "Detroit",
+    "state": "MI",
+    "country": "USA"
+  },
+  {
+    "schoolID": "midlndluth",
+    "name_full": "Midland Lutheran College",
+    "city": "Fremont",
+    "state": "NE",
+    "country": "USA"
+  },
+  {
+    "schoolID": "migocco",
+    "name_full": "Glen Oaks Community College",
+    "city": "Centreville",
+    "state": "MI",
+    "country": "USA"
+  },
+  {
+    "schoolID": "migrand",
+    "name_full": "Grand Rapids Community College",
+    "city": "Grand Rapids",
+    "state": "MI",
+    "country": "USA"
+  },
+  {
+    "schoolID": "mihenry",
+    "name_full": "Henry Ford Community College",
+    "city": "Dearborn",
+    "state": "MI",
+    "country": "USA"
+  },
+  {
+    "schoolID": "mikalam",
+    "name_full": "Kalamazoo Valley Community College",
+    "city": "Kalamazoo",
+    "state": "MI",
+    "country": "USA"
+  },
+  {
+    "schoolID": "millersvil",
+    "name_full": "Millersville University of Pennsylvania",
+    "city": "Millersville",
+    "state": "PA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "milligantn",
+    "name_full": "Milligan College",
+    "city": "Milligan College",
+    "state": "TN",
+    "country": "USA"
+  },
+  {
+    "schoolID": "millikin",
+    "name_full": "Millikin University",
+    "city": "Decatur",
+    "state": "IL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "millsapsms",
+    "name_full": "Millsaps College",
+    "city": "Jackson",
+    "state": "MS",
+    "country": "USA"
+  },
+  {
+    "schoolID": "milmich",
+    "name_full": "Lake Michigan College",
+    "city": "Benton Harbor",
+    "state": "MI",
+    "country": "USA"
+  },
+  {
+    "schoolID": "mimacom",
+    "name_full": "Macomb Community College",
+    "city": "Warren",
+    "state": "MI",
+    "country": "USA"
+  },
+  {
+    "schoolID": "mimuske",
+    "name_full": "Muskegon Community College",
+    "city": "Muskegon",
+    "state": "MI",
+    "country": "USA"
+  },
+  {
+    "schoolID": "minnesota",
+    "name_full": "University of Minnesota",
+    "city": "Minneapolis",
+    "state": "MN",
+    "country": "USA"
+  },
+  {
+    "schoolID": "minorth",
+    "name_full": "Northern Michigan University",
+    "city": "Marquette",
+    "state": "MI",
+    "country": "USA"
+  },
+  {
+    "schoolID": "mioakla",
+    "name_full": "Oakland Community College",
+    "city": "Farmington Hills",
+    "state": "MI",
+    "country": "USA"
+  },
+  {
+    "schoolID": "missouri",
+    "name_full": "University of Missouri Columbia",
+    "city": "Columbia",
+    "state": "MO",
+    "country": "USA"
+  },
+  {
+    "schoolID": "missst",
+    "name_full": "Mississippi State University",
+    "city": "Mississippi State",
+    "state": "MS",
+    "country": "USA"
+  },
+  {
+    "schoolID": "mistcla",
+    "name_full": "St. Clair County Community College",
+    "city": "Port Huron",
+    "state": "MI",
+    "country": "USA"
+  },
+  {
+    "schoolID": "mit",
+    "name_full": "Massachusetts Institute of Technology",
+    "city": "Cambridge",
+    "state": "MA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "mnbemid",
+    "name_full": "Bemidji State University",
+    "city": "Bemidji",
+    "state": "MN",
+    "country": "USA"
+  },
+  {
+    "schoolID": "mnmesabi",
+    "name_full": "Mesabi Range Community and Technical College",
+    "city": "Virginia",
+    "state": "MN",
+    "country": "USA"
+  },
+  {
+    "schoolID": "mnmoorh",
+    "name_full": "Minnesota State University",
+    "city": "Moorhead",
+    "state": "Moorhead",
+    "country": "MN"
+  },
+  {
+    "schoolID": "mnmorris",
+    "name_full": "University of Minnesota",
+    "city": "Morris",
+    "state": "Morris",
+    "country": "MN"
+  },
+  {
+    "schoolID": "mnnorma",
+    "name_full": "Normandale Community College",
+    "city": "Bloomington",
+    "state": "MN",
+    "country": "USA"
+  },
+  {
+    "schoolID": "mnparke",
+    "name_full": "Parker College",
+    "city": "Winnebago",
+    "state": "MN",
+    "country": "USA"
+  },
+  {
+    "schoolID": "mntclairst",
+    "name_full": "Montclair State University",
+    "city": "Montclair",
+    "state": "NJ",
+    "country": "USA"
+  },
+  {
+    "schoolID": "mobileal",
+    "name_full": "University of Mobile",
+    "city": "Mobile",
+    "state": "AL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "moconco",
+    "name_full": "Concordia Seminary-St. Louis",
+    "city": "St. Louis",
+    "state": "MO",
+    "country": "USA"
+  },
+  {
+    "schoolID": "mocrowd",
+    "name_full": "Crowder College",
+    "city": "Neosho",
+    "state": "MO",
+    "country": "USA"
+  },
+  {
+    "schoolID": "moculve",
+    "name_full": "Culver-Stockton College",
+    "city": "Canton",
+    "state": "MO",
+    "country": "USA"
+  },
+  {
+    "schoolID": "modrury",
+    "name_full": "Drury University",
+    "city": "Springfield",
+    "state": "MO",
+    "country": "USA"
+  },
+  {
+    "schoolID": "moeastc",
+    "name_full": "East Central College",
+    "city": "Union",
+    "state": "MO",
+    "country": "USA"
+  },
+  {
+    "schoolID": "mofores",
+    "name_full": "St. Louis Community College",
+    "city": "Forest Park Campus",
+    "state": "St. Louis",
+    "country": "MO"
+  },
+  {
+    "schoolID": "moharri",
+    "name_full": "Harris-Stowe State College",
+    "city": "St. Louis",
+    "state": "MO",
+    "country": "USA"
+  },
+  {
+    "schoolID": "mojcjco",
+    "name_full": "Jefferson City Junior College",
+    "city": "Jefferson City",
+    "state": "MO",
+    "country": "USA"
+  },
+  {
+    "schoolID": "mojeffe",
+    "name_full": "Jefferson College",
+    "city": "Hillsboro",
+    "state": "MO",
+    "country": "USA"
+  },
+  {
+    "schoolID": "molongv",
+    "name_full": "Longview Community College",
+    "city": "Kansas City",
+    "state": "MO",
+    "country": "USA"
+  },
+  {
+    "schoolID": "momaple",
+    "name_full": "Maple Woods Community College",
+    "city": "Kansas City",
+    "state": "MO",
+    "country": "USA"
+  },
+  {
+    "schoolID": "mominer",
+    "name_full": "Mineral Area College",
+    "city": "Park Hills",
+    "state": "MO",
+    "country": "USA"
+  },
+  {
+    "schoolID": "monmouth",
+    "name_full": "Monmouth University",
+    "city": "West Long Branch",
+    "state": "NJ",
+    "country": "USA"
+  },
+  {
+    "schoolID": "monroecc",
+    "name_full": "Monroe Community College",
+    "city": "Rochester",
+    "state": "NY",
+    "country": "USA"
+  },
+  {
+    "schoolID": "montevallo",
+    "name_full": "University of Montevallo",
+    "city": "Montevallo",
+    "state": "AL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "montreatnc",
+    "name_full": "Montreat College",
+    "city": "Montreat",
+    "state": "NC",
+    "country": "USA"
+  },
+  {
+    "schoolID": "morehead",
+    "name_full": "Morehead State University",
+    "city": "Morehead",
+    "state": "KY",
+    "country": "USA"
+  },
+  {
+    "schoolID": "morehouse",
+    "name_full": "Morehouse College",
+    "city": "Atlanta",
+    "state": "GA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "morganst",
+    "name_full": "Morgan State University",
+    "city": "Baltimore",
+    "state": "MD",
+    "country": "USA"
+  },
+  {
+    "schoolID": "morolla",
+    "name_full": "Missouri University of Science and Technology",
+    "city": "Rolla",
+    "state": "MO",
+    "country": "USA"
+  },
+  {
+    "schoolID": "mosouthern",
+    "name_full": "Missouri Southern State University",
+    "city": "Joplin",
+    "state": "MO",
+    "country": "USA"
+  },
+  {
+    "schoolID": "motarki",
+    "name_full": "Tarkio College",
+    "city": "Tarkio",
+    "state": "MO",
+    "country": "USA"
+  },
+  {
+    "schoolID": "mothree",
+    "name_full": "Three Rivers Community College",
+    "city": "Poplar Bluff",
+    "state": "MO",
+    "country": "USA"
+  },
+  {
+    "schoolID": "movalley",
+    "name_full": "Missouri Valley College",
+    "city": "Marshall",
+    "state": "MO",
+    "country": "USA"
+  },
+  {
+    "schoolID": "mowestern",
+    "name_full": "Missouri Western State University",
+    "city": "St. Joseph",
+    "state": "MO",
+    "country": "USA"
+  },
+  {
+    "schoolID": "mrningside",
+    "name_full": "Morningside College",
+    "city": "Sioux City",
+    "state": "IA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "mryvilletn",
+    "name_full": "Maryville College",
+    "city": "Maryville",
+    "state": "TN",
+    "country": "USA"
+  },
+  {
+    "schoolID": "mscollege",
+    "name_full": "Mississippi College",
+    "city": "Clinton",
+    "state": "MS",
+    "country": "USA"
+  },
+  {
+    "schoolID": "mscopia",
+    "name_full": "Copiah-Lincoln Community College",
+    "city": "Wesson",
+    "state": "MS",
+    "country": "USA"
+  },
+  {
+    "schoolID": "mseccco",
+    "name_full": "East Central Community College",
+    "city": "Decatur",
+    "state": "MS",
+    "country": "USA"
+  },
+  {
+    "schoolID": "msgcmac",
+    "name_full": "Gulf Coast Military Academy",
+    "city": "Gulfport",
+    "state": "MS",
+    "country": "USA"
+  },
+  {
+    "schoolID": "mshinds",
+    "name_full": "Hinds Community College",
+    "city": "Raymond",
+    "state": "MS",
+    "country": "USA"
+  },
+  {
+    "schoolID": "msholme",
+    "name_full": "Holmes Community College",
+    "city": "Ridgeland",
+    "state": "MS",
+    "country": "USA"
+  },
+  {
+    "schoolID": "msitawa",
+    "name_full": "Itawamba Community College",
+    "city": "Fulton",
+    "state": "MS",
+    "country": "USA"
+  },
+  {
+    "schoolID": "msmdcco",
+    "name_full": "Mississippi Delta Community College",
+    "city": "Moorhead",
+    "state": "MS",
+    "country": "USA"
+  },
+  {
+    "schoolID": "msmerid",
+    "name_full": "Meridian Community College",
+    "city": "Meridian",
+    "state": "MS",
+    "country": "USA"
+  },
+  {
+    "schoolID": "msnwmcc",
+    "name_full": "Northwest Mississippi Community College",
+    "city": "Senatobia",
+    "state": "MS",
+    "country": "USA"
+  },
+  {
+    "schoolID": "mspearl",
+    "name_full": "Pearl River Community College",
+    "city": "Poplarville",
+    "state": "MS",
+    "country": "USA"
+  },
+  {
+    "schoolID": "msswmcc",
+    "name_full": "Southwest Mississippi Community College",
+    "city": "Summit",
+    "state": "MS",
+    "country": "USA"
+  },
+  {
+    "schoolID": "mstupel",
+    "name_full": "Tupelo Military Institute",
+    "city": "Tupelo",
+    "state": "MS",
+    "country": "USA"
+  },
+  {
+    "schoolID": "mtennst",
+    "name_full": "Middle Tennessee State University",
+    "city": "Murfreesboro",
+    "state": "TN",
+    "country": "USA"
+  },
+  {
+    "schoolID": "mtolive",
+    "name_full": "Mount Olive College",
+    "city": "Mount Olive",
+    "state": "NC",
+    "country": "USA"
+  },
+  {
+    "schoolID": "mtstmarys",
+    "name_full": "Mount St. Mary's University",
+    "city": "Emmitsburg",
+    "state": "MD",
+    "country": "USA"
+  },
+  {
+    "schoolID": "mtunionoh",
+    "name_full": "Mount Union College",
+    "city": "Alliance",
+    "state": "OH",
+    "country": "USA"
+  },
+  {
+    "schoolID": "mtvernnaz",
+    "name_full": "Mount Vernon Nazarene University",
+    "city": "Mount Vernon",
+    "state": "OH",
+    "country": "USA"
+  },
+  {
+    "schoolID": "muhlenberg",
+    "name_full": "Muhlenberg College",
+    "city": "Allentown",
+    "state": "PA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "murrayst",
+    "name_full": "Murray State University",
+    "city": "Murray",
+    "state": "KY",
+    "country": "USA"
+  },
+  {
+    "schoolID": "muskingum",
+    "name_full": "Muskingum College",
+    "city": "New Concord",
+    "state": "OH",
+    "country": "USA"
+  },
+  {
+    "schoolID": "nalabama",
+    "name_full": "University of North Alabama",
+    "city": "Florence",
+    "state": "AL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "narizona",
+    "name_full": "Northern Arizona University",
+    "city": "Flagstaff",
+    "state": "AZ",
+    "country": "USA"
+  },
+  {
+    "schoolID": "navy",
+    "name_full": "United States Naval Academy",
+    "city": "Annapolis",
+    "state": "MD",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ncat",
+    "name_full": "North Carolina A&T State University",
+    "city": "Greensboro",
+    "state": "NC",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ncbreva",
+    "name_full": "Brevard College",
+    "city": "Brevard",
+    "state": "NC",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ncchowa",
+    "name_full": "Chowan College",
+    "city": "Murfreesboro",
+    "state": "NC",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ncentralil",
+    "name_full": "North Central College",
+    "city": "Naperville",
+    "state": "IL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "nclouis",
+    "name_full": "Louisburg College",
+    "city": "Louisburg",
+    "state": "NC",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ncmarsh",
+    "name_full": "Mars Hill College",
+    "city": "Mars Hill",
+    "state": "NC",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ncolorado",
+    "name_full": "University of Northern Colorado",
+    "city": "Greeley",
+    "state": "CO",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ncpitcc",
+    "name_full": "Pitt Community College",
+    "city": "Winterville",
+    "state": "NC",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ncruthe",
+    "name_full": "Rutherford College",
+    "city": "Rutherford College",
+    "state": "NC",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ncstand",
+    "name_full": "St. Andrews Presbyterian College",
+    "city": "Laurinburg",
+    "state": "NC",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ncstate",
+    "name_full": "North Carolina State University",
+    "city": "Raleigh",
+    "state": "NC",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ncuncpe",
+    "name_full": "University of North Carolina at Pembroke",
+    "city": "Pembroke",
+    "state": "NC",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ncweave",
+    "name_full": "Weaver College",
+    "city": "Weaverville",
+    "state": "NC",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ndstate",
+    "name_full": "North Dakota State University",
+    "city": "Fargo",
+    "state": "ND",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ndunind",
+    "name_full": "University of North Dakota",
+    "city": "Grand Forks",
+    "state": "ND",
+    "country": "USA"
+  },
+  {
+    "schoolID": "neastern",
+    "name_full": "Northeastern University",
+    "city": "Boston",
+    "state": "MA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "nebellevue",
+    "name_full": "Bellevue University",
+    "city": "Bellevue",
+    "state": "NE",
+    "country": "USA"
+  },
+  {
+    "schoolID": "nebkearney",
+    "name_full": "University of Nebraska at Kearney",
+    "city": "Kearney",
+    "state": "NE",
+    "country": "USA"
+  },
+  {
+    "schoolID": "nebomaha",
+    "name_full": "University of Nebraska at Omaha",
+    "city": "Omaha",
+    "state": "NE",
+    "country": "USA"
+  },
+  {
+    "schoolID": "nebraska",
+    "name_full": "University of Nebraska at Lincoln",
+    "city": "Lincoln",
+    "state": "NE",
+    "country": "USA"
+  },
+  {
+    "schoolID": "nedoane",
+    "name_full": "Doane College",
+    "city": "Crete",
+    "state": "NE",
+    "country": "USA"
+  },
+  {
+    "schoolID": "nehasti",
+    "name_full": "Hastings College",
+    "city": "Hastings",
+    "state": "NE",
+    "country": "USA"
+  },
+  {
+    "schoolID": "neillinois",
+    "name_full": "Northeastern Illinois University",
+    "city": "Chicago",
+    "state": "IL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "nepersh",
+    "name_full": "John J Pershing College",
+    "city": "Beatrice",
+    "state": "NE",
+    "country": "USA"
+  },
+  {
+    "schoolID": "nevada",
+    "name_full": "University of Nevada-Reno",
+    "city": "Reno",
+    "state": "NV",
+    "country": "USA"
+  },
+  {
+    "schoolID": "newberry",
+    "name_full": "Newberry College",
+    "city": "Newberry",
+    "state": "SC",
+    "country": "USA"
+  },
+  {
+    "schoolID": "newesleyan",
+    "name_full": "Nebraska Wesleyan University",
+    "city": "Lincoln",
+    "state": "NE",
+    "country": "USA"
+  },
+  {
+    "schoolID": "neweste",
+    "name_full": "Western Nebraska Community College",
+    "city": "Scottsbluff",
+    "state": "NE",
+    "country": "USA"
+  },
+  {
+    "schoolID": "newhamp",
+    "name_full": "University of New Hampshire",
+    "city": "Durham",
+    "state": "NH",
+    "country": "USA"
+  },
+  {
+    "schoolID": "newhaven",
+    "name_full": "University of New Haven",
+    "city": "West Haven",
+    "state": "CT",
+    "country": "USA"
+  },
+  {
+    "schoolID": "newyorku",
+    "name_full": "New York University",
+    "city": "New York",
+    "state": "NY",
+    "country": "USA"
+  },
+  {
+    "schoolID": "nflorida",
+    "name_full": "University of North Florida",
+    "city": "Jacksonville",
+    "state": "FL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "niagara",
+    "name_full": "Niagara University",
+    "city": "Lewiston",
+    "state": "NY",
+    "country": "USA"
+  },
+  {
+    "schoolID": "nicholls",
+    "name_full": "Nicholls State University",
+    "city": "Thibodaux",
+    "state": "LA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "nillinois",
+    "name_full": "Northern Illinois University",
+    "city": "DeKalb",
+    "state": "IL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "niowa",
+    "name_full": "University of Northern Iowa",
+    "city": "Cedar Falls",
+    "state": "IA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "njberge",
+    "name_full": "Bergen Community College",
+    "city": "Paramus",
+    "state": "NJ",
+    "country": "USA"
+  },
+  {
+    "schoolID": "njborde",
+    "name_full": "Bordentown Military Institute",
+    "city": "Bordentown",
+    "state": "NJ",
+    "country": "USA"
+  },
+  {
+    "schoolID": "njbrook",
+    "name_full": "Brookdale Community College",
+    "city": "Lincroft",
+    "state": "NJ",
+    "country": "USA"
+  },
+  {
+    "schoolID": "njburli",
+    "name_full": "Burlington County College",
+    "city": "Pemberton",
+    "state": "NJ",
+    "country": "USA"
+  },
+  {
+    "schoolID": "njcamde",
+    "name_full": "Camden County College",
+    "city": "Blackwood",
+    "state": "NJ",
+    "country": "USA"
+  },
+  {
+    "schoolID": "njccmor",
+    "name_full": "County College of Morris",
+    "city": "Randolph",
+    "state": "NJ",
+    "country": "USA"
+  },
+  {
+    "schoolID": "njcente",
+    "name_full": "Centenary College",
+    "city": "Hackettstown",
+    "state": "NJ",
+    "country": "USA"
+  },
+  {
+    "schoolID": "njcity",
+    "name_full": "New Jersey City University",
+    "city": "Jersey City",
+    "state": "NJ",
+    "country": "USA"
+  },
+  {
+    "schoolID": "njglouc",
+    "name_full": "Gloucester County College",
+    "city": "Sewell",
+    "state": "NJ",
+    "country": "USA"
+  },
+  {
+    "schoolID": "njmerce",
+    "name_full": "Mercer County Community College",
+    "city": "West Windsor",
+    "state": "NJ",
+    "country": "USA"
+  },
+  {
+    "schoolID": "njmiddl",
+    "name_full": "Middlesex County Community College",
+    "city": "Edison",
+    "state": "NJ",
+    "country": "USA"
+  },
+  {
+    "schoolID": "njricha",
+    "name_full": "Richard Stockton College of New Jersey",
+    "city": "Pomona",
+    "state": "NJ",
+    "country": "USA"
+  },
+  {
+    "schoolID": "njupsal",
+    "name_full": "Upsala College",
+    "city": "East Orange",
+    "state": "NJ",
+    "country": "USA"
+  },
+  {
+    "schoolID": "nkentucky",
+    "name_full": "Northern Kentucky University",
+    "city": "Highland Heights",
+    "state": "KY",
+    "country": "USA"
+  },
+  {
+    "schoolID": "nmeaste",
+    "name_full": "Eastern New Mexico University",
+    "city": "Portales",
+    "state": "NM",
+    "country": "USA"
+  },
+  {
+    "schoolID": "nmexico",
+    "name_full": "University of New Mexico",
+    "city": "Albuquerque",
+    "state": "NM",
+    "country": "USA"
+  },
+  {
+    "schoolID": "nmhighland",
+    "name_full": "New Mexico Highlands University",
+    "city": "Las Vegas",
+    "state": "NM",
+    "country": "USA"
+  },
+  {
+    "schoolID": "nmmilin",
+    "name_full": "New Mexico Military Institute",
+    "city": "Roswell",
+    "state": "NM",
+    "country": "USA"
+  },
+  {
+    "schoolID": "nmnmjco",
+    "name_full": "New Mexico Junior College",
+    "city": "Hobbs",
+    "state": "NM",
+    "country": "USA"
+  },
+  {
+    "schoolID": "nmsouth",
+    "name_full": "College of the Southwest",
+    "city": "Hobbs",
+    "state": "NM",
+    "country": "USA"
+  },
+  {
+    "schoolID": "nmstate",
+    "name_full": "New Mexico State University",
+    "city": "Las Cruces",
+    "state": "NM",
+    "country": "USA"
+  },
+  {
+    "schoolID": "norfolkst",
+    "name_full": "Norfolk State University",
+    "city": "Norfolk",
+    "state": "VA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "norleans",
+    "name_full": "University of New Orleans",
+    "city": "New Orleans",
+    "state": "LA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "northwood",
+    "name_full": "Northwood University",
+    "city": "Midland",
+    "state": "MI",
+    "country": "USA"
+  },
+  {
+    "schoolID": "norwichvt",
+    "name_full": "Norwich University",
+    "city": "Northfield",
+    "state": "VT",
+    "country": "USA"
+  },
+  {
+    "schoolID": "notredame",
+    "name_full": "University of Notre Dame",
+    "city": "South Bend",
+    "state": "IN",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ntexas",
+    "name_full": "University of North Texas",
+    "city": "Denton",
+    "state": "TX",
+    "country": "USA"
+  },
+  {
+    "schoolID": "nvsouth",
+    "name_full": "College of Southern Nevada",
+    "city": "Henderson",
+    "state": "NV",
+    "country": "USA"
+  },
+  {
+    "schoolID": "nwestern",
+    "name_full": "Northwestern University",
+    "city": "Evanston",
+    "state": "IL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "nwmost",
+    "name_full": "Northwest Missouri State University",
+    "city": "Maryville",
+    "state": "MO",
+    "country": "USA"
+  },
+  {
+    "schoolID": "nwokstate",
+    "name_full": "Northwestern Oklahoma State University",
+    "city": "Alva",
+    "state": "OK",
+    "country": "USA"
+  },
+  {
+    "schoolID": "nwstate",
+    "name_full": "Northwestern State University of Louisiana",
+    "city": "Natchitoches",
+    "state": "LA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "nybrock",
+    "name_full": "State University of New York at Brockport",
+    "city": "Brockport",
+    "state": "NY",
+    "country": "USA"
+  },
+  {
+    "schoolID": "nycortland",
+    "name_full": "State University of New York at Cortland",
+    "city": "Cortland",
+    "state": "NY",
+    "country": "USA"
+  },
+  {
+    "schoolID": "nydutch",
+    "name_full": "Dutchess Community College",
+    "city": "Poughkeepsie",
+    "state": "NY",
+    "country": "USA"
+  },
+  {
+    "schoolID": "nyeriec",
+    "name_full": "Erie Community College",
+    "city": "Buffalo",
+    "state": "NY",
+    "country": "USA"
+  },
+  {
+    "schoolID": "nyfredonia",
+    "name_full": "State University of New York at Fredonia",
+    "city": "Fredonia",
+    "state": "NY",
+    "country": "USA"
+  },
+  {
+    "schoolID": "nykbcco",
+    "name_full": "Kingsborough Community College",
+    "city": "Brooklyn",
+    "state": "NY",
+    "country": "USA"
+  },
+  {
+    "schoolID": "nylehma",
+    "name_full": "Lehman College",
+    "city": "Bronx",
+    "state": "NY",
+    "country": "USA"
+  },
+  {
+    "schoolID": "nymarit",
+    "name_full": "Maritime College",
+    "city": "Throggs Neck",
+    "state": "NY",
+    "country": "USA"
+  },
+  {
+    "schoolID": "nymercy",
+    "name_full": "Mercy College",
+    "city": "Dobbs Ferry",
+    "state": "NY",
+    "country": "USA"
+  },
+  {
+    "schoolID": "nymohaw",
+    "name_full": "Mohawk Valley Community College",
+    "city": "Utica",
+    "state": "NY",
+    "country": "USA"
+  },
+  {
+    "schoolID": "nynassa",
+    "name_full": "Nassau Community College",
+    "city": "Garden City",
+    "state": "NY",
+    "country": "USA"
+  },
+  {
+    "schoolID": "nyoneonta",
+    "name_full": "State University of New York at Oneonta",
+    "city": "Oneonta",
+    "state": "NY",
+    "country": "USA"
+  },
+  {
+    "schoolID": "nyonond",
+    "name_full": "Onondaga Community College",
+    "city": "Syracuse",
+    "state": "NY",
+    "country": "USA"
+  },
+  {
+    "schoolID": "nyrockl",
+    "name_full": "Rockland Community College",
+    "city": "Suffern",
+    "state": "NY",
+    "country": "USA"
+  },
+  {
+    "schoolID": "nysuffo",
+    "name_full": "Suffolk County Community College",
+    "city": "Brentwood",
+    "state": "NY",
+    "country": "USA"
+  },
+  {
+    "schoolID": "nytech",
+    "name_full": "New York Institute of Technology",
+    "city": "Old Westbury",
+    "state": "NY",
+    "country": "USA"
+  },
+  {
+    "schoolID": "nyuroch",
+    "name_full": "University of Rochester",
+    "city": "Rochester",
+    "state": "NY",
+    "country": "USA"
+  },
+  {
+    "schoolID": "oakland",
+    "name_full": "Oakland University",
+    "city": "Rochester",
+    "state": "MI",
+    "country": "USA"
+  },
+  {
+    "schoolID": "oberlinoh",
+    "name_full": "Oberlin College",
+    "city": "Oberlin",
+    "state": "OH",
+    "country": "USA"
+  },
+  {
+    "schoolID": "occidental",
+    "name_full": "Occidental College",
+    "city": "Los Angeles",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "oglethrpga",
+    "name_full": "Oglethorpe University",
+    "city": "Atlanta",
+    "state": "GA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ohcapit",
+    "name_full": "Capital University",
+    "city": "Bexley",
+    "state": "OH",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ohcaset",
+    "name_full": "Case Institute of Applied Sciences",
+    "city": "Cleveland",
+    "state": "OH",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ohcuyah",
+    "name_full": "Cuyahoga Community College",
+    "city": "Cleveland",
+    "state": "OH",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ohdominican",
+    "name_full": "Ohio Dominican University",
+    "city": "Columbus",
+    "state": "OH",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ohgiffi",
+    "name_full": "Giffin Junior College",
+    "city": "Van Wert",
+    "state": "OH",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ohio",
+    "name_full": "Ohio University",
+    "city": "Athens",
+    "state": "OH",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ohiost",
+    "name_full": "The Ohio State University",
+    "city": "Columbus",
+    "state": "OH",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ohjohnc",
+    "name_full": "John Carroll University",
+    "city": "University Heights",
+    "state": "OH",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ohlakel",
+    "name_full": "Lakeland Community College",
+    "city": "Kirtland",
+    "state": "OH",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ohlerie",
+    "name_full": "Lake Erie College",
+    "city": "Painesville",
+    "state": "OH",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ohnorth",
+    "name_full": "Ohio Northern University",
+    "city": "Ada",
+    "state": "OH",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ohsincl",
+    "name_full": "Sinclair Community College",
+    "city": "Dayton",
+    "state": "OH",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ohvalley",
+    "name_full": "Ohio Valley College",
+    "city": "Vienna",
+    "state": "WV",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ohwesleyan",
+    "name_full": "Ohio Wesleyan University",
+    "city": "Delaware",
+    "state": "OH",
+    "country": "USA"
+  },
+  {
+    "schoolID": "okbapti",
+    "name_full": "Oklahoma Baptist University",
+    "city": "Shawnee",
+    "state": "OK",
+    "country": "USA"
+  },
+  {
+    "schoolID": "okcity",
+    "name_full": "Oklahoma City University",
+    "city": "Oklahoma City",
+    "state": "OK",
+    "country": "USA"
+  },
+  {
+    "schoolID": "okconno",
+    "name_full": "Connors State College",
+    "city": "Warner",
+    "state": "OK",
+    "country": "USA"
+  },
+  {
+    "schoolID": "okeaste",
+    "name_full": "East Oklahoma State College",
+    "city": "Wilburton",
+    "state": "OK",
+    "country": "USA"
+  },
+  {
+    "schoolID": "oklahoma",
+    "name_full": "University of Oklahoma",
+    "city": "Norman",
+    "state": "OK",
+    "country": "USA"
+  },
+  {
+    "schoolID": "okmurra",
+    "name_full": "Murray State College",
+    "city": "Tishomingo",
+    "state": "OK",
+    "country": "USA"
+  },
+  {
+    "schoolID": "okneoam",
+    "name_full": "Northeast Oklahoma A&M College",
+    "city": "Miami",
+    "state": "OK",
+    "country": "USA"
+  },
+  {
+    "schoolID": "oknestu",
+    "name_full": "Northeastern State University",
+    "city": "Tahlequah",
+    "state": "OK",
+    "country": "USA"
+  },
+  {
+    "schoolID": "okocsw",
+    "name_full": "Oklahoma City Southwestern College",
+    "city": "Oklahoma City",
+    "state": "OK",
+    "country": "USA"
+  },
+  {
+    "schoolID": "okroger",
+    "name_full": "Rogers State University",
+    "city": "Claremore",
+    "state": "OK",
+    "country": "USA"
+  },
+  {
+    "schoolID": "oksemin",
+    "name_full": "Seminole State College",
+    "city": "Seminole",
+    "state": "OK",
+    "country": "USA"
+  },
+  {
+    "schoolID": "okstate",
+    "name_full": "Oklahoma State University",
+    "city": "Stillwater",
+    "state": "OK",
+    "country": "USA"
+  },
+  {
+    "schoolID": "okwesle",
+    "name_full": "Oklahoma Wesleyan University",
+    "city": "Bartlesville",
+    "state": "OK",
+    "country": "USA"
+  },
+  {
+    "schoolID": "okweste",
+    "name_full": "Western Oklahoma State College",
+    "city": "Altus",
+    "state": "OK",
+    "country": "USA"
+  },
+  {
+    "schoolID": "olddom",
+    "name_full": "Old Dominion University",
+    "city": "Norfolk",
+    "state": "VA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "olemiss",
+    "name_full": "University of Mississippi",
+    "city": "Oxford",
+    "state": "MS",
+    "country": "USA"
+  },
+  {
+    "schoolID": "olivetmi",
+    "name_full": "Olivet College",
+    "city": "Olivet",
+    "state": "MI",
+    "country": "USA"
+  },
+  {
+    "schoolID": "olivetnaz",
+    "name_full": "Olivet Nazarene University",
+    "city": "Bourbonnais",
+    "state": "IL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "oralrob",
+    "name_full": "Oral Roberts University",
+    "city": "Tulsa",
+    "state": "OK",
+    "country": "USA"
+  },
+  {
+    "schoolID": "orbluem",
+    "name_full": "Blue Mountain Community College",
+    "city": "Pendleton",
+    "state": "OR",
+    "country": "USA"
+  },
+  {
+    "schoolID": "orcheme",
+    "name_full": "Chemeketa Community College",
+    "city": "Salem",
+    "state": "OR",
+    "country": "USA"
+  },
+  {
+    "schoolID": "orcorba",
+    "name_full": "Corban College",
+    "city": "Salem",
+    "state": "OR",
+    "country": "USA"
+  },
+  {
+    "schoolID": "oregon",
+    "name_full": "University of Oregon",
+    "city": "Eugene",
+    "state": "OR",
+    "country": "USA"
+  },
+  {
+    "schoolID": "oregonst",
+    "name_full": "Oregon State University",
+    "city": "Corvallis",
+    "state": "OR",
+    "country": "USA"
+  },
+  {
+    "schoolID": "orlinnb",
+    "name_full": "Linn-Benton Community College",
+    "city": "Albany",
+    "state": "OR",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ormount",
+    "name_full": "Mount Hood Community College",
+    "city": "Gresham",
+    "state": "OR",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ortreas",
+    "name_full": "Treasure Valley Community College",
+    "city": "Ontario",
+    "state": "OR",
+    "country": "USA"
+  },
+  {
+    "schoolID": "orweste",
+    "name_full": "Western Oregon University",
+    "city": "Monmouth",
+    "state": "OR",
+    "country": "USA"
+  },
+  {
+    "schoolID": "otterbein",
+    "name_full": "Otterbein College",
+    "city": "Westerville",
+    "state": "OH",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ouachitab",
+    "name_full": "Ouachita Baptist University",
+    "city": "Arkadelphia",
+    "state": "AR",
+    "country": "USA"
+  },
+  {
+    "schoolID": "oxnard",
+    "name_full": "Oxnard College",
+    "city": "Oxnard",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ozarks",
+    "name_full": "University of the Ozarks",
+    "city": "Clarksville",
+    "state": "AR",
+    "country": "USA"
+  },
+  {
+    "schoolID": "paalleb",
+    "name_full": "Community College of Allegheny County",
+    "city": "Boyce Campus",
+    "state": "Monroeville",
+    "country": "PA"
+  },
+  {
+    "schoolID": "paalles",
+    "name_full": "Community College of Allegheny County",
+    "city": "South Campus",
+    "state": "West Mifflin",
+    "country": "PA"
+  },
+  {
+    "schoolID": "pabeave",
+    "name_full": "Community College of Beaver County",
+    "city": "Monaca",
+    "state": "PA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "pabucks",
+    "name_full": "Bucks County Community College",
+    "city": "Lewisburg",
+    "state": "PA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "pabutle",
+    "name_full": "Butler County Community College",
+    "city": "Butler",
+    "state": "PA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "pacarli",
+    "name_full": "Carlisle Indian Industrial School",
+    "city": "Carlisle",
+    "state": "PA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "paccphi",
+    "name_full": "Community College of Philadelphia",
+    "city": "Philadelphia",
+    "state": "PA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "pacheyn",
+    "name_full": "Cheyney University",
+    "city": "Cheyney",
+    "state": "PA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "pacific",
+    "name_full": "University of the Pacific",
+    "city": "Stockton",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "pacificor",
+    "name_full": "Pacific University",
+    "city": "Forest Grove",
+    "state": "OR",
+    "country": "USA"
+  },
+  {
+    "schoolID": "padelaw",
+    "name_full": "Delaware County Community College",
+    "city": "Marple",
+    "state": "PA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "padesal",
+    "name_full": "DeSales University",
+    "city": "Center Valley",
+    "state": "PA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "pahahne",
+    "name_full": "Hahnemann University",
+    "city": "Philadelphia",
+    "state": "PA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "pahaver",
+    "name_full": "Haverford College in Pennsylvania",
+    "city": "Haverford",
+    "state": "PA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "palaroc",
+    "name_full": "LaRoche College",
+    "city": "Pittsburgh",
+    "state": "PA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "palinco",
+    "name_full": "Lincoln University",
+    "city": "Lincoln University",
+    "state": "PA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "paschuy",
+    "name_full": "Schuylkill College",
+    "city": "Reading",
+    "state": "PA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "pavolan",
+    "name_full": "Volant College",
+    "city": "Volant",
+    "state": "PA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "pbsc",
+    "name_full": "Palm Beach Community College",
+    "city": "Lake Worth",
+    "state": "FL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "pennst",
+    "name_full": "Pennsylvania State University",
+    "city": "State College",
+    "state": "PA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "pepperdine",
+    "name_full": "Pepperdine University",
+    "city": "Malibu",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "pfeiffer",
+    "name_full": "Pfeiffer University",
+    "city": "Misenheimer",
+    "state": "NC",
+    "country": "USA"
+  },
+  {
+    "schoolID": "philly",
+    "name_full": "Philadelphia University",
+    "city": "Philadelphia",
+    "state": "PA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "philsmith",
+    "name_full": "Philander Smith College",
+    "city": "Little Rock",
+    "state": "AR",
+    "country": "USA"
+  },
+  {
+    "schoolID": "piedmontga",
+    "name_full": "Piedmont College",
+    "city": "Demorest",
+    "state": "GA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "pittsbst",
+    "name_full": "Pittsburg State University",
+    "city": "Pittsburg",
+    "state": "KS",
+    "country": "USA"
+  },
+  {
+    "schoolID": "pittsburgh",
+    "name_full": "University of Pittsburgh",
+    "city": "Pittsburgh",
+    "state": "PA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "plymouth",
+    "name_full": "Plymouth State College",
+    "city": "Plymouth",
+    "state": "NH",
+    "country": "USA"
+  },
+  {
+    "schoolID": "pompitzer",
+    "name_full": "Pomona College/Pitzer College",
+    "city": "Claremont",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "portland",
+    "name_full": "University of Portland",
+    "city": "Portland",
+    "state": "OR",
+    "country": "USA"
+  },
+  {
+    "schoolID": "portlandst",
+    "name_full": "Portland State University",
+    "city": "Portland",
+    "state": "OR",
+    "country": "USA"
+  },
+  {
+    "schoolID": "prairview",
+    "name_full": "Prairie View A&M University",
+    "city": "Prairie View",
+    "state": "TX",
+    "country": "USA"
+  },
+  {
+    "schoolID": "presbytrn",
+    "name_full": "Presbyterian College",
+    "city": "Clinton",
+    "state": "SC",
+    "country": "USA"
+  },
+  {
+    "schoolID": "princeton",
+    "name_full": "Princeton University",
+    "city": "Princeton",
+    "state": "NJ",
+    "country": "USA"
+  },
+  {
+    "schoolID": "providence",
+    "name_full": "Providence College",
+    "city": "Providence",
+    "state": "RI",
+    "country": "USA"
+  },
+  {
+    "schoolID": "psubehrend",
+    "name_full": "Penn State Erie",
+    "city": "the Behrend College of Pennsylvania State University",
+    "state": "Erie",
+    "country": "PA"
+  },
+  {
+    "schoolID": "ptlomanaz",
+    "name_full": "Point Loma Nazarene University",
+    "city": "San Diego",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ptparkpa",
+    "name_full": "Point Park University",
+    "city": "Pittsburgh",
+    "state": "PA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "pugetsound",
+    "name_full": "University of Puget Sound",
+    "city": "Tacoma",
+    "state": "WA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "purdue",
+    "name_full": "Purdue University",
+    "city": "West Lafayette",
+    "state": "IN",
+    "country": "USA"
+  },
+  {
+    "schoolID": "quincy",
+    "name_full": "Quincy University",
+    "city": "Quincy",
+    "state": "IL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "quinnipiac",
+    "name_full": "Quinnipiac College",
+    "city": "Hamden",
+    "state": "CT",
+    "country": "USA"
+  },
+  {
+    "schoolID": "radford",
+    "name_full": "Radford University",
+    "city": "Radford",
+    "state": "VA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ramaponj",
+    "name_full": "Ramapo College",
+    "city": "Mahwah",
+    "state": "NJ",
+    "country": "USA"
+  },
+  {
+    "schoolID": "randmacon",
+    "name_full": "Randolph-Macon College",
+    "city": "Ashland",
+    "state": "VA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "rhodeisle",
+    "name_full": "University of Rhode Island",
+    "city": "Kingston",
+    "state": "RI",
+    "country": "USA"
+  },
+  {
+    "schoolID": "rhodestn",
+    "name_full": "Rhodes College",
+    "city": "Memphis",
+    "state": "TN",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ric",
+    "name_full": "Rhode Island College",
+    "city": "Providence",
+    "state": "RI",
+    "country": "USA"
+  },
+  {
+    "schoolID": "rice",
+    "name_full": "Rice University",
+    "city": "Houston",
+    "state": "TX",
+    "country": "USA"
+  },
+  {
+    "schoolID": "richmond",
+    "name_full": "University of Richmond",
+    "city": "Richmond",
+    "state": "VA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "rider",
+    "name_full": "Rider University",
+    "city": "Lawrenceville",
+    "state": "NJ",
+    "country": "USA"
+  },
+  {
+    "schoolID": "riogrande",
+    "name_full": "University of Rio Grande",
+    "city": "Rio Grande",
+    "state": "OH",
+    "country": "USA"
+  },
+  {
+    "schoolID": "riponwi",
+    "name_full": "Ripon College",
+    "city": "Ripon",
+    "state": "WI",
+    "country": "USA"
+  },
+  {
+    "schoolID": "riroger",
+    "name_full": "Roger Williams University",
+    "city": "Bristol",
+    "state": "RI",
+    "country": "USA"
+  },
+  {
+    "schoolID": "roanokeva",
+    "name_full": "Roanoke College",
+    "city": "Salem",
+    "state": "VA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "robertmor",
+    "name_full": "Robert Morris University",
+    "city": "Moon Township",
+    "state": "PA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "rockhurst",
+    "name_full": "Rockhurst University",
+    "city": "Kansas City",
+    "state": "MO",
+    "country": "USA"
+  },
+  {
+    "schoolID": "rollins",
+    "name_full": "Rollins College",
+    "city": "Winter Park",
+    "state": "FL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "rosehulman",
+    "name_full": "Rose-Hulman Institute of Technology",
+    "city": "Terre Haute",
+    "state": "IN",
+    "country": "USA"
+  },
+  {
+    "schoolID": "rowannj",
+    "name_full": "Rowan University",
+    "city": "Glassboro",
+    "state": "NJ",
+    "country": "USA"
+  },
+  {
+    "schoolID": "rutgers",
+    "name_full": "Rutgers",
+    "city": "the State University of New Jersey",
+    "state": "New Brunswick",
+    "country": "NJ"
+  },
+  {
+    "schoolID": "sacstate",
+    "name_full": "California State University Sacramento",
+    "city": "Sacramento",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "saginawval",
+    "name_full": "Saginaw Valley State University",
+    "city": "Saginaw",
+    "state": "MI",
+    "country": "USA"
+  },
+  {
+    "schoolID": "salabama",
+    "name_full": "University of South Alabama",
+    "city": "Mobile",
+    "state": "AL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "salemintl",
+    "name_full": "Salem International University",
+    "city": "Salem",
+    "state": "WV",
+    "country": "USA"
+  },
+  {
+    "schoolID": "samford",
+    "name_full": "Samford University",
+    "city": "Birmingham",
+    "state": "AL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "samhouston",
+    "name_full": "Sam Houston State University",
+    "city": "Huntsville",
+    "state": "TX",
+    "country": "USA"
+  },
+  {
+    "schoolID": "sandiego",
+    "name_full": "University of San Diego",
+    "city": "San Diego",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "sandiegost",
+    "name_full": "San Diego State University",
+    "city": "San Diego",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "sanfran",
+    "name_full": "University of San Francisco",
+    "city": "San Francisco",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "sanfranst",
+    "name_full": "San Francisco State University",
+    "city": "San Francisco",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "sanjosest",
+    "name_full": "San Jose State University",
+    "city": "San Jose",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "santaclara",
+    "name_full": "Santa Clara University",
+    "city": "Santa Clara",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "sarkansas",
+    "name_full": "Southern Arkansas University",
+    "city": "Magnolia",
+    "state": "AR",
+    "country": "USA"
+  },
+  {
+    "schoolID": "savcolad",
+    "name_full": "Savannah College of Arts and Design",
+    "city": "Savannah",
+    "state": "GA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "scarolina",
+    "name_full": "University of South Carolina",
+    "city": "Columbia",
+    "state": "SC",
+    "country": "USA"
+  },
+  {
+    "schoolID": "scfranc",
+    "name_full": "Francis Marion University",
+    "city": "Florence",
+    "state": "SC",
+    "country": "USA"
+  },
+  {
+    "schoolID": "schreiner",
+    "name_full": "Schreiner University",
+    "city": "Kerrville",
+    "state": "TX",
+    "country": "USA"
+  },
+  {
+    "schoolID": "sclimes",
+    "name_full": "Limestone College",
+    "city": "Gaffney",
+    "state": "SC",
+    "country": "USA"
+  },
+  {
+    "schoolID": "scranton",
+    "name_full": "University of Scranton",
+    "city": "Scranton",
+    "state": "PA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "scspart",
+    "name_full": "Spartanburg Methodist College",
+    "city": "Spartanburg",
+    "state": "SC",
+    "country": "USA"
+  },
+  {
+    "schoolID": "scstate",
+    "name_full": "South Carolina State University",
+    "city": "Orangeburg",
+    "state": "SC",
+    "country": "USA"
+  },
+  {
+    "schoolID": "scupsta",
+    "name_full": "University of South Carolina Upstate",
+    "city": "Spartanburg",
+    "state": "SC",
+    "country": "USA"
+  },
+  {
+    "schoolID": "sdakotast",
+    "name_full": "South Dakota State University",
+    "city": "Brookings",
+    "state": "SD",
+    "country": "USA"
+  },
+  {
+    "schoolID": "sdcity",
+    "name_full": "San Diego City College",
+    "city": "San Diego",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "seattle",
+    "name_full": "Seattle University",
+    "city": "Seattle",
+    "state": "WA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "sefl",
+    "name_full": "Southeastern University",
+    "city": "Lakeland",
+    "state": "FL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "sela",
+    "name_full": "Southeastern Louisiana University",
+    "city": "Hammond",
+    "state": "LA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "seminolecc",
+    "name_full": "Seminole Community College",
+    "city": "Sanford",
+    "state": "FL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "semost",
+    "name_full": "Southeast Missouri State University",
+    "city": "Cape Girardeau",
+    "state": "MO",
+    "country": "USA"
+  },
+  {
+    "schoolID": "seoklahoma",
+    "name_full": "Southeastern Oklahoma State University",
+    "city": "Durant",
+    "state": "OK",
+    "country": "USA"
+  },
+  {
+    "schoolID": "setonhall",
+    "name_full": "Seton Hall University",
+    "city": "South Orange",
+    "state": "NJ",
+    "country": "USA"
+  },
+  {
+    "schoolID": "sfaustin",
+    "name_full": "Stephen F Austin State University",
+    "city": "Nacogdoches",
+    "state": "TX",
+    "country": "USA"
+  },
+  {
+    "schoolID": "sfcc",
+    "name_full": "South Florida Community College",
+    "city": "Avon Park",
+    "state": "FL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "sflorida",
+    "name_full": "University of South Florida",
+    "city": "Tampa",
+    "state": "FL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "shaw",
+    "name_full": "Shaw University",
+    "city": "Raleigh",
+    "state": "NC",
+    "country": "USA"
+  },
+  {
+    "schoolID": "shenandoah",
+    "name_full": "Shenandoah University",
+    "city": "Winchester",
+    "state": "VA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "shepherdwv",
+    "name_full": "Shepherd College",
+    "city": "Shepherdstown",
+    "state": "WV",
+    "country": "USA"
+  },
+  {
+    "schoolID": "shipnsburg",
+    "name_full": "Shippensburg University of Pennsylvania",
+    "city": "Shippensburg",
+    "state": "PA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "shorterga",
+    "name_full": "Shorter College",
+    "city": "Rome",
+    "state": "GA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "siena",
+    "name_full": "Siena College",
+    "city": "Loudonville",
+    "state": "NY",
+    "country": "USA"
+  },
+  {
+    "schoolID": "silledward",
+    "name_full": "Southern Illinois University Edwardsville",
+    "city": "Edwardsville",
+    "state": "IL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "sillinois",
+    "name_full": "Southern Illinois University Carbondale",
+    "city": "Carbondale",
+    "state": "IL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "sindiana",
+    "name_full": "University of Southern Indiana",
+    "city": "Evansville",
+    "state": "IN",
+    "country": "USA"
+  },
+  {
+    "schoolID": "sliprock",
+    "name_full": "Slippery Rock University of Pennsylvania",
+    "city": "Slippery Rock",
+    "state": "PA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "smaine",
+    "name_full": "University of Southern Maine",
+    "city": "Gorham",
+    "state": "ME",
+    "country": "USA"
+  },
+  {
+    "schoolID": "smethodist",
+    "name_full": "Southern Methodist University",
+    "city": "Dallas",
+    "state": "TX",
+    "country": "USA"
+  },
+  {
+    "schoolID": "smiss",
+    "name_full": "University of Southern Mississippi",
+    "city": "Hattiesburg",
+    "state": "MS",
+    "country": "USA"
+  },
+  {
+    "schoolID": "sonomast",
+    "name_full": "Sonoma State University",
+    "city": "Rohnert Park",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "southernu",
+    "name_full": "Southern University and A&M College",
+    "city": "Baton Rouge",
+    "state": "LA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "springhill",
+    "name_full": "Spring Hill College",
+    "city": "Mobile",
+    "state": "AL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "sprngfldma",
+    "name_full": "Springfield College",
+    "city": "Springfield",
+    "state": "MA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "stambrseia",
+    "name_full": "St. Ambrose University",
+    "city": "Davenport",
+    "state": "IA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "stanford",
+    "name_full": "Stanford University",
+    "city": "Palo Alto",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "stanselm",
+    "name_full": "St. Anselm College",
+    "city": "Manchester",
+    "state": "NH",
+    "country": "USA"
+  },
+  {
+    "schoolID": "staugustne",
+    "name_full": "St. Augustine's College",
+    "city": "Raleigh",
+    "state": "NC",
+    "country": "USA"
+  },
+  {
+    "schoolID": "stbonny",
+    "name_full": "St. Bonaventure University",
+    "city": "St. Bonaventure",
+    "state": "NY",
+    "country": "USA"
+  },
+  {
+    "schoolID": "stcloudst",
+    "name_full": "St.Cloud State University",
+    "city": "St. Cloud",
+    "state": "MN",
+    "country": "USA"
+  },
+  {
+    "schoolID": "stedwardtx",
+    "name_full": "St. Edward's University",
+    "city": "Austin",
+    "state": "TX",
+    "country": "USA"
+  },
+  {
+    "schoolID": "sterlingks",
+    "name_full": "Sterling University",
+    "city": "Sterling",
+    "state": "KS",
+    "country": "USA"
+  },
+  {
+    "schoolID": "stetson",
+    "name_full": "Stetson University",
+    "city": "DeLand",
+    "state": "FL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "stfranny",
+    "name_full": "St. Francis University",
+    "city": "Brooklyn",
+    "state": "NY",
+    "country": "USA"
+  },
+  {
+    "schoolID": "stfranpa",
+    "name_full": "St. Francis University",
+    "city": "Loretto",
+    "state": "PA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "stfrncisil",
+    "name_full": "University of St. Francis",
+    "city": "Joliet",
+    "state": "IL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "stjohns",
+    "name_full": "St. John's University",
+    "city": "Queens",
+    "state": "NY",
+    "country": "USA"
+  },
+  {
+    "schoolID": "stjosephin",
+    "name_full": "St. Joseph's College",
+    "city": "Rensselaer",
+    "state": "IN",
+    "country": "USA"
+  },
+  {
+    "schoolID": "stjosephs",
+    "name_full": "St. Joseph's University",
+    "city": "Philadelphia",
+    "state": "PA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "stlawrence",
+    "name_full": "St. Lawrence University",
+    "city": "Canton",
+    "state": "NY",
+    "country": "USA"
+  },
+  {
+    "schoolID": "stleo",
+    "name_full": "St. Leo College",
+    "city": "St. Leo",
+    "state": "FL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "stlouis",
+    "name_full": "St. Louis University",
+    "city": "St. Louis",
+    "state": "MO",
+    "country": "USA"
+  },
+  {
+    "schoolID": "stmartinwa",
+    "name_full": "St. Martin's College",
+    "city": "Lacey",
+    "state": "WA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "stmarysca",
+    "name_full": "St. Mary's College of California",
+    "city": "Moraga",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "stmarysmn",
+    "name_full": "St. Mary's University of Minnesota",
+    "city": "Winona",
+    "state": "MN",
+    "country": "USA"
+  },
+  {
+    "schoolID": "stmarytx",
+    "name_full": "St. Mary's University",
+    "city": "San Antonio",
+    "state": "TX",
+    "country": "USA"
+  },
+  {
+    "schoolID": "stmichaels",
+    "name_full": "St. Michael's College",
+    "city": "Colchester",
+    "state": "VT",
+    "country": "USA"
+  },
+  {
+    "schoolID": "stonybrook",
+    "name_full": "Stony Brook University",
+    "city": "Stony Brook",
+    "state": "NY",
+    "country": "USA"
+  },
+  {
+    "schoolID": "stpeters",
+    "name_full": "St. Peter's College",
+    "city": "Jersey City",
+    "state": "NJ",
+    "country": "USA"
+  },
+  {
+    "schoolID": "strose",
+    "name_full": "College of St. Rose",
+    "city": "Albany",
+    "state": "NY",
+    "country": "USA"
+  },
+  {
+    "schoolID": "stthomasfl",
+    "name_full": "St. Thomas University",
+    "city": "Miami Gardens",
+    "state": "FL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "stthomasmn",
+    "name_full": "University of St. Thomas",
+    "city": "St. Paul",
+    "state": "MN",
+    "country": "USA"
+  },
+  {
+    "schoolID": "stxavieril",
+    "name_full": "St. Xavier University",
+    "city": "Orland Park",
+    "state": "IL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "sulrossst",
+    "name_full": "Sul Ross State University",
+    "city": "Alpine",
+    "state": "TX",
+    "country": "USA"
+  },
+  {
+    "schoolID": "sunybing",
+    "name_full": "State University of New York at Binghamton",
+    "city": "Binghamton",
+    "state": "NY",
+    "country": "USA"
+  },
+  {
+    "schoolID": "sunybuff",
+    "name_full": "University at Buffalo",
+    "city": "State University of New York",
+    "state": "Buffalo",
+    "country": "NY"
+  },
+  {
+    "schoolID": "susquehnna",
+    "name_full": "Susquehanna University",
+    "city": "Selinsgrove",
+    "state": "PA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "sutah",
+    "name_full": "Southern Utah University",
+    "city": "Cedar City",
+    "state": "UT",
+    "country": "USA"
+  },
+  {
+    "schoolID": "swarthmore",
+    "name_full": "Swarthmore College",
+    "city": "Swarthmore",
+    "state": "PA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "swesternks",
+    "name_full": "Southwestern College",
+    "city": "Winfield",
+    "state": "KS",
+    "country": "USA"
+  },
+  {
+    "schoolID": "swesterntx",
+    "name_full": "Southwestern University",
+    "city": "Georgetown",
+    "state": "TX",
+    "country": "USA"
+  },
+  {
+    "schoolID": "swmost",
+    "name_full": "Missouri State University",
+    "city": "Springfield",
+    "state": "MO",
+    "country": "USA"
+  },
+  {
+    "schoolID": "swoklahoma",
+    "name_full": "Southwestern Oklahoma State University",
+    "city": "Weatherford",
+    "state": "OK",
+    "country": "USA"
+  },
+  {
+    "schoolID": "swtexas",
+    "name_full": "Texas State University",
+    "city": "San Marcos",
+    "state": "TX",
+    "country": "USA"
+  },
+  {
+    "schoolID": "syracuse",
+    "name_full": "Syracuse University",
+    "city": "Syracuse",
+    "state": "NY",
+    "country": "USA"
+  },
+  {
+    "schoolID": "tampa",
+    "name_full": "University of Tampa",
+    "city": "Tampa",
+    "state": "FL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "tamucomm",
+    "name_full": "Texas A&M University-Commerce",
+    "city": "Commerce",
+    "state": "TX",
+    "country": "USA"
+  },
+  {
+    "schoolID": "tamukvill",
+    "name_full": "Texas A&M University-Kingsville",
+    "city": "Kingsville",
+    "state": "TX",
+    "country": "USA"
+  },
+  {
+    "schoolID": "tarletonst",
+    "name_full": "Tarleton State University",
+    "city": "Stephenville",
+    "state": "TX",
+    "country": "USA"
+  },
+  {
+    "schoolID": "temple",
+    "name_full": "Temple University",
+    "city": "Philadelphia",
+    "state": "PA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "tennessee",
+    "name_full": "University of Tennessee",
+    "city": "Knoxville",
+    "state": "TN",
+    "country": "USA"
+  },
+  {
+    "schoolID": "tennst",
+    "name_full": "Tennessee State University",
+    "city": "Nashville",
+    "state": "TN",
+    "country": "USA"
+  },
+  {
+    "schoolID": "texas",
+    "name_full": "University of Texas at Austin",
+    "city": "Austin",
+    "state": "TX",
+    "country": "USA"
+  },
+  {
+    "schoolID": "texasam",
+    "name_full": "Texas A&M University",
+    "city": "College Station",
+    "state": "TX",
+    "country": "USA"
+  },
+  {
+    "schoolID": "thielpa",
+    "name_full": "Thiel College",
+    "city": "Greenville",
+    "state": "PA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "thomasmore",
+    "name_full": "Thomas More College",
+    "city": "Crestview Hills",
+    "state": "KY",
+    "country": "USA"
+  },
+  {
+    "schoolID": "tnchatt",
+    "name_full": "Chattanooga State Technical Community College",
+    "city": "Chattanooga",
+    "state": "TN",
+    "country": "USA"
+  },
+  {
+    "schoolID": "tnchris",
+    "name_full": "Christian Brothers University",
+    "city": "Memphis",
+    "state": "TN",
+    "country": "USA"
+  },
+  {
+    "schoolID": "tncleve",
+    "name_full": "Cleveland State Community College",
+    "city": "Cleveland",
+    "state": "TN",
+    "country": "USA"
+  },
+  {
+    "schoolID": "tncolum",
+    "name_full": "Columbia State Community College",
+    "city": "Columbia",
+    "state": "TN",
+    "country": "USA"
+  },
+  {
+    "schoolID": "tnhiwas",
+    "name_full": "Hiwassee College",
+    "city": "Madisonville",
+    "state": "TN",
+    "country": "USA"
+  },
+  {
+    "schoolID": "tnjacks",
+    "name_full": "Jackson State Community College",
+    "city": "Jackson",
+    "state": "TN",
+    "country": "USA"
+  },
+  {
+    "schoolID": "tnkingc",
+    "name_full": "King College",
+    "city": "Bristol",
+    "state": "TN",
+    "country": "USA"
+  },
+  {
+    "schoolID": "tnmotlo",
+    "name_full": "Motlow State Community College",
+    "city": "Lynchburg",
+    "state": "TN",
+    "country": "USA"
+  },
+  {
+    "schoolID": "tnswten",
+    "name_full": "Southwest Tennessee Community College",
+    "city": "Memphis",
+    "state": "TN",
+    "country": "USA"
+  },
+  {
+    "schoolID": "tntech",
+    "name_full": "Tennessee Technological University",
+    "city": "Cookeville",
+    "state": "TN",
+    "country": "USA"
+  },
+  {
+    "schoolID": "tntenme",
+    "name_full": "University of Tennessee Health Science Center",
+    "city": "Memphis",
+    "state": "TN",
+    "country": "USA"
+  },
+  {
+    "schoolID": "tnvolun",
+    "name_full": "Volunteer State Community College",
+    "city": "Gallatin",
+    "state": "TN",
+    "country": "USA"
+  },
+  {
+    "schoolID": "tnwesleyan",
+    "name_full": "Tennessee Wesleyan College",
+    "city": "Athens",
+    "state": "TN",
+    "country": "USA"
+  },
+  {
+    "schoolID": "toledo",
+    "name_full": "University of Toledo",
+    "city": "Toledo",
+    "state": "OH",
+    "country": "USA"
+  },
+  {
+    "schoolID": "towson",
+    "name_full": "Towson University",
+    "city": "Towson",
+    "state": "MD",
+    "country": "USA"
+  },
+  {
+    "schoolID": "trinityct",
+    "name_full": "Trinity College",
+    "city": "Hartford",
+    "state": "CT",
+    "country": "USA"
+  },
+  {
+    "schoolID": "trinitytx",
+    "name_full": "Trinity University",
+    "city": "San Antonio",
+    "state": "TX",
+    "country": "USA"
+  },
+  {
+    "schoolID": "trnsylvnia",
+    "name_full": "Transylvania University",
+    "city": "Lexington",
+    "state": "KY",
+    "country": "USA"
+  },
+  {
+    "schoolID": "troyst",
+    "name_full": "Troy University",
+    "city": "Troy",
+    "state": "AL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "trumanst",
+    "name_full": "Truman State University",
+    "city": "Kirksville",
+    "state": "MO",
+    "country": "USA"
+  },
+  {
+    "schoolID": "tuftsma",
+    "name_full": "Tufts University",
+    "city": "Medford",
+    "state": "MA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "tulane",
+    "name_full": "Tulane University",
+    "city": "New Orleans",
+    "state": "LA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "tulsa",
+    "name_full": "University of Tulsa",
+    "city": "Tulsa",
+    "state": "OK",
+    "country": "USA"
+  },
+  {
+    "schoolID": "tusculum",
+    "name_full": "Tusculum College",
+    "city": "Greenville",
+    "state": "TN",
+    "country": "USA"
+  },
+  {
+    "schoolID": "tuskegee",
+    "name_full": "Tuskegee University",
+    "city": "Tuskegee",
+    "state": "AL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "txalvin",
+    "name_full": "Alvin Community College",
+    "city": "Alvin",
+    "state": "TX",
+    "country": "USA"
+  },
+  {
+    "schoolID": "txangel",
+    "name_full": "Angelo State University",
+    "city": "San Angelo",
+    "state": "TX",
+    "country": "USA"
+  },
+  {
+    "schoolID": "txangjc",
+    "name_full": "Angelina College",
+    "city": "Lufkin",
+    "state": "TX",
+    "country": "USA"
+  },
+  {
+    "schoolID": "txausti",
+    "name_full": "Austin Community College",
+    "city": "Austin",
+    "state": "TX",
+    "country": "USA"
+  },
+  {
+    "schoolID": "txblinn",
+    "name_full": "Blinn College",
+    "city": "Brenham",
+    "state": "TX",
+    "country": "USA"
+  },
+  {
+    "schoolID": "txburne",
+    "name_full": "Burnetta College",
+    "city": "Venus",
+    "state": "TX",
+    "country": "USA"
+  },
+  {
+    "schoolID": "txchrist",
+    "name_full": "Texas Christian University",
+    "city": "Fort Worth",
+    "state": "TX",
+    "country": "USA"
+  },
+  {
+    "schoolID": "txclare",
+    "name_full": "Clarendon College",
+    "city": "Clarendon",
+    "state": "TX",
+    "country": "USA"
+  },
+  {
+    "schoolID": "txcoast",
+    "name_full": "Coastal Bend College",
+    "city": "Beeville",
+    "state": "TX",
+    "country": "USA"
+  },
+  {
+    "schoolID": "txcolli",
+    "name_full": "Collin College",
+    "city": "Dallas",
+    "state": "TX",
+    "country": "USA"
+  },
+  {
+    "schoolID": "txeastf",
+    "name_full": "Eastfield College",
+    "city": "Mesquite",
+    "state": "TX",
+    "country": "USA"
+  },
+  {
+    "schoolID": "txelpas",
+    "name_full": "El Paso Community College",
+    "city": "El Paso",
+    "state": "TX",
+    "country": "USA"
+  },
+  {
+    "schoolID": "txfrank",
+    "name_full": "Frank Phillips College",
+    "city": "Borger",
+    "state": "TX",
+    "country": "USA"
+  },
+  {
+    "schoolID": "txgalve",
+    "name_full": "Galveston College",
+    "city": "Galveston",
+    "state": "TX",
+    "country": "USA"
+  },
+  {
+    "schoolID": "txgrays",
+    "name_full": "Grayson County College",
+    "city": "Denison",
+    "state": "TX",
+    "country": "USA"
+  },
+  {
+    "schoolID": "txhillj",
+    "name_full": "Hill College",
+    "city": "Hillsboro",
+    "state": "TX",
+    "country": "USA"
+  },
+  {
+    "schoolID": "txhowar",
+    "name_full": "Howard College",
+    "city": "Big Spring",
+    "state": "TX",
+    "country": "USA"
+  },
+  {
+    "schoolID": "txkilgo",
+    "name_full": "Kilgore College",
+    "city": "Kilgore",
+    "state": "TX",
+    "country": "USA"
+  },
+  {
+    "schoolID": "txleejc",
+    "name_full": "Lee College",
+    "city": "Baytown",
+    "state": "TX",
+    "country": "USA"
+  },
+  {
+    "schoolID": "txlonmo",
+    "name_full": "Lon Morris College",
+    "city": "Jacksonville",
+    "state": "TX",
+    "country": "USA"
+  },
+  {
+    "schoolID": "txmclen",
+    "name_full": "McLennan Community College",
+    "city": "Waco",
+    "state": "TX",
+    "country": "USA"
+  },
+  {
+    "schoolID": "txmcmur",
+    "name_full": "McMurry University",
+    "city": "Abilene",
+    "state": "TX",
+    "country": "USA"
+  },
+  {
+    "schoolID": "txmerid",
+    "name_full": "Meridian Junior College",
+    "city": "Meridian",
+    "state": "TX",
+    "country": "USA"
+  },
+  {
+    "schoolID": "txmidla",
+    "name_full": "Midland College",
+    "city": "Midland",
+    "state": "TX",
+    "country": "USA"
+  },
+  {
+    "schoolID": "txnavar",
+    "name_full": "Navarro College",
+    "city": "Corsicana",
+    "state": "TX",
+    "country": "USA"
+  },
+  {
+    "schoolID": "txnctjc",
+    "name_full": "North Central Texas College",
+    "city": "Gainesville",
+    "state": "TX",
+    "country": "USA"
+  },
+  {
+    "schoolID": "txnetex",
+    "name_full": "Northeast Texas Community College",
+    "city": "Mount Pleasant",
+    "state": "TX",
+    "country": "USA"
+  },
+  {
+    "schoolID": "txodess",
+    "name_full": "Odessa College",
+    "city": "Odessa",
+    "state": "TX",
+    "country": "USA"
+  },
+  {
+    "schoolID": "txpanol",
+    "name_full": "Panola College",
+    "city": "Carthage",
+    "state": "TX",
+    "country": "USA"
+  },
+  {
+    "schoolID": "txparis",
+    "name_full": "Paris Junior College",
+    "city": "Paris",
+    "state": "TX",
+    "country": "USA"
+  },
+  {
+    "schoolID": "txpaulq",
+    "name_full": "Paul Quinn College",
+    "city": "Dallas",
+    "state": "TX",
+    "country": "USA"
+  },
+  {
+    "schoolID": "txsajco",
+    "name_full": "San Antonio College",
+    "city": "San Antonio",
+    "state": "TX",
+    "country": "USA"
+  },
+  {
+    "schoolID": "txsjjcn",
+    "name_full": "San Jacinto College",
+    "city": "North Campus",
+    "state": "Houston",
+    "country": "TX"
+  },
+  {
+    "schoolID": "txsjjco",
+    "name_full": "San Jacinto College",
+    "city": "Pasadena",
+    "state": "TX",
+    "country": "USA"
+  },
+  {
+    "schoolID": "txswtex",
+    "name_full": "Southwest Texas Junior College",
+    "city": "Uvalde",
+    "state": "TX",
+    "country": "USA"
+  },
+  {
+    "schoolID": "txtech",
+    "name_full": "Texas Tech University",
+    "city": "Lubbock",
+    "state": "TX",
+    "country": "USA"
+  },
+  {
+    "schoolID": "txtempl",
+    "name_full": "Temple College",
+    "city": "Temple",
+    "state": "TX",
+    "country": "USA"
+  },
+  {
+    "schoolID": "txtexar",
+    "name_full": "Texarkana College",
+    "city": "Texarkana",
+    "state": "TX",
+    "country": "USA"
+  },
+  {
+    "schoolID": "txtyler",
+    "name_full": "Tyler Junior College",
+    "city": "Tyler",
+    "state": "TX",
+    "country": "USA"
+  },
+  {
+    "schoolID": "txverno",
+    "name_full": "Vernon College",
+    "city": "Vernon",
+    "state": "TX",
+    "country": "USA"
+  },
+  {
+    "schoolID": "txweath",
+    "name_full": "Weatherford College",
+    "city": "Weatherford",
+    "state": "TX",
+    "country": "USA"
+  },
+  {
+    "schoolID": "txwesle",
+    "name_full": "Wesley College",
+    "city": "Greenville",
+    "state": "TX",
+    "country": "USA"
+  },
+  {
+    "schoolID": "txwesleyan",
+    "name_full": "Texas Wesleyan University",
+    "city": "Fort Worth",
+    "state": "TX",
+    "country": "USA"
+  },
+  {
+    "schoolID": "txwestt",
+    "name_full": "West Texas A&M University",
+    "city": "Canyon",
+    "state": "TX",
+    "country": "USA"
+  },
+  {
+    "schoolID": "txwhart",
+    "name_full": "Wharton County Junior College",
+    "city": "Wharton",
+    "state": "TX",
+    "country": "USA"
+  },
+  {
+    "schoolID": "uab",
+    "name_full": "University of Alabama at Birmingham",
+    "city": "Birmingham",
+    "state": "AL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ucdavis",
+    "name_full": "University of California",
+    "city": "Davis",
+    "state": "Davis",
+    "country": "CA"
+  },
+  {
+    "schoolID": "ucirvine",
+    "name_full": "University of California",
+    "city": "Irvine",
+    "state": "Irvine",
+    "country": "CA"
+  },
+  {
+    "schoolID": "ucla",
+    "name_full": "University of California",
+    "city": "Los Angeles",
+    "state": "Los Angeles",
+    "country": "CA"
+  },
+  {
+    "schoolID": "uconn",
+    "name_full": "University of Connecticut",
+    "city": "Storrs",
+    "state": "CT",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ucriver",
+    "name_full": "University of California",
+    "city": "Riverside",
+    "state": "Riverside",
+    "country": "CA"
+  },
+  {
+    "schoolID": "ucsb",
+    "name_full": "University of California",
+    "city": "Santa Barbara",
+    "state": "Santa Barbara",
+    "country": "CA"
+  },
+  {
+    "schoolID": "ucsd",
+    "name_full": "University of California",
+    "city": "San Diego",
+    "state": "La Jolla",
+    "country": "CA"
+  },
+  {
+    "schoolID": "ulala",
+    "name_full": "University of Louisiana at Lafayette",
+    "city": "Lafayette",
+    "state": "LA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ulamo",
+    "name_full": "University of Louisiana at Monroe",
+    "city": "Monroe",
+    "state": "LA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "umass",
+    "name_full": "University of Massachusetts Amherst",
+    "city": "Amherst",
+    "state": "MA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "umassdartm",
+    "name_full": "University of Massachusetts Dartmouth",
+    "city": "North Dartmouth",
+    "state": "MA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "umbc",
+    "name_full": "University of Maryland",
+    "city": "Baltimore County",
+    "state": "Baltimore",
+    "country": "MD"
+  },
+  {
+    "schoolID": "umes",
+    "name_full": "University of Maryland Eastern Shore",
+    "city": "Princess Anne",
+    "state": "MD",
+    "country": "USA"
+  },
+  {
+    "schoolID": "umkc",
+    "name_full": "University of Missouri Kansas City",
+    "city": "Kansas City",
+    "state": "MO",
+    "country": "USA"
+  },
+  {
+    "schoolID": "unc",
+    "name_full": "University of North Carolina at Chapel Hill",
+    "city": "Chapel Hill",
+    "state": "NC",
+    "country": "USA"
+  },
+  {
+    "schoolID": "uncashe",
+    "name_full": "University of North Carolina at Asheville",
+    "city": "Asheville",
+    "state": "NC",
+    "country": "USA"
+  },
+  {
+    "schoolID": "uncgreen",
+    "name_full": "University of North Carolina at Greensboro",
+    "city": "Greensboro",
+    "state": "NC",
+    "country": "USA"
+  },
+  {
+    "schoolID": "uncwilm",
+    "name_full": "University of North Carolina at Wilmington",
+    "city": "Wilmington",
+    "state": "NC",
+    "country": "USA"
+  },
+  {
+    "schoolID": "unionny",
+    "name_full": "Union College",
+    "city": "Schenectady",
+    "state": "NY",
+    "country": "USA"
+  },
+  {
+    "schoolID": "uniontn",
+    "name_full": "Union University",
+    "city": "Jackson",
+    "state": "TN",
+    "country": "USA"
+  },
+  {
+    "schoolID": "unlv",
+    "name_full": "University of Nevada-Las Vegas",
+    "city": "Las Vegas",
+    "state": "NV",
+    "country": "USA"
+  },
+  {
+    "schoolID": "uofsouth",
+    "name_full": "University of the South",
+    "city": "Sewanee",
+    "state": "TN",
+    "country": "USA"
+  },
+  {
+    "schoolID": "upenn",
+    "name_full": "University of Pennsylvania",
+    "city": "Philadelphia",
+    "state": "PA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "upperiowa",
+    "name_full": "Upper Iowa University",
+    "city": "Fayette",
+    "state": "IA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "ursinus",
+    "name_full": "Ursinus College",
+    "city": "Collegeville",
+    "state": "PA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "usc",
+    "name_full": "University of Southern California",
+    "city": "Los Angeles",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "uscaiken",
+    "name_full": "University of South Carolina Aiken",
+    "city": "Aiken",
+    "state": "SC",
+    "country": "USA"
+  },
+  {
+    "schoolID": "utah",
+    "name_full": "University of Utah",
+    "city": "Salt Lake City",
+    "state": "UT",
+    "country": "USA"
+  },
+  {
+    "schoolID": "utahst",
+    "name_full": "Utah State University",
+    "city": "Logan",
+    "state": "UT",
+    "country": "USA"
+  },
+  {
+    "schoolID": "utahvalley",
+    "name_full": "Utah Valley State University",
+    "city": "Orem",
+    "state": "UT",
+    "country": "USA"
+  },
+  {
+    "schoolID": "utarl",
+    "name_full": "University of Texas at Arlington",
+    "city": "Arlington",
+    "state": "TX",
+    "country": "USA"
+  },
+  {
+    "schoolID": "utchat",
+    "name_full": "University of Tennessee at Chattanooga",
+    "city": "Chattanooga",
+    "state": "TN",
+    "country": "USA"
+  },
+  {
+    "schoolID": "utdixie",
+    "name_full": "Dixie State College of Utah",
+    "city": "St. George",
+    "state": "UT",
+    "country": "USA"
+  },
+  {
+    "schoolID": "utep",
+    "name_full": "University of Texas at El Paso",
+    "city": "El Paso",
+    "state": "TX",
+    "country": "USA"
+  },
+  {
+    "schoolID": "utpanam",
+    "name_full": "University of Texas Pan American",
+    "city": "Edinburg",
+    "state": "TX",
+    "country": "USA"
+  },
+  {
+    "schoolID": "utslxxo",
+    "name_full": "Salt Lake Community College",
+    "city": "Salt Lake City",
+    "state": "UT",
+    "country": "USA"
+  },
+  {
+    "schoolID": "utsnojc",
+    "name_full": "Snow College",
+    "city": "Ephraim",
+    "state": "UT",
+    "country": "USA"
+  },
+  {
+    "schoolID": "vaappre",
+    "name_full": "Newport News Apprentice School",
+    "city": "Newport News",
+    "state": "VA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "vaemenn",
+    "name_full": "Eastern Mennonite University",
+    "city": "Harrisonburg",
+    "state": "VA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "valdostast",
+    "name_full": "Valdosta State University",
+    "city": "Valdosta",
+    "state": "GA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "valpo",
+    "name_full": "Valparaiso University",
+    "city": "Valparaiso",
+    "state": "IN",
+    "country": "USA"
+  },
+  {
+    "schoolID": "vamedic",
+    "name_full": "Medical College of Virginia",
+    "city": "Richmond",
+    "state": "VA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "vandy",
+    "name_full": "Vanderbilt University",
+    "city": "Nashville",
+    "state": "TN",
+    "country": "USA"
+  },
+  {
+    "schoolID": "vanguardca",
+    "name_full": "Vanguard University of Southern California",
+    "city": "Costa Mesa",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "vatech",
+    "name_full": "Virginia Polytechnic Institute and State University",
+    "city": "Blacksburg",
+    "state": "VA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "vcu",
+    "name_full": "Virginia Commonwealth University",
+    "city": "Richmond",
+    "state": "VA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "vermont",
+    "name_full": "University of Vermont",
+    "city": "Burlington",
+    "state": "VT",
+    "country": "USA"
+  },
+  {
+    "schoolID": "villanova",
+    "name_full": "Villanova University",
+    "city": "Villanova",
+    "state": "PA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "virginia",
+    "name_full": "University of Virginia",
+    "city": "Charlottesville",
+    "state": "VA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "virginiast",
+    "name_full": "Virginia State University",
+    "city": "Petersburg",
+    "state": "VA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "viterbowi",
+    "name_full": "Viterbo University",
+    "city": "La Crosse",
+    "state": "WI",
+    "country": "USA"
+  },
+  {
+    "schoolID": "vmi",
+    "name_full": "Virginia Military Institute",
+    "city": "Lexington",
+    "state": "VA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "wabashin",
+    "name_full": "Wabash College",
+    "city": "Crawfordsville",
+    "state": "IN",
+    "country": "USA"
+  },
+  {
+    "schoolID": "wabelle",
+    "name_full": "Bellevue Community College",
+    "city": "Bellevue",
+    "state": "WA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "wacentr",
+    "name_full": "Centralia College",
+    "city": "Centralia",
+    "state": "WA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "waclark",
+    "name_full": "Clark College",
+    "city": "Vancouver",
+    "state": "WA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "wacolum",
+    "name_full": "Columbia Basin College",
+    "city": "Pasco",
+    "state": "WA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "waedmon",
+    "name_full": "Edmonds Community College",
+    "city": "Lynnwood",
+    "state": "WA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "waevere",
+    "name_full": "Everett Community College",
+    "city": "Everett",
+    "state": "WA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "wagner",
+    "name_full": "Wagner College",
+    "city": "Staten Island",
+    "state": "NY",
+    "country": "USA"
+  },
+  {
+    "schoolID": "wagreen",
+    "name_full": "Green River Community College",
+    "city": "Auburn",
+    "state": "WA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "wake",
+    "name_full": "Wake Forest University",
+    "city": "Winston-Salem",
+    "state": "NC",
+    "country": "USA"
+  },
+  {
+    "schoolID": "walabama",
+    "name_full": "University of West Alabama",
+    "city": "Livingston",
+    "state": "AL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "walower",
+    "name_full": "Lower Columbia College",
+    "city": "Longview",
+    "state": "WA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "waolymp",
+    "name_full": "Olympic College",
+    "city": "Bremerton",
+    "state": "WA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "warnerpac",
+    "name_full": "Warner Pacific College",
+    "city": "Portland",
+    "state": "OR",
+    "country": "USA"
+  },
+  {
+    "schoolID": "wasfcco",
+    "name_full": "Spokane Falls Community College",
+    "city": "Spokane",
+    "state": "WA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "washburn",
+    "name_full": "Washburn University",
+    "city": "Topeka",
+    "state": "KS",
+    "country": "USA"
+  },
+  {
+    "schoolID": "washcollmd",
+    "name_full": "Washington College",
+    "city": "Chestertown",
+    "state": "MD",
+    "country": "USA"
+  },
+  {
+    "schoolID": "washcolltn",
+    "name_full": "Washington College",
+    "city": "Jonesborough",
+    "state": "TN",
+    "country": "USA"
+  },
+  {
+    "schoolID": "washington",
+    "name_full": "University of Washington",
+    "city": "Seattle",
+    "state": "WA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "washjeffpa",
+    "name_full": "Washington and Jefferson College",
+    "city": "Washington",
+    "state": "PA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "washleeva",
+    "name_full": "Washington and Lee University",
+    "city": "Lexington",
+    "state": "VA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "washore",
+    "name_full": "Shoreline Community College",
+    "city": "Shoreline",
+    "state": "WA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "washst",
+    "name_full": "Washington State University",
+    "city": "Pullman",
+    "state": "WA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "watacom",
+    "name_full": "Tacoma Community College",
+    "city": "Tacoma",
+    "state": "WA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "wawalla",
+    "name_full": "Walla Walla Community College",
+    "city": "Walla Walla",
+    "state": "WA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "wawenat",
+    "name_full": "Wenatchee Valley College",
+    "city": "Wenatchee",
+    "state": "WA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "wayakim",
+    "name_full": "Yakima Valley Community College",
+    "city": "Yakima",
+    "state": "WA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "waynesburg",
+    "name_full": "Waynesburg College",
+    "city": "Waynesburg",
+    "state": "PA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "waynest",
+    "name_full": "Wayne State University",
+    "city": "Detroit",
+    "state": "MI",
+    "country": "USA"
+  },
+  {
+    "schoolID": "waynestne",
+    "name_full": "Wayne State College",
+    "city": "Wayne",
+    "state": "NE",
+    "country": "USA"
+  },
+  {
+    "schoolID": "wcarolina",
+    "name_full": "Western Carolina University",
+    "city": "Cullowhee",
+    "state": "NC",
+    "country": "USA"
+  },
+  {
+    "schoolID": "wchester",
+    "name_full": "West Chester University of Pennsylvania",
+    "city": "West Chester",
+    "state": "PA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "wconnst",
+    "name_full": "Western Connecticut State University",
+    "city": "Danbury",
+    "state": "CT",
+    "country": "USA"
+  },
+  {
+    "schoolID": "weberst",
+    "name_full": "Weber State College",
+    "city": "Ogden",
+    "state": "UT",
+    "country": "USA"
+  },
+  {
+    "schoolID": "wesleyanct",
+    "name_full": "Wesleyan University",
+    "city": "Middletown",
+    "state": "CT",
+    "country": "USA"
+  },
+  {
+    "schoolID": "westmontca",
+    "name_full": "Westmont College",
+    "city": "Santa Barbara",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "wflorida",
+    "name_full": "University of West Florida",
+    "city": "Pensacola",
+    "state": "FL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "wgeorgia",
+    "name_full": "State University of West Georgia",
+    "city": "Carrollton",
+    "state": "GA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "wheatonma",
+    "name_full": "Wheaton College",
+    "city": "Wheaton",
+    "state": "MA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "whitmanwa",
+    "name_full": "Whitman College",
+    "city": "Walla Walla",
+    "state": "WA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "whittierca",
+    "name_full": "Whittier College",
+    "city": "Whittier",
+    "state": "CA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "whitwrthwa",
+    "name_full": "Whitworth College",
+    "city": "Spokane",
+    "state": "WA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "wicarro",
+    "name_full": "Carroll College",
+    "city": "Waukesha",
+    "state": "WI",
+    "country": "USA"
+  },
+  {
+    "schoolID": "wichitast",
+    "name_full": "Wichita State University",
+    "city": "Wichita",
+    "state": "KS",
+    "country": "USA"
+  },
+  {
+    "schoolID": "widenerpa",
+    "name_full": "Widener University",
+    "city": "Chester",
+    "state": "PA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "wilacrosse",
+    "name_full": "University of Wisconsin at La Crosse",
+    "city": "La Crosse",
+    "state": "WI",
+    "country": "USA"
+  },
+  {
+    "schoolID": "wilawre",
+    "name_full": "Lawrence University",
+    "city": "Appleton",
+    "state": "WI",
+    "country": "USA"
+  },
+  {
+    "schoolID": "wilbrforce",
+    "name_full": "Wilberforce University",
+    "city": "Wilberforce",
+    "state": "OH",
+    "country": "USA"
+  },
+  {
+    "schoolID": "wileytx",
+    "name_full": "Wiley College",
+    "city": "Marshall",
+    "state": "TX",
+    "country": "USA"
+  },
+  {
+    "schoolID": "wilkespa",
+    "name_full": "Wilkes University",
+    "city": "Wilkes-Barre",
+    "state": "PA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "willamette",
+    "name_full": "Willamette University",
+    "city": "Salem",
+    "state": "OR",
+    "country": "USA"
+  },
+  {
+    "schoolID": "williamsma",
+    "name_full": "Williams College",
+    "city": "Williamstown",
+    "state": "MA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "willinois",
+    "name_full": "Western Illinois University",
+    "city": "Macomb",
+    "state": "IL",
+    "country": "USA"
+  },
+  {
+    "schoolID": "willmary",
+    "name_full": "College of William and Mary",
+    "city": "Williamsburg",
+    "state": "VA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "wingate",
+    "name_full": "Wingate University",
+    "city": "Wingate",
+    "state": "NC",
+    "country": "USA"
+  },
+  {
+    "schoolID": "winstsalst",
+    "name_full": "Winston-Salem State University",
+    "city": "Winston-Salem",
+    "state": "NC",
+    "country": "USA"
+  },
+  {
+    "schoolID": "winthrop",
+    "name_full": "Winthrop University",
+    "city": "Rock Hill",
+    "state": "SC",
+    "country": "USA"
+  },
+  {
+    "schoolID": "wioshkosh",
+    "name_full": "University of Wisconsin at Oshkosh",
+    "city": "Oshkosh",
+    "state": "WI",
+    "country": "USA"
+  },
+  {
+    "schoolID": "wisacre",
+    "name_full": "Sacred Heart College",
+    "city": "Watertown",
+    "state": "WI",
+    "country": "USA"
+  },
+  {
+    "schoolID": "wisconsin",
+    "name_full": "University of Wisconsin at Madison",
+    "city": "Madison",
+    "state": "WI",
+    "country": "USA"
+  },
+  {
+    "schoolID": "wistnor",
+    "name_full": "St. Norbert College",
+    "city": "De Pere",
+    "state": "WI",
+    "country": "USA"
+  },
+  {
+    "schoolID": "wistvnspt",
+    "name_full": "University of Wisconsin at Stevens Point",
+    "city": "Stevens Point",
+    "state": "WI",
+    "country": "USA"
+  },
+  {
+    "schoolID": "wisuperior",
+    "name_full": "University of Wisconsin at Superior",
+    "city": "Superior",
+    "state": "WI",
+    "country": "USA"
+  },
+  {
+    "schoolID": "wittnbrgoh",
+    "name_full": "Wittenberg University",
+    "city": "Springfield",
+    "state": "OH",
+    "country": "USA"
+  },
+  {
+    "schoolID": "wiwhitewtr",
+    "name_full": "University of Wisconsin at Whitewater",
+    "city": "Whitewater",
+    "state": "WI",
+    "country": "USA"
+  },
+  {
+    "schoolID": "wkentucky",
+    "name_full": "Western Kentucky University",
+    "city": "Bowling Green",
+    "state": "KY",
+    "country": "USA"
+  },
+  {
+    "schoolID": "wlibertyst",
+    "name_full": "West Liberty State College",
+    "city": "West Liberty",
+    "state": "WV",
+    "country": "USA"
+  },
+  {
+    "schoolID": "wlmcarey",
+    "name_full": "William Carey College",
+    "city": "Hattiesburg",
+    "state": "MS",
+    "country": "USA"
+  },
+  {
+    "schoolID": "wlmjewell",
+    "name_full": "William Jewell College",
+    "city": "Liberty",
+    "state": "MO",
+    "country": "USA"
+  },
+  {
+    "schoolID": "wlmpennia",
+    "name_full": "William Penn University",
+    "city": "Oskaloosa",
+    "state": "IA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "wmichigan",
+    "name_full": "Western Michigan University",
+    "city": "Kalamazoo",
+    "state": "MI",
+    "country": "USA"
+  },
+  {
+    "schoolID": "wminstermo",
+    "name_full": "Westminster College",
+    "city": "Fulton",
+    "state": "MO",
+    "country": "USA"
+  },
+  {
+    "schoolID": "wminsterpa",
+    "name_full": "Westminster College",
+    "city": "New Wilmington",
+    "state": "PA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "wofford",
+    "name_full": "Wofford College",
+    "city": "Spartanburg",
+    "state": "SC",
+    "country": "USA"
+  },
+  {
+    "schoolID": "woosteroh",
+    "name_full": "College of Wooster",
+    "city": "Wooster",
+    "state": "OH",
+    "country": "USA"
+  },
+  {
+    "schoolID": "wpaterson",
+    "name_full": "William Paterson University",
+    "city": "Wayne",
+    "state": "NJ",
+    "country": "USA"
+  },
+  {
+    "schoolID": "wrightst",
+    "name_full": "Wright State University",
+    "city": "Dayton",
+    "state": "OH",
+    "country": "USA"
+  },
+  {
+    "schoolID": "wshngtonmo",
+    "name_full": "Washington University in St. Louis",
+    "city": "St. Louis",
+    "state": "MO",
+    "country": "USA"
+  },
+  {
+    "schoolID": "wvirginia",
+    "name_full": "West Virginia University",
+    "city": "Morgantown",
+    "state": "WV",
+    "country": "USA"
+  },
+  {
+    "schoolID": "wvpotom",
+    "name_full": "Potomac State College",
+    "city": "Keyser",
+    "state": "WV",
+    "country": "USA"
+  },
+  {
+    "schoolID": "wvstate",
+    "name_full": "West Virginia State University",
+    "city": "Institute",
+    "state": "WV",
+    "country": "USA"
+  },
+  {
+    "schoolID": "wvwesleyan",
+    "name_full": "West Virginia Wesleyan College",
+    "city": "Buckhannon",
+    "state": "WV",
+    "country": "USA"
+  },
+  {
+    "schoolID": "wwashngton",
+    "name_full": "Western Washington University",
+    "city": "Bellingham",
+    "state": "WA",
+    "country": "USA"
+  },
+  {
+    "schoolID": "wyoming",
+    "name_full": "University of Wyoming",
+    "city": "Laramie",
+    "state": "WY",
+    "country": "USA"
+  },
+  {
+    "schoolID": "xavier",
+    "name_full": "Xavier University",
+    "city": "Cincinnati",
+    "state": "OH",
+    "country": "USA"
+  },
+  {
+    "schoolID": "yale",
+    "name_full": "Yale University",
+    "city": "New Haven",
+    "state": "CT",
+    "country": "USA"
+  },
+  {
+    "schoolID": "youngst",
+    "name_full": "Youngstown State University",
+    "city": "Youngstown",
+    "state": "OH",
+    "country": "USA"
+  }
+]

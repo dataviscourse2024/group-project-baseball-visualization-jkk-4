@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>MLB Visualizations</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- d3 script -->
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+
+<body>
+  <h3>CS-5630 / CS-6630 MLB Visualizations</h3>
+  <address>
+    <span>Name: Jaden Lee, Kendall Ruth, Kacey Abbott</span>
+  </address>
+  <br />
+  <hr />
+  <br />
+
+  <div class="toolbox">
+    <span>
+      <label>Franchise:</label>
+      <select id="franchises">
+      </select>
+    </span>
+
+    <span>
+      <label>Data Metric</label>
+      <select id="metric">
+        <option value="wins">Wins</option>
+        <option value="losses">Losses</option>
+      </select>
+    </span>
+
+  </div>
+  <br />
+
+  <div class="row chart">
+    <div class="chart">
+      <h2>Bar Charts</h2>
+      <div id="Barchart-div">
+      </div>
+    </div>
+  </div>
+</body>
+<script src="script.js"></script>
+
+</html>

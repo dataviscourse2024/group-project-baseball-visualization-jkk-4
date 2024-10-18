@@ -1,0 +1,53 @@
+.chart,
+h2 {
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.toolbox span {
+    padding: 5px;
+}
+
+svg {
+    padding: 10px;
+    width: 1000px;
+    height: 500px;
+}
+
+/* style of bar charts */
+.bar-chart rect {
+    fill: rgb(79, 175, 211);
+}
+
+.bar-chart .hovered {
+    fill: #979696;
+}
+
+/* style of line charts */
+.line-chart {
+    stroke: rgb(79, 175, 211);
+    stroke-width: 2;
+    fill: none;
+}
+
+text {
+    fill: black;
+}
+
+/* style of area charts */
+.area-chart {
+    fill: rgb(79, 175, 211);
+}
+
+/* style of scatter plot */
+.scatter-plot circle {
+    fill: rgb(79, 175, 211);
+}
+
+.scatter-plot .hovered {
+    fill: #979696;
+}

@@ -10,44 +10,51 @@
 </head>
 
 <body>
-  <h3>CS-5630 / CS-6630 MLB Visualizations</h3>
-  <address>
-    <span>Name: Jaden Lee, Kendall Ruth, Kacey Abbott</span>
-  </address>
-  <br />
+  <div>
+    <img src="./datasets/mlb-logo.png" alt="MLB Logo" style="height:100px"> 
+    <h1>CS-5630 / CS-6630 MLB Visualizations</h1>
+    <address>
+      <span>Name: Jaden Lee, Kendall Ruth, Kacey Abbott </span>
+    </address>
+  </div>
   <hr />
-  <br />
-
-  <div class="toolbox">
+  <div class="container">
     <span>
-      <label>Player Select:</label>
-      <select id="players">
-      </select>
+      <label>Select a Player:</label>
+      <select id="players"></select>
     </span>
   </div>
-  <br />
-  <div class = "batter table">
-      <div class="table">
-        <h2 style = "text-align: left;">Player Stats</h2>
-        <table id = "Table-div">
+  <hr />
+  <div>
+    <h2>Trading Cards</h2>
+    <p>Baseball collectors have long prized player trading cards based on rarity and quality. Cards of the game's best players could fetch millions of dollars, but how can we objectively judge players? On the backs of trading cards, you'd find critical stat information for a given player. This popularized counting stats like the ones shown in the table below. </p>
+    <div class="container">
+      <div class="player-image">
+        <img id="player-image" src="" alt="Player Image" style="max-width: 300px;"/>
+      </div>      
+      <div class="batter-table">
+        <div class="table">
+          <table id="Table-div"></table>
         </div>
-      </div>
-  </div>
-
-  <div class="row chart">
-    <div class="chart">
-      <h2>Player wOBA Chart</h2>
-      <div id="batting-div">
       </div>
     </div>
   </div>
-
-  <div class="player-image">
-    <h3>Player Card</h3>
-    <p id="player-subtitle" style="font-size: 12px;">**Currently hard coded for one player,<br> but will eventually change based on the player name chosen.<br>  10,000+ player images**</p>
-    <img id="player-image" src="" alt="Player Image" style="max-width: 300px;">
+  <hr />
+  <div>
+    <h2>Rate Statistics</h2>
+    <p>This evolved into rate statistics like Batting Average (BAA), On-Base Percentage (OBP), and Slugging (SLG) that attempted to quantify a batter's performance on a per opportunity basis.</p>
   </div>
-
+  <hr />
+  <div>
+    <h2>Modern Statistics</h2>
+    <p>However, modern sabermetricians are focused on winning behaviors. Thus, we redefined our offensive production metrics not to evaluate hits or bases, but runs and wins. wOBA of a player uses linear weights to assign run values to each type of event when players attempt to reach via a hit.</p>
+    <div class="row chart container">
+      <div class="chart">
+        <div id="batting-div">
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 
 <script type="module" src="./scripts/main.js"></script>

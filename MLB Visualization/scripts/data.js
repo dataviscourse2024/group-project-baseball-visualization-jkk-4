@@ -23,3 +23,28 @@ export function getFranchiseData() {
                 losses: s.L})))
         .catch((e) => console.log("An error occurred fetching season data for the selected franchise:", e));
 }
+
+/**
+ * Gets season data for the currently selected MLB hitter.
+ * @param {string} playerID ID of selected player
+ */
+export function getBattingData(playerID="troutmi01") {
+    return d3.json(`${API_HOST}/batting/${playerID}`)
+        .then((seasons) => seasons)
+        .catch((e) => console.log("An error occurred fetching batting data:", e));
+}
+
+/**
+ * Gets the wOBA weights for each event based on the given year.
+ * @param {number} year *currently uses dummy data*
+ */
+export function getWobaWeights(year) {
+    return {
+        "uBB": 0.690,
+        "hbp": 0.722,
+        "1b": 0.888,
+        "2b": 1.271,
+        "3b": 1.616,
+        "hr": 2.101
+    }
+}

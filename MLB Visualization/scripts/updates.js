@@ -85,20 +85,18 @@ export function updateTable(data) {
  * @param playerName
  */
 export function updateWebsite(data, playerName) {
-  let metric = d3.select("#metric").node().value;
-  let xData = data.map((d) => d.year);
-  let yData = data.map((d) => metric == "wins" ? d.wins : d.losses);
-  updateBarChart(xData, yData);
 
   // Update the player image
-  updatePlayerImage(playerName);
+  updatePlayerImage(); //playerName);
 }
 
 /**
 * Updates the player image based on the given player name.
 * @param {string} playerName
 */
-function updatePlayerImage(playerName) {
+function updatePlayerImage() {
+  const sel = document.getElementById("players")
+  const playerName = sel.options[sel.selectedIndex].text;
   const [firstName, lastName] = playerName.split(' ');
   const firstInitial = firstName.charAt(0).toUpperCase();
   const imageFolder = `FirstName${firstInitial}`;
@@ -112,61 +110,3 @@ function updatePlayerImage(playerName) {
       .attr("src", imageUrl)
       .attr("alt", playerName);
 }
-//
-
-* Updates the bar chart using the x and y data provided.
- * @param {string} xData categorical independent variable
- * @param {number} yData dependent variable
- */
-/*
-function updateBarChart (xData, yData) {
-
-    // Construct the scales and axes.
-    let xScale = d3.scaleBand()
-                    .domain(xData)
-                    .range([0, CHART_WIDTH - MARGIN.left - MARGIN.right])
-                    .padding(.2);
-    let xAxis = d3.axisBottom();
-    xAxis.scale(xScale);
-    let yScale = d3.scaleLinear()
-                    .domain([0, d3.max(yData)])
-                    .range([CHART_HEIGHT - MARGIN.top - MARGIN.bottom, 0])
-                    .nice();
-    let yAxis = d3.axisLeft();
-    yAxis.scale(yScale);
-  
-    // Draw each of the axes and bars to the chart.
-    let barChartDiv = d3.select("#Barchart-div");
-    barChartDiv.select(".x-axis")
-      .attr("transform", "translate(" + (MARGIN.left) + "," + (CHART_HEIGHT - MARGIN.top) + ")")
-      .call(xAxis);
-    barChartDiv.select(".y-axis")
-      .attr("transform", "translate(" + (MARGIN.left) + "," + (MARGIN.top) + ")")
-      .call(yAxis);
-    let bars = barChartDiv.select(".bar-chart").selectAll("rect")
-      .data(xData.map((d, i) => {return {x: xData[i], y: yData[i]}}))
-  
-    bars.exit()
-      .transition()
-      .duration(ANIMATION_DUATION)
-      .style("opacity", 0)
-      .remove();
-  
-    bars = bars.enter().append("rect")
-      .attr("x", (d) => MARGIN.left + xScale(d.x))
-      .attr("y", (d) => CHART_HEIGHT - MARGIN.bottom)
-      .attr("width", xScale.bandwidth())
-      .attr("height", (d) => 0)
-      .merge(bars);
-  
-    bars.transition()
-      .duration(ANIMATION_DUATION)
-      .attr("x", (d) => MARGIN.left + xScale(d.x))
-      .attr("y", (d) => CHART_HEIGHT - MARGIN.bottom - yScale(0) + yScale(d.y))
-      .attr("width", xScale.bandwidth())
-      .attr("height", (d) => yScale(0) - yScale(d.y));
-  
-    bars.on("mouseover", (event) => d3.select(event.currentTarget).classed("hovered", true))
-      .on("mouseout", (event) => d3.select(event.currentTarget).classed("hovered", false));
-  }
-*/

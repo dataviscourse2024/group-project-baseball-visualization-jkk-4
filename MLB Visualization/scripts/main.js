@@ -1,11 +1,11 @@
 import { getPlayers, getPlayerData} from "./data.js";
-import {setupTable, updatePlayerSelect, updateTable } from "./updates.js";
+import { updateWebsite, setupTable, updatePlayerSelect, updateTable } from "./updates.js";
 
 /** 
  * Updates the visualizations with data of the current selected franchise.
 */
 async function adjustData() {
-    updateWebsite(await getFranchiseData(), "Zoilo Versalles"); // Pass the player name here
+    updateWebsite(null, "Zoilo Versalles"); // Pass the player name here
     updateTable(await getPlayerData())
 }
 

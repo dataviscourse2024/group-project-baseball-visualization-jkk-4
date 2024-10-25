@@ -21,20 +21,7 @@ app.add_middleware(
 
 @app.get("/")
 async def root():
-    return {"message": "Welcome to our baseball API."}
-
-@app.get("/franchises")
-async def franchises():
-    data = pd.read_csv("./datasets/csv/TeamsFranchises.csv")
-    data = data[["franchID", "franchName"]]
-    return data.to_dict(orient='records')
-
-@app.get("/franchise/{franchise_id}")
-async def franchises(franchise_id: str):
-    data = pd.read_csv("./datasets/csv/Teams.csv")
-    data = data.loc[data["franchID"] == franchise_id]
-    data = data[["yearID", "G", "W", "L"]]
-    return data.to_dict(orient='records')
+    return {"message": "Welcome to our baseball API. Open the '/docs' page to see the API."}
 
 app.mount("/datasets", StaticFiles(directory="datasets"), name="datasets")
 

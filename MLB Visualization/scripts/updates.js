@@ -7,32 +7,12 @@ const ANIMATION_DUATION = 1000;
 /**
  * Set up the website with proper DOM elements.
  */
-/*
 export function setupWebsite() {
-    let barChart = d3.select("#Barchart-div").append("svg").style("width", CHART_WIDTH).style("height", CHART_HEIGHT);
-    barChart.append("g").classed("bar-chart", true);
-    barChart.append("g").classed("x-axis", true);
-    barChart.append("g").classed("y-axis", true);
-
     let battingChart = d3.select("#batting-div").append("svg").style("width", CHART_WIDTH).style("height", CHART_HEIGHT);
     battingChart.append("g").classed("batting-chart", true);
     battingChart.append("g").classed("x-axis", true);
     battingChart.append("g").classed("y-axis", true);
 }
-    ex
-*/
-/**
- * Updates the franchise select box with all teams.
- * @param {object[]} franchises franchise ID and name
- */
-/*
-export function updateFranchiseSelect(franchises) {
-    const franchiseSelect = d3.select('#franchises');
-    franchises.forEach((f, i) => {
-        franchiseSelect.append("option").text(f.franchName).property("value", f.franchID).property("selected", i == 1);
-    });
-}
-  */
   
 /**
  * Updates the players select box with all teams.
@@ -91,12 +71,10 @@ export function updateTable(data) {
  * @param data 
  * @param playerName
  */
-export function updateWebsite(hitterData, wobaWeights, playerName) {
-    updateBattingChart(hitterData, wobaWeights);
+export function updateWebsite(hitterData, wobaWeights) {
+  updateBattingChart(hitterData, wobaWeights);
   // Update the player image
-  updatePlayerImage(); //playerName);
-}
-
+  updatePlayerImage();
 }
 
 /**

@@ -12,8 +12,8 @@ async function adjustData() {
 /**
  * Script to setup and run the website.
  */
+setupWebsite();
 setupTable();
-/*updateFranchiseSelect(await getFranchises()); */
 updatePlayerSelect(await getPlayers());
 adjustData();
 d3.selectAll("select").on("change", (event) => adjustData());

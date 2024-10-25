@@ -2,10 +2,13 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 import pandas as pd
 
+from fastapi.staticfiles import StaticFiles
+
 app = FastAPI()
 
 origins = [
     "http://localhost:8080",
+    "http://localhost:8000" 
 ]
 
 app.add_middleware(
@@ -33,6 +36,8 @@ async def franchises(franchise_id: str):
     data = data[["yearID", "G", "W", "L"]]
     return data.to_dict(orient='records')
 
+app.mount("/datasets", StaticFiles(directory="datasets"), name="datasets")
+
 @app.get("/players")
 async def players():
     personalInfo = pd.read_csv("./datasets/csv/People.csv",  encoding='latin-1')
@@ -52,4 +57,3 @@ async def batters(player_id: str):
         data = data.loc[data["playerID"] == player_id]
         data = data[["playerID","yearID", "teamID", "W","L","G","GS","CG","SHO","SV","IPouts","H","ER","HR","BB","SO","BAOpp","ERA","IBB","WP","HBP","BK","BFP","GF","R","SH","SF","GIDP"]].fillna(0)
     return data.to_dict(orient='records')
-

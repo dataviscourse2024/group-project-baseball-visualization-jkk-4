@@ -35,7 +35,8 @@ async def franchises(franchise_id: str):
 
 @app.get("/players")
 async def players():
-    personalInfo = pd.read_csv("./datasets/csv/People.csv")
+    personalInfo = pd.read_csv("./datasets/csv/People.csv",  encoding='latin-1')
+    print(personalInfo)
     personalInfo = personalInfo.loc[personalInfo["birthYear"] > 1800]
     personalInfo = personalInfo[["playerID", "nameFirst", "nameLast"]]
     return personalInfo.to_dict(orient='records')

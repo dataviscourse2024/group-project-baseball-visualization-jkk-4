@@ -75,7 +75,6 @@ export function updateTable(data) {
            .append("td") 
            .text(d => d);
 
-
 }
 /**
  * Updates the visualizations based on the given data.

@@ -1,19 +1,19 @@
-import { getFranchises, getFranchiseData } from "./data.js";
-import { setupWebsite, updateFranchiseSelect, updateWebsite } from "./updates.js";
+import { getPlayers, getPlayerData} from "./data.js";
+import {setupTable, updatePlayerSelect, updateTable } from "./updates.js";
 
 /** 
  * Updates the visualizations with data of the current selected franchise.
 */
 async function adjustData() {
-    //const data = await getFranchiseData();
-    //updateWebsite(data, "Zoilo Versalles");
     updateWebsite(await getFranchiseData(), "Zoilo Versalles"); // Pass the player name here
+    updateTable(await getPlayerData())
 }
 
 /**
  * Script to setup and run the website.
  */
-setupWebsite();
-updateFranchiseSelect(await getFranchises());
+setupTable();
+/*updateFranchiseSelect(await getFranchises()); */
+updatePlayerSelect(await getPlayers());
 adjustData();
 d3.selectAll("select").on("change", (event) => adjustData());

@@ -3,6 +3,10 @@ h2 {
     text-align: center;
 }
 
+h3 {
+    text-align: left;
+}
+
 .row {
     display: flex;
     flex-wrap: wrap;

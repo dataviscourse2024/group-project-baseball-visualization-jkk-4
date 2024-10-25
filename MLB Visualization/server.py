@@ -2,10 +2,13 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 import pandas as pd
 
+from fastapi.staticfiles import StaticFiles
+
 app = FastAPI()
 
 origins = [
     "http://localhost:8080",
+    "http://localhost:8000" 
 ]
 
 app.add_middleware(
@@ -32,3 +35,6 @@ async def franchises(franchise_id: str):
     data = data.loc[data["franchID"] == franchise_id]
     data = data[["yearID", "G", "W", "L"]]
     return data.to_dict(orient='records')
+
+
+app.mount("/datasets", StaticFiles(directory="datasets"), name="datasets")

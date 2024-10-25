@@ -27,20 +27,41 @@ export function updateFranchiseSelect(franchises) {
 
 /**
  * Updates the visualizations based on the given data.
- * @param data 
- */
-export function updateWebsite(data) {
-    let metric = d3.select("#metric").node().value;
-    let xData = data.map((d) => d.year);
-    let yData = data.map((d) => metric == "wins" ? d.wins : d.losses);
-    updateBarChart(xData, yData);
-}
-
-/**
  * Updates the bar chart using the x and y data provided.
  * @param {string} xData categorical independent variable
  * @param {number} yData dependent variable
+ * @param data 
+ * @param playerName
  */
+export function updateWebsite(data, playerName) {
+  let metric = d3.select("#metric").node().value;
+  let xData = data.map((d) => d.year);
+  let yData = data.map((d) => metric == "wins" ? d.wins : d.losses);
+  updateBarChart(xData, yData);
+
+  // Update the player image
+  updatePlayerImage(playerName);
+}
+
+/**
+* Updates the player image based on the given player name.
+* @param {string} playerName
+*/
+function updatePlayerImage(playerName) {
+  const [firstName, lastName] = playerName.split(' ');
+  const firstInitial = firstName.charAt(0).toUpperCase();
+  const imageFolder = `FirstName${firstInitial}`;
+  const imageName = `${firstName}_${lastName}.jpg`;
+
+ 
+  const imageUrl = `http://localhost:8000/datasets/Card Images/${imageFolder}/${imageName}`;
+
+
+  d3.select("#player-image")
+      .attr("src", imageUrl)
+      .attr("alt", playerName);
+}
+//
 function updateBarChart (xData, yData) {
 
     // Construct the scales and axes.

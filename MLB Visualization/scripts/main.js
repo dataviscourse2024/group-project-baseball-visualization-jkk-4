@@ -5,7 +5,9 @@ import { setupWebsite, updateFranchiseSelect, updateWebsite } from "./updates.js
  * Updates the visualizations with data of the current selected franchise.
 */
 async function adjustData() {
-    updateWebsite(await getFranchiseData());
+    //const data = await getFranchiseData();
+    //updateWebsite(data, "Zoilo Versalles");
+    updateWebsite(await getFranchiseData(), "Zoilo Versalles"); // Pass the player name here
 }
 
 /**

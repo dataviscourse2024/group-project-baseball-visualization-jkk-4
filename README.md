@@ -10,7 +10,6 @@ See https://www.dataviscourse.net/2024/project/ for detailed instructions.
 - Author: Jaden Lee, Kendall Ruth, Kacey Abbott
 - Affiliation: University of Utah
 - Professor: Paul Rosen
-- Emails: //todo
 - Created Date: September 13, 2024
 - Repository Link: https://github.com/dataviscourse2024/group-project-baseball-visualization-jkk-4
 - Copyright: This code may not be copied or edited for academic use.

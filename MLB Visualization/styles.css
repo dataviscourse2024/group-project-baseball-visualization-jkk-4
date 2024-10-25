@@ -27,31 +27,40 @@ svg {
     fill: rgb(79, 175, 211);
 }
 
+
 .bar-chart .hovered {
     fill: #979696;
-}
-
-/* style of line charts */
-.line-chart {
-    stroke: rgb(79, 175, 211);
-    stroke-width: 2;
-    fill: none;
 }
 
 text {
     fill: black;
 }
 
-/* style of area charts */
-.area-chart {
-    fill: rgb(79, 175, 211);
+/* style of batting chart */
+.walk {
+    fill: rgb(116, 211, 79);
 }
 
-/* style of scatter plot */
-.scatter-plot circle {
-    fill: rgb(79, 175, 211);
+.hit-by-pitch {
+    fill: rgb(79, 211, 182);
 }
 
-.scatter-plot .hovered {
-    fill: #979696;
+.single {
+    fill: rgb(79, 154, 211);
+}
+
+.double {
+    fill: rgb(79, 105, 211);
+}
+
+.triple {
+    fill: rgb(118, 79, 211);
+}
+
+.home-run {
+    fill: rgb(191, 79, 211);
+}
+
+.total {
+    fill: rgb(174, 174, 174);
 }

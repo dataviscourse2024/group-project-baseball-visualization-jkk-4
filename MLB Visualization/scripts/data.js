@@ -10,10 +10,24 @@ export function getPlayers() {
         .catch((e) => console.log("An error occurred fetching the list of players:", e));
 }
 
-export function getPlayerData() {
+/**
+ * Gets the wOBA weights for each event based on the given year.
+ * @param {number} year *currently uses dummy data*
+ */
+export function getWobaWeights(year) {
+    return {
+        "uBB": 0.690,
+        "hbp": 0.722,
+        "1b": 0.888,
+        "2b": 1.271,
+        "3b": 1.616,
+        "hr": 2.101
+    }
+}
+
+  export function getPlayerData() {
     const playerID = d3.select('#players').node().value;
     return d3.json(`${API_HOST}/players/${playerID}/`)
         .then((playerData) => playerData)
         .catch((e) => console.log("An error occurred fetching the list of playerData:", e));
-
 }

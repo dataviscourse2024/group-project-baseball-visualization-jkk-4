@@ -174,7 +174,7 @@ function updateBattingChart(hitterData, weights) {
 /**
 * Updates the player image based on the given player name.
 * @param {string} playerName
-*/
+
 function updatePlayerImage() {
   const sel = document.getElementById("players")
   const playerName = sel.options[sel.selectedIndex].text;
@@ -185,9 +185,38 @@ function updatePlayerImage() {
 
  
   const imageUrl = `http://localhost:8000/datasets/Card Images/${imageFolder}/${imageName}`;
+*/
+  function updatePlayerImage() {
+    const sel = document.getElementById("players");
+    const playerName = sel.options[sel.selectedIndex].text;
+    const [firstName, lastName] = playerName.split(' ');
+    const firstInitial = firstName.charAt(0).toUpperCase();
+    let imageFolder;
 
+    if (firstInitial === 'J') {
+        const firstTwoLetters = firstName.substring(0, 2).toUpperCase();
+        if (firstTwoLetters >= 'JA' && firstTwoLetters <= 'JI') {
+            imageFolder = 'FirstNameJaJi';
+        } else if (firstTwoLetters >= 'JJ' && firstTwoLetters <= 'JU') {
+            imageFolder = 'FirstNameJjJu';
+        } else {
+            imageFolder = `FirstName${firstInitial}`;
+        }
+    } else {
+        imageFolder = `FirstName${firstInitial}`;
+    }
 
-  d3.select("#player-image")
-      .attr("src", imageUrl)
-      .attr("alt", playerName);
+    const imageName = `${firstName}_${lastName}.jpg`;
+    const imageUrl = `http://localhost:8000/datasets/Card Images/${imageFolder}/${imageName}`;
+
+    const imgElement = document.getElementById("player-image");
+    imgElement.src = imageUrl;
+    imgElement.alt = playerName;
+
+    imgElement.onerror = function () {
+        imgElement.onerror = null;
+        imgElement.src = `http://localhost:8000/datasets/Card Images/FirstNameD/default.jpg`;
+        imgElement.alt = "Default image";
+    };
 }
+

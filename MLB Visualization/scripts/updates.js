@@ -18,20 +18,26 @@ export function setupWebsite() {
  * Updates the players select box with all players.
  * @param {object[]} players player Info
  */
+
 export function updatePlayerSelect(players) {
   const playerSelect = d3.select('#players');
-  let addedValues = []
-  players.forEach((f,i) => {
-    let nameString = f.nameFirst + ' ' + f.nameLast
-    if(!addedValues.includes(nameString)) {
-      playerSelect.append("option").text(nameString).property("value", f.playerID).property("selected", i == 1);
+  playerSelect.selectAll("option").remove(); 
+
+  let addedValues = [];
+  players.forEach((player, i) => {
+    let nameString = player.nameFirst + ' ' + player.nameLast;
+    if (!addedValues.includes(nameString)) {
+      playerSelect.append("option")
+        .text(nameString)
+        .property("value", player.playerID)
+        .property("selected", i == 0);
       addedValues.push(nameString);
     }
   });
 }
 export function setupTable() {
   let tableHeaders = d3.select('#Table-div').append("thead").append("tr");
-  const headers = ["playerID", "yearID", "teamID","G","AB","R","H","2B","3B","HR","RBI","SB","CS","BB","SO","IBB","HBP","SH","SF","GIDP"];
+  const headers = ["Year", "Team Name", "G", "AB", "R", "H", "2B", "3B", "HR", "RBI", "SB", "CS", "BB", "SO", "IBB", "HBP", "SH", "SF", "GIDP"];
   tableHeaders.selectAll('th')
               .data(headers)
               .enter()
@@ -40,8 +46,31 @@ export function setupTable() {
 } 
 
 /* Consulted ChatGpt on setting up this function */
+// export function updateTable(data) {
+//   d3.select("#Table-div").select("thead").remove();
+//   d3.select("#Table-div").select("tbody").remove();
+//   let tableHeaders = d3.select('#Table-div')
+//   tableHeaders.append("thead")
+//               .append("tr")
+//               .selectAll('th')
+//               .data(Object.keys(data[0]))
+//               .enter()
+//               .append('th')
+//               .text(d => d);
+//   let tableBody = tableHeaders.append('tbody')
+//                               .selectAll('tr')  
+//                               .data(data)
+//                               .enter()
+//                               .append('tr')  ; 
+//   tableBody.selectAll("td")
+//            .data(d => Object.values(d))
+//            .enter()
+//            .append("td") 
+//            .text(d => d);
+
+// }
+
 export function updateTable(data) {
-  d3.select("#Table-div").select("thead").remove();
   d3.select("#Table-div").select("tbody").remove();
   let tableHeaders = d3.select('#Table-div');
   let headers = []
@@ -52,6 +81,7 @@ export function updateTable(data) {
   else {
     headers = ["playerID","yearID", "teamID", "W","L","G","GS","CG","SHO","SV","IPouts","H","ER","HR","BB","SO","BAOpp","ERA","IBB","WP","HBP","BK","BFP","GF","R","SH","SF","GIDP"];
   }
+  /* Consulted ChatGpt on setting up this function */
   tableHeaders.append("thead")
               .append("tr")
               .selectAll('th')
@@ -63,14 +93,15 @@ export function updateTable(data) {
                               .selectAll('tr')  
                               .data(data)
                               .enter()
-                              .append('tr')  ; 
+                              .append('tr'); 
   tableBody.selectAll("td")
            .data(d => Object.values(d))
            .enter()
            .append("td") 
            .text(d => d);
-
 }
+
+
 /**
  * Updates the visualizations based on the given data.
  * Updates the bar chart using the x and y data provided.
@@ -182,18 +213,8 @@ function updateBattingChart(hitterData, weights) {
 /**
 * Updates the player image based on the given player name.
 * @param {string} playerName
-
-function updatePlayerImage() {
-  const sel = document.getElementById("players")
-  const playerName = sel.options[sel.selectedIndex].text;
-  const [firstName, lastName] = playerName.split(' ');
-  const firstInitial = firstName.charAt(0).toUpperCase();
-  const imageFolder = `FirstName${firstInitial}`;
-  const imageName = `${firstName}_${lastName}.jpg`;
-
- 
-  const imageUrl = `http://localhost:8000/datasets/Card Images/${imageFolder}/${imageName}`;
 */
+
   function updatePlayerImage() {
     const sel = document.getElementById("players");
     const playerName = sel.options[sel.selectedIndex].text;

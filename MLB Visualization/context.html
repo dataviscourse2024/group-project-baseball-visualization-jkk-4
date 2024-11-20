@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Context Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div>
+    <h1><button onclick="window.location.href='index.html'">Back to Main</button></h1>
+    <h1>MLB Visualizations Context</h1>
+    <p>This page provides context for the MLB Visualizations project. Here you can find additional information explaining what each section of the main page is about.</p>
+    <p>The project aims to explore the performance of Major League Baseball players through various visualizations and statistical metrics. It focuses on trading cards, rate statistics, and modern advanced metrics to better understand the value of different players.</p>
+  </div>
+  <hr />
+  <div>
+    <h2>Baseball Statistics Definitions</h2>
+    <ul>
+      <li>G (Games Played): The number of games in which the player appeared.</li>
+      <li>AB (At Bats): The number of official at-bats (excludes walks, sacrifices, etc.).</li>
+      <li>R (Runs Scored): The total number of runs the player scored.</li>
+      <li>H (Hits): The number of times the player successfully reached first base by hitting the ball.</li>
+      <li>2B (Doubles): The number of hits where the player reached second base.</li>
+      <li>3B (Triples): The number of hits where the player reached third base.</li>
+      <li>HR (Home Runs): The number of hits where the player hit the ball out of play, allowing them to round all the bases and score.</li>
+      <li>RBI (Runs Batted In): The number of runs that scored as a direct result of the player's at-bat.</li>
+      <li>SB (Stolen Bases): The number of times the player successfully stole a base.</li>
+      <li>CS (Caught Stealing): The number of times the player was caught attempting to steal a base.</li>
+      <li>BB (Base on Balls / Walks): The number of times the player was awarded first base after taking four balls outside the strike zone.</li>
+      <li>SO (Strikeouts): The number of times the player struck out.</li>
+      <li>IBB (Intentional Base on Balls): The number of times the player was intentionally walked by the opposing pitcher.</li>
+      <li>HBP (Hit By Pitch): The number of times the player reached base after being hit by a pitch.</li>
+      <li>SH (Sacrifice Hits / Sacrifice Bunts): The number of times the player successfully bunted the ball to advance a runner.</li>
+      <li>SF (Sacrifice Flies): The number of fly balls that resulted in a run scoring (but the batter being out).</li>
+      <li>GIDP (Grounded Into Double Play): The number of times the player grounded into a double play, resulting in two outs.</li>
+    </ul>
+  </div>
+  <hr />
+  <div>
+
+    <div>
+        <h2>Data Scources</h2>
+        <p>
+            The data used in this project has been sourced from the Sean Lahman Baseball Database (<a href="http://www.seanlahman.com/" target="_blank">http://www.seanlahman.com/</a>). The Lahman dataset is an extensive collection of baseball statistics that includes information on over 21,000 players throughout the history of Major League Baseball. This rich dataset provided us with player statistics spanning 1871 to 2023 such as games played, runs scored, hits, and other critical metrics that are displayed in our visualizations.
+          </p>
+          <p>
+            The baseball card images were compiled by scraping the Baseball Almanac website (<a href="https://www.baseball-almanac.com/" target="_blank">https://www.baseball-almanac.com/</a>). Using this approach, we were able to obtain nearly 10,000 player images, which we use to complement the statistical data from the Lahman dataset. These images add a visual element that makes it easier to connect statistics to real players, enhancing the overall experience.
+          </p>
+          <p>
+            For the players that we were unable to find images for, we use a default placeholder image. This ensures that every player represented in our dataset has some form of imagery, even if specific photos are unavailable. The combination of comprehensive player data and visual elements provides a more engaging and informative experience for users exploring Major League Baseball history and statistics.
+          </p>
+          <img src="http://localhost:8000/datasets/Card Images/FirstNameD/default.jpg" alt="Default Player Image" style="max-width: 200px;"/>
+    <hr />
+    </div>
+
+  </div>
+</body>
+
+</html>

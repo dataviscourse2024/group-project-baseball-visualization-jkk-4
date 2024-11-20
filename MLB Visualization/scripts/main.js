@@ -5,7 +5,7 @@ import { setupWebsite, updateWebsite, setupTable, updatePlayerSelect, updateTabl
  * Updates the visualizations with data of the current selected franchise.
 */
 async function adjustData() {
-    updateWebsite(await getPlayerData(), await getWobaWeights(), "Zoilo Versalles");
+    updateWebsite(await getPlayerData(), await getWobaWeights());
     updateTable(await getPlayerData())
 }
 
@@ -16,4 +16,4 @@ setupWebsite();
 setupTable();
 updatePlayerSelect(await getPlayers());
 adjustData();
-d3.selectAll("select").on("change", (event) => adjustData());
+d3.selectAll("select").on("change", (event) => adjustData())

@@ -37,7 +37,7 @@ export function updatePlayerSelect(players) {
 }
 export function setupTable() {
   let tableHeaders = d3.select('#Table-div').append("thead").append("tr");
-  let headers = ["yearID", "teamID", "W","L","G","GS","CG","SHO","SV","IPouts","H","ER","HR","BB","SO","BAOpp","ERA","IBB","WP","HBP","BK","BFP","GF","R","SH","SF","GIDP"];
+  let headers = ["yearID", "Team", "W","L","G","GS","CG","SHO","SV","IPouts","H","ER","HR","BB","SO","BAOpp","ERA","IBB","WP","HBP","BK","BFP","GF","R","SH","SF","GIDP"];
   tableHeaders.selectAll('th')
               .data(headers)
               .enter()

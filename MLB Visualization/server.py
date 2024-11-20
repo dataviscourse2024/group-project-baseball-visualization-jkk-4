@@ -38,7 +38,6 @@ async def batters(player_id: str):
     data = pd.read_csv("./datasets/csv/Batting.csv")
     data = data.loc[data["playerID"] == player_id]
     data = data[["yearID","TeamName","G","AB","R","H","2B","3B","HR","RBI","SB","CS","BB","SO","IBB","HBP","SH","SF","GIDP"]].fillna(0)
-    data = data[["yearID", "TeamName", "G", "AB", "R", "H", "2B", "3B", "HR", "RBI", "SB", "CS", "BB", "SO", "IBB", "HBP", "SH", "SF", "GIDP"]].fillna(0)
     return data.to_dict(orient='records')
 
 @app.get("/pitchers/{player_id}")

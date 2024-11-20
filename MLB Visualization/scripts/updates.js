@@ -15,7 +15,7 @@ export function setupWebsite() {
 }
   
 /**
- * Updates the players select box with all teams.
+ * Updates the players select box with all players.
  * @param {object[]} players player Info
  */
 
@@ -35,7 +35,6 @@ export function updatePlayerSelect(players) {
     }
   });
 }
-
 export function setupTable() {
   let tableHeaders = d3.select('#Table-div').append("thead").append("tr");
   const headers = ["Year", "Team Name", "G", "AB", "R", "H", "2B", "3B", "HR", "RBI", "SB", "CS", "BB", "SO", "IBB", "HBP", "SH", "SF", "GIDP"];
@@ -44,7 +43,8 @@ export function setupTable() {
               .enter()
               .append('th')
               .text(function (header) { return header; })
-}
+} 
+
 /* Consulted ChatGpt on setting up this function */
 // export function updateTable(data) {
 //   d3.select("#Table-div").select("thead").remove();
@@ -72,14 +72,28 @@ export function setupTable() {
 
 export function updateTable(data) {
   d3.select("#Table-div").select("tbody").remove();
-
-  let tableBody = d3.select('#Table-div')
-                    .append('tbody')
-                    .selectAll('tr')  
-                    .data(data)
-                    .enter()
-                    .append('tr');
-
+  let tableHeaders = d3.select('#Table-div');
+  let headers = []
+  if (d3.select('#player-type').node().value == "Batting") {
+    console.log("Here")
+    headers = ["playerID", "yearID", "teamID","G","AB","R","H","2B","3B","HR","RBI","SB","CS","BB","SO","IBB","HBP","SH","SF","GIDP"];
+  }
+  else {
+    headers = ["playerID","yearID", "teamID", "W","L","G","GS","CG","SHO","SV","IPouts","H","ER","HR","BB","SO","BAOpp","ERA","IBB","WP","HBP","BK","BFP","GF","R","SH","SF","GIDP"];
+  }
+  /* Consulted ChatGpt on setting up this function */
+  tableHeaders.append("thead")
+              .append("tr")
+              .selectAll('th')
+              .data(headers)
+              .enter()
+              .append('th')
+              .text(function (header) { return header; })
+  let tableBody = tableHeaders.append('tbody')
+                              .selectAll('tr')  
+                              .data(data)
+                              .enter()
+                              .append('tr'); 
   tableBody.selectAll("td")
            .data(d => Object.values(d))
            .enter()

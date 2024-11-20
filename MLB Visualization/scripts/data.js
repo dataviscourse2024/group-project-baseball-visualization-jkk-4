@@ -27,7 +27,15 @@ export function getWobaWeights(year) {
 
   export function getPlayerData() {
     const playerID = d3.select('#players').node().value;
-    return d3.json(`${API_HOST}/players/${playerID}/`)
-        .then((playerData) => playerData)
-        .catch((e) => console.log("An error occurred fetching the list of playerData:", e));
+    const batting_pitching = d3.select('#player-type').node().value;
+    if (batting_pitching == 'Batting') {
+        return d3.json(`${API_HOST}/batters/${playerID}/`)
+            .then((playerData) => playerData)
+            .catch((e) => console.log("An error occurred fetching the list of playerData:", e));
+    }
+    else {
+        return d3.json(`${API_HOST}/pitchers/${playerID}/`)
+            .then((playerData) => playerData)
+            .catch((e) => console.log("An error occurred fetching the list of playerData:", e));
+    }
 }

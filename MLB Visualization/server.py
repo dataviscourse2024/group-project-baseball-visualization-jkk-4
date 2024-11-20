@@ -29,19 +29,21 @@ app.mount("/datasets", StaticFiles(directory="datasets"), name="datasets")
 @app.get("/players")
 async def players():
     personalInfo = pd.read_csv("./datasets/csv/People.csv",  encoding='latin-1')
-    print(personalInfo)
     personalInfo = personalInfo.loc[personalInfo["birthYear"] > 1800]
     personalInfo = personalInfo[["playerID", "nameFirst", "nameLast"]]
     return personalInfo.to_dict(orient='records')
 
-@app.get("/players/{player_id}")
+@app.get("/batters/{player_id}")
 async def batters(player_id: str):
     data = pd.read_csv("./datasets/csv/Batting.csv")
     data = data.loc[data["playerID"] == player_id]
-    if len(data) > 0:
-        data = data[["playerID", "yearID", "teamID","G","AB","R","H","2B","3B","HR","RBI","SB","CS","BB","SO","IBB","HBP","SH","SF","GIDP"]].fillna(0)
-    else:
-        data = pd.read_csv("./datasets/csv/Pitching.csv")
-        data = data.loc[data["playerID"] == player_id]
-        data = data[["playerID","yearID", "teamID", "W","L","G","GS","CG","SHO","SV","IPouts","H","ER","HR","BB","SO","BAOpp","ERA","IBB","WP","HBP","BK","BFP","GF","R","SH","SF","GIDP"]].fillna(0)
+    data = data[["playerID", "yearID", "teamID","G","AB","R","H","2B","3B","HR","RBI","SB","CS","BB","SO","IBB","HBP","SH","SF","GIDP"]].fillna(0)
     return data.to_dict(orient='records')
+
+@app.get("/pitchers/{player_id}")
+async def pitchers(player_id: str):
+    data = pd.read_csv("./datasets/csv/Pitching.csv")
+    data = data.loc[data["playerID"] == player_id]
+    data = data[["playerID","yearID", "teamID", "W","L","G","GS","CG","SHO","SV","IPouts","H","ER","HR","BB","SO","BAOpp","ERA","IBB","WP","HBP","BK","BFP","GF","R","SH","SF","GIDP"]].fillna(0)
+    return data.to_dict(orient='records')
+

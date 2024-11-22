@@ -9,35 +9,86 @@
 
 <body>
   <div>
+    <img src="./datasets/mlb-logo.png" alt="MLB Logo" style="height:100px"> 
+    <h1>CS-5630 / CS-6630 MLB Visualizations</h1>
+    <address>
+      <span>Name: Jaden Lee, Kendall Ruth, Kacey Abbott </span>
+    </address>
+  </div>
+  <hr />
+  <div>
+  <div>
     <h1>
       <button onclick="window.location.href='index.html'">Back to Main</button>
       <button onclick="window.location.href='comparison.html'">Player Comparison</button>
     </h1>
     <h1>MLB Visualizations Context</h1>
     <p>This page provides context for the MLB Visualizations project. Here you can find additional information explaining what each section of the main page is about.</p>
-    <p>The project aims to explore the performance of Major League Baseball players through various visualizations and statistical metrics. It focuses on trading cards, rate statistics, and modern advanced metrics to better understand the value of different players.</p>
+    <p>The project aims to explore the performance of Major League Baseball players through various visualizations and statistical metrics. It focuses on rate statistics and modern advanced metrics to better understand the value of different players.</p>
   </div>
   <hr />
   <div>
     <h2>Baseball Statistics Definitions</h2>
+    <h3>Pitching Acronyms</h3>
     <ul>
-      <li>G (Games Played): The number of games in which the player appeared.</li>
-      <li>AB (At Bats): The number of official at-bats (excludes walks, sacrifices, etc.).</li>
-      <li>R (Runs Scored): The total number of runs the player scored.</li>
-      <li>H (Hits): The number of times the player successfully reached first base by hitting the ball.</li>
-      <li>2B (Doubles): The number of hits where the player reached second base.</li>
-      <li>3B (Triples): The number of hits where the player reached third base.</li>
-      <li>HR (Home Runs): The number of hits where the player hit the ball out of play, allowing them to round all the bases and score.</li>
-      <li>RBI (Runs Batted In): The number of runs that scored as a direct result of the player's at-bat.</li>
-      <li>SB (Stolen Bases): The number of times the player successfully stole a base.</li>
-      <li>CS (Caught Stealing): The number of times the player was caught attempting to steal a base.</li>
-      <li>BB (Base on Balls / Walks): The number of times the player was awarded first base after taking four balls outside the strike zone.</li>
-      <li>SO (Strikeouts): The number of times the player struck out.</li>
-      <li>IBB (Intentional Base on Balls): The number of times the player was intentionally walked by the opposing pitcher.</li>
-      <li>HBP (Hit By Pitch): The number of times the player reached base after being hit by a pitch.</li>
-      <li>SH (Sacrifice Hits / Sacrifice Bunts): The number of times the player successfully bunted the ball to advance a runner.</li>
-      <li>SF (Sacrifice Flies): The number of fly balls that resulted in a run scoring (but the batter being out).</li>
-      <li>GIDP (Grounded Into Double Play): The number of times the player grounded into a double play, resulting in two outs.</li>
+      <li><strong>W:</strong> Wins - Number of games the pitcher was the winning pitcher.</li>
+      <li><strong>L:</strong> Losses - Number of games the pitcher was the losing pitcher.</li>
+      <li><strong>G:</strong> Games - Total number of games the pitcher appeared in.</li>
+      <li><strong>GS:</strong> Games Started - Number of games the pitcher started.</li>
+      <li><strong>CG:</strong> Complete Games - Number of games the pitcher completed without relief.</li>
+      <li><strong>SHO:</strong> Shutouts - Number of complete games where the pitcher allowed no runs.</li>
+      <li><strong>SV:</strong> Saves - Number of games the pitcher successfully saved.</li>
+      <li><strong>IPouts:</strong> Innings Pitched Outs - Total number of outs the pitcher achieved (divide by 3 for innings pitched).</li>
+      <li><strong>H:</strong> Hits - Total number of hits allowed by the pitcher.</li>
+      <li><strong>ER:</strong> Earned Runs - Total number of earned runs allowed by the pitcher.</li>
+      <li><strong>HR:</strong> Home Runs - Total number of home runs allowed by the pitcher.</li>
+      <li><strong>BB:</strong> Walks (Bases on Balls) - Total number of batters walked by the pitcher.</li>
+      <li><strong>SO:</strong> Strikeouts - Total number of batters struck out by the pitcher.</li>
+      <li><strong>BAOpp:</strong> Batting Average Against - Batting average of opposing hitters against the pitcher.</li>
+      <li><strong>ERA:</strong> Earned Run Average - Average number of earned runs allowed per 9 innings pitched.</li>
+      <li><strong>IBB:</strong> Intentional Walks - Total number of intentional walks issued by the pitcher.</li>
+      <li><strong>WP:</strong> Wild Pitches - Total number of wild pitches thrown by the pitcher.</li>
+      <li><strong>HBP:</strong> Hit by Pitch - Total number of batters hit by the pitcher.</li>
+      <li><strong>BK:</strong> Balks - Total number of balks committed by the pitcher.</li>
+      <li><strong>BFP:</strong> Batters Faced by Pitcher - Total number of batters faced by the pitcher.</li>
+      <li><strong>GF:</strong> Games Finished - Number of games the pitcher was the last pitcher in the game.</li>
+      <li><strong>R:</strong> Runs - Total number of runs allowed by the pitcher.</li>
+      <li><strong>SH:</strong> Sacrifice Hits - Total number of sacrifice bunts allowed by the pitcher.</li>
+      <li><strong>SF:</strong> Sacrifice Flies - Total number of sacrifice flies allowed by the pitcher.</li>
+      <li><strong>GIDP:</strong> Grounded Into Double Plays - Total number of double plays induced by the pitcher.</li>
+    </ul>    
+    <h3>Batting Acronyms</h3>
+    <ul>
+      <li><strong>G:</strong> Games Played - The number of games in which the player appeared.</li>
+      <li><strong>AB:</strong> At Bats - The number of official at-bats (excludes walks, sacrifices, etc.).</li>
+      <li><strong>R:</strong> Runs Scored - The total number of runs the player scored.</li>
+      <li><strong>H:</strong> Hits - The number of times the player successfully reached first base by hitting the ball.</li>
+      <li><strong>2B:</strong> Doubles - The number of hits where the player reached second base.</li>
+      <li><strong>3B:</strong> Triples - The number of hits where the player reached third base.</li>
+      <li><strong>HR:</strong> Home Runs - The number of hits where the player hit the ball out of play, allowing them to round all the bases and score.</li>
+      <li><strong>RBI:</strong> Runs Batted In - The number of runs that scored as a direct result of the player's at-bat.</li>
+      <li><strong>SB:</strong> Stolen Bases - The number of times the player successfully stole a base.</li>
+      <li><strong>CS:</strong> Caught Stealing - The number of times the player was caught attempting to steal a base.</li>
+      <li><strong>BB:</strong> Base on Balls / Walks - The number of times the player was awarded first base after taking four balls outside the strike zone.</li>
+      <li><strong>SO:</strong> Strikeouts - The number of times the player struck out.</li>
+      <li><strong>IBB:</strong> Intentional Base on Balls - The number of times the player was intentionally walked by the opposing pitcher.</li>
+      <li><strong>HBP:</strong> Hit By Pitch - The number of times the player reached base after being hit by a pitch.</li>
+      <li><strong>SH:</strong> Sacrifice Hits / Sacrifice Bunts - The number of times the player successfully bunted the ball to advance a runner.</li>
+      <li><strong>SF:</strong> Sacrifice Flies - The number of fly balls that resulted in a run scoring (but the batter being out).</li>
+      <li><strong>GIDP:</strong> Grounded Into Double Play - The number of times the player grounded into a double play, resulting in two outs.</li>
+    </ul>
+    
+    <h3>wOBA</h3>
+    <ul>
+      <li><strong>wOBA (Weighted On-Base Average):</strong> An advanced baseball statistic that measures a player's overall offensive contributions more accurately than traditional metrics like batting average, on-base percentage (OBP), or slugging percentage (SLG).</li>
+      <li><strong>Purpose:</strong> Evaluates a hitter's overall offensive performance by combining the ability to reach base and the quality of hits.</li>
+      <li><strong>Weighted Events:</strong>
+        <ul>
+          <li>Walks and hit-by-pitches are valued less than singles.</li>
+          <li>Doubles, triples, and home runs receive progressively higher weights based on their run-producing value.</li>
+        </ul>
+      </li>
+      <li><strong>Scale:</strong> wOBA is scaled similarly to on-base percentage (OBP). A league-average wOBA is typically around <strong>0.320 to 0.340</strong>, depending on the era and league.</li>
     </ul>
   </div>
   <hr />
@@ -52,7 +103,10 @@
             The baseball card images were compiled by scraping the Baseball Almanac website (<a href="https://www.baseball-almanac.com/" target="_blank">https://www.baseball-almanac.com/</a>). Using this approach, we were able to obtain nearly 10,000 player images, which we use to complement the statistical data from the Lahman dataset. These images add a visual element that makes it easier to connect statistics to real players, enhancing the overall experience.
           </p>
           <p>
-            For the players that we were unable to find images for, we use a default placeholder image. This ensures that every player represented in our dataset has some form of imagery, even if specific photos are unavailable. The combination of comprehensive player data and visual elements provides a more engaging and informative experience for users exploring Major League Baseball history and statistics.
+            For the players that we were unable to find images for, we use a default placeholder image. This ensures that every player represented in our dataset has some form of imagery, even if specific photos are unavailable. The combination of comprehensive player data and visual elements provides a more engaging and informative experience for users exploring Major League Baseball history and statistics. 
+          </p>
+          <p>
+            Note: The majority of player iamges not found were from the early years of baseball. Of the over 21,000 players in our data, more than 10,000 of them were born before 1945.
           </p>
           <img src="http://localhost:8000/datasets/Card Images/FirstNameD/default.jpg" alt="Default Player Image" style="max-width: 200px;"/>
     <hr />

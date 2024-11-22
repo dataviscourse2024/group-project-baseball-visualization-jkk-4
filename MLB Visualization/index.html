@@ -21,8 +21,8 @@
   <div>
 
     <h1> 
-      <button onclick="window.location.href='context.html'">Context</button>
       <button onclick="window.location.href='comparison.html'">Player Comparison</button>
+      <button onclick="window.location.href='context.html'">Additional Context</button>
     </h1>
   </div>
   <hr />
@@ -30,10 +30,11 @@
     <span>
       <label>Select a Player:</label>
       <select id="players"></select>
-      <label>Pitching or Batting Stats</label>
+      <br><br>
+      <label>Batting or Pitching Stats:</label>
       <select id="player-type">
-        <option value="Pitching">Pitching</option>
         <option value="Batting">Batting</option>
+        <option value="Pitching">Pitching</option>
       </select>
 
     </span>
@@ -42,7 +43,7 @@
   <div>
 
     
-    <h2>Trading Cards</h2>
+    <h2>Core Statistics</h2>
     <p>Baseball collectors have long prized player trading cards based on rarity and quality. Cards of the game's best players could fetch millions of dollars, but how can we objectively judge players? On the backs of trading cards, you'd find critical stat information for a given player. This popularized counting stats like the ones shown in the table below. </p>
     <div class="container">
       <div class="player-image">
@@ -59,11 +60,12 @@
   <div>
     <h2>Rate Statistics</h2>
     <p>This evolved into rate statistics like Batting Average (BAA), On-Base Percentage (OBP), and Slugging (SLG) that attempted to quantify a batter's performance on a per opportunity basis.</p>
+    <p>--Visualizations in work--</p>
   </div>
   <hr />
   <div>
     <h2>Modern Statistics</h2>
-    <p>However, modern sabermetricians are focused on winning behaviors. Thus, we redefined our offensive production metrics not to evaluate hits or bases, but runs and wins. wOBA of a player uses linear weights to assign run values to each type of event when players attempt to reach via a hit.</p>
+    <p>However, modern sabermetricians are focused on winning behaviors. Thus, we redefined our offensive production metrics not to evaluate hits or bases, but runs and wins. wOBA (Weighted On-Base Average) of a player uses linear weights to assign run values to each type of event when players attempt to reach via a hit.</p>
     <div class="row chart container">
       <div class="chart">
         <div id="batting-div">

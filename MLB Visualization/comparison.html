@@ -9,25 +9,38 @@
   <script src="https://d3js.org/d3.v7.min.js"></script>
 </head>
 <body>
+  <div>
+    <img src="./datasets/mlb-logo.png" alt="MLB Logo" style="height:100px"> 
+    <h1>CS-5630 / CS-6630 MLB Visualizations</h1>
+    <address>
+      <span>Name: Jaden Lee, Kendall Ruth, Kacey Abbott </span>
+    </address>
+  </div>
+  <hr />
+  <div>
     <div>
       <h1>
         <button onclick="window.location.href='index.html'">Back to Main</button>
-        <button onclick="window.location.href='context.html'">Context</button>
+        <button onclick="window.location.href='context.html'">Additional Context</button>
       </h1>
     </div>
     <hr />
     <div class="container">
     <label>Select Player 1:</label>
       <select id="players1"></select>
+    </div>
+    <div class="container">
     <label>Select Player 2:</label>
       <select id="players2"></select>
+    </div>
+    <div class="container"> 
     <label>Pitching or Batting Stats Comparison</label>
       <select id="player-type">
         <option value="Pitching">Pitching</option>
         <option value="Batting">Batting</option>
       </select>
-
     </div>
+    <h2>--Visualizations in work--</h2>
 </body>
 <script type="module" src="./scripts/comparisonMain.js"></script>
 

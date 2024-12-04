@@ -1,17 +1,86 @@
 // Constants for the charts, that would be useful.
 const CHART_WIDTH = 1000;
 const CHART_HEIGHT = 400;
-const MARGIN = { left: 50, bottom: 20, top: 20, right: 20 };
+const MARGIN = { left: 50, bottom: 50, top: 20, right: 20 };
 const ANIMATION_DUATION = 1000;
+
+const SMALL_CHART_WIDTH = 300;
+const SMALL_CHART_HEIGHT = 300;
+
 
 /**
  * Set up the website with proper DOM elements.
  */
 export function setupWebsite() {
-    let battingChart = d3.select("#batting-div").append("svg").style("width", CHART_WIDTH).style("height", CHART_HEIGHT);
+  setupAveragesChart();
+
+  let resultsChart = d3.select("#results-div").append("svg").style("width", SMALL_CHART_WIDTH).style("height", SMALL_CHART_HEIGHT);
+  resultsChart.append("g").classed("results-chart", true);
+
+  let statsChart = d3.select("#stat-div").append("svg").style("width", SMALL_CHART_WIDTH).style("height", SMALL_CHART_HEIGHT);
+  statsChart.append("g").classed("stat-chart", true);
+  statsChart.append("g").classed("x-axis", true);
+  statsChart.append("g").classed("y-axis", true);
+
+    let battingChart = d3.select("#modern-div").append("svg").style("width", CHART_WIDTH).style("height", CHART_HEIGHT);
     battingChart.append("g").classed("batting-chart", true);
     battingChart.append("g").classed("x-axis", true);
     battingChart.append("g").classed("y-axis", true);
+}
+
+function setupAveragesChart() {
+  let averagesChart = d3.select("#averages-div").append("svg").style("width", SMALL_CHART_WIDTH).style("height", SMALL_CHART_HEIGHT);
+  averagesChart.append("g").classed("avg-line", true);
+  averagesChart.append("g").classed("obp-line", true);
+  averagesChart.append("g").classed("slg-line", true);
+  averagesChart.append("g").classed("x-axis", true);
+  averagesChart.append("g").classed("y-axis", true);
+
+  averagesChart.append("text")
+    .attr("x", SMALL_CHART_WIDTH / 2)
+    .attr("y", SMALL_CHART_HEIGHT - MARGIN.bottom / 4)
+    .attr("text-anchor", "middle")
+    .text("Year");
+  
+  averagesChart.append("text")
+    .attr("transform", "rotate(-90)")
+    .attr("x", -SMALL_CHART_HEIGHT / 2)
+    .attr("y", MARGIN.left / 3)
+    .attr("text-anchor", "start")
+    .text("Averages");
+
+  averagesChart.append("rect")
+    .attr("x", SMALL_CHART_WIDTH / 2 - 85)
+    .attr("y", MARGIN.top)
+    .attr("width", 50)
+    .attr("height", 10)
+    .style("fill", "blue")
+  averagesChart.append("text")
+    .attr("text-anchor", "middle")
+    .attr("transform", "translate(" + (SMALL_CHART_WIDTH / 2 - 60) + ", " + (3 * MARGIN.top / 4) + ")")
+    .text("BAA");
+  
+  averagesChart.append("rect")
+    .attr("x", SMALL_CHART_WIDTH / 2 - 25)
+    .attr("y", MARGIN.top)
+    .attr("width", 50)
+    .attr("height", 10)
+    .style("fill", "red")
+  averagesChart.append("text")
+    .attr("text-anchor", "middle")
+    .attr("transform", "translate(" + (SMALL_CHART_WIDTH / 2) + ", " + (3 * MARGIN.top / 4) + ")")
+    .text("OBP");
+
+  averagesChart.append("rect")
+    .attr("x", SMALL_CHART_WIDTH / 2 + 35)
+    .attr("y", MARGIN.top)
+    .attr("width", 50)
+    .attr("height", 10)
+    .style("fill", "green")
+  averagesChart.append("text")
+    .attr("text-anchor", "middle")
+    .attr("transform", "translate(" + (SMALL_CHART_WIDTH / 2 + 60) + ", " + (3 * MARGIN.top / 4) + ")")
+    .text("SLG");
 }
   
 /**
@@ -111,6 +180,9 @@ export function updateTable(data) {
  * @param playerName
  */
 export function updateWebsite(hitterData, wobaWeights) {
+  updateAveragesChart(hitterData);
+  updateResultsChart(hitterData);
+  updateStatsChart(hitterData);
   updateBattingChart(hitterData, wobaWeights);
   // Update the player image
   updatePlayerImage();
@@ -146,9 +218,9 @@ function updateBattingChart(hitterData, weights) {
   yAxis.scale(yScale);
 
   // Draw each of the axes to the chart.
-  let battingDiv = d3.select("#batting-div");
+  let battingDiv = d3.select("#modern-div");
   battingDiv.select(".x-axis")
-    .attr("transform", "translate(" + (MARGIN.left) + "," + (CHART_HEIGHT - MARGIN.top) + ")")
+    .attr("transform", "translate(" + (MARGIN.left) + "," + (CHART_HEIGHT - MARGIN.bottom) + ")")
     .call(xAxis);
   battingDiv.select(".y-axis")
     .attr("transform", "translate(" + (MARGIN.left) + "," + (MARGIN.top) + ")")
@@ -249,3 +321,64 @@ function updateBattingChart(hitterData, weights) {
     };
 }
 
+function updateAveragesChart(hitterData) {
+  let years = hitterData.map((season) => new Date(parseInt(season.yearID), 0));
+  let battingAvgs = hitterData.map((season) => season.H / season.AB || 0);
+  let onBaseAvgs = hitterData.map((season) => (season.H + season.BB + season.HBP) / (season.AB + season.BB + season.HBP + season.SF) || 0);
+  let sluggingAvgs = hitterData.map((season) => (season.H + season["2B"] + 2*season["3B"] + 3*season.HR) / season.AB || 0);
+
+  let xScale = d3.scaleTime()
+                  .domain([d3.min(years), d3.max(years)])
+                  .range([0, SMALL_CHART_WIDTH - MARGIN.left - MARGIN.right]);
+  let numTicks = d3.max(years).getFullYear() - d3.min(years).getFullYear() + 1;
+  let xAxis = d3.axisBottom()
+    .ticks(numTicks).tickFormat(d3.timeFormat('%y'));
+  xAxis.scale(xScale);
+
+  let yScale = d3.scaleLinear()
+                  .domain([0, 1])
+                  .range([SMALL_CHART_HEIGHT - MARGIN.top - MARGIN.bottom, 0])
+                  .nice();
+  let yAxis = d3.axisLeft();
+  yAxis.scale(yScale);
+
+  d3.select("#averages-div").select(".x-axis")
+    .attr("transform", "translate(" + (MARGIN.left) + "," + (SMALL_CHART_HEIGHT - MARGIN.bottom) + ")")
+    .call(xAxis);
+  d3.select("#averages-div").select(".y-axis")
+    .attr("transform", "translate(" + (MARGIN.left) + "," + (MARGIN.top) + ")")
+    .call(yAxis);
+  let lineGenerator = d3.line()
+    .x((d) => MARGIN.left + xScale(d.x))
+    .y((d) => SMALL_CHART_HEIGHT - MARGIN.bottom - yScale(0) + yScale(d.y));
+  let avgData = years.map((year, index) => {return {x: years[index], y: battingAvgs[index]}});
+  d3.select(".avg-line").selectAll("path")
+    .data([avgData])
+    .join("path")
+    .attr("d", lineGenerator)
+    .style("fill", "none")
+    .style("stroke", "blue")
+    .style("stroke-width", 4);
+  let obpData = years.map((year, index) => {return {x: years[index], y: onBaseAvgs[index]}});
+  d3.select(".obp-line").selectAll("path")
+    .data([obpData])
+    .join("path")
+    .attr("d", lineGenerator)
+    .style("fill", "none")
+    .style("stroke", "red")
+    .style("stroke-width", 4);
+  let slgData = years.map((year, index) => {return {x: years[index], y: sluggingAvgs[index]}});
+  d3.select(".slg-line").selectAll("path")
+    .data([slgData])
+    .join("path")
+    .attr("d", lineGenerator)
+    .style("fill", "none")
+    .style("stroke", "green")
+    .style("stroke-width", 4);
+}
+
+function updateResultsChart(hitterData) {
+}
+
+function updateStatsChart(hitterData) {
+}

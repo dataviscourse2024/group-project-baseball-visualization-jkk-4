@@ -73,80 +73,95 @@ export function updateChart(players, playerOne, playerTwo) {
       name2 = player.nameFirst + ' ' + player.nameLast;
     }
   });
+
   let selectedStat = d3.select('#statList').node().value;
   let playerOneVal = playerOne.map(d => d[selectedStat]);
-  let playerOneObject = []
+  let playerOneObject = [];
   playerOneVal.forEach((number, i) => {
-    let tempPlayer = {}
-    tempPlayer.number = number
-    tempPlayer.i = i + 1
-    playerOneObject.push(tempPlayer)
-  })
-  console.log(playerOneObject)
-  let playerOneLength = playerOneVal.length;
+    let tempPlayer = { number, i: i + 1 };
+    playerOneObject.push(tempPlayer);
+  });
+
   let playerTwoVal = playerTwo.map(d => d[selectedStat]);
-  let playerTwoObject = []
+  let playerTwoObject = [];
   playerTwoVal.forEach((number, i) => {
-    let tempPlayer = {}
-    tempPlayer.number = number
-    tempPlayer.i = i + 1
-    playerTwoObject.push(tempPlayer)
-  })
-  console.log(playerTwoObject)
-  let playerTwoLength = playerTwoVal.length;
-  let xScale = d3.scaleLinear()
-                 .domain([1, d3.max([playerOneLength, playerTwoLength])])
-                 .range([MARGIN.left, CHART_WIDTH - MARGIN.right]);
-  let xAxis = d3.axisBottom()
-                .ticks(d3.max([playerOneLength, playerTwoLength]) - 1);
-  xAxis.scale(xScale);
-  let yScale = d3.scaleLinear()
-                  .domain([0, d3.max(playerOneVal.concat(playerTwoVal))])
-                  .range([CHART_HEIGHT - MARGIN.bottom, MARGIN.top])
-                  .nice();
-  let yAxis = d3.axisLeft();
-  yAxis.scale(yScale);  
+    let tempPlayer = { number, i: i + 1 };
+    playerTwoObject.push(tempPlayer);
+  });
+
   let battingDiv = d3.select("#comparison");
+
+  // Scales
+  let xScale = d3.scaleLinear()
+                 .domain([1, d3.max([playerOneVal.length, playerTwoVal.length])])
+                 .range([MARGIN.left, CHART_WIDTH - MARGIN.right]);
+
+  let yScale = d3.scaleLinear()
+                 .domain([0, d3.max(playerOneVal.concat(playerTwoVal))])
+                 .range([CHART_HEIGHT - MARGIN.bottom, MARGIN.top])
+                 .nice();
+
+  // Area Generator
+  let areaGenerator = d3.area()
+                        .x(d => xScale(d.i))
+                        .y1(d => yScale(d.number))
+                        .y0(() => CHART_HEIGHT - MARGIN.bottom);
+
+  // Remove old paths and render new areas
+  battingDiv.select(".chart").selectAll("path").remove();
+
+  battingDiv.select(".chart")
+            .append("path")
+            .datum(playerOneObject)
+            .attr("class", "area")
+            .attr("fill", "skyblue")
+            .attr("fill-opacity", 0.25)
+            .attr("stroke", "skyblue")
+            .attr("stroke-width", 0.5)
+            .attr("d", areaGenerator);
+
+  if (JSON.stringify(playerOneVal) !== JSON.stringify(playerTwoVal)) {
+    battingDiv.select(".chart")
+              .append("path")
+              .datum(playerTwoObject)
+              .attr("class", "area")
+              .attr("fill", "red")
+              .attr("fill-opacity", 0.25)
+              .attr("stroke", "red")
+              .attr("stroke-width", 0.5)
+              .attr("d", areaGenerator);
+  }
+
+  // Axes
+  let xAxis = d3.axisBottom(xScale)
+                .ticks(playerOneVal.length - 1);
+
+  let yAxis = d3.axisLeft(yScale);
+
+  // Render X-Axis
   battingDiv.select(".x-axis")
-    .attr("transform", `translate(0, ${CHART_HEIGHT - MARGIN.bottom})`)
-    .call(xAxis);
+            .attr("transform", `translate(0, ${CHART_HEIGHT - MARGIN.bottom})`)
+            .call(xAxis);
+
+  // Render Y-Axis
   battingDiv.select(".y-axis")
-    .attr("transform", `translate(${MARGIN.left}, 0)`)
-    .call(yAxis);
+            .attr("transform", `translate(${MARGIN.left}, 0)`)
+            .call(yAxis);
+
+  // Axis Labels
   battingDiv.select("text.x-axis-label").remove();
   battingDiv.append("text")
-            .attr("transform" , `translate(${CHART_WIDTH / 2}, ${CHART_HEIGHT - MARGIN.bottom + 40})`)
+            .attr("transform", `translate(${CHART_WIDTH / 2}, ${CHART_HEIGHT - MARGIN.bottom + 40})`)
             .attr("class", "x-axis-label")
             .style("text-anchor", "middle")
             .text("Year Number");
-  battingDiv.select("text.y-axis-label").remove(); // Remove any old label
+
+  battingDiv.select("text.y-axis-label").remove();
   battingDiv.append("text")
             .attr("class", "y-axis-label")
             .attr("transform", "rotate(-90)")
             .attr("x", -(CHART_HEIGHT / 2))
-            .attr("y", MARGIN.left-40)
+            .attr("y", MARGIN.left - 40)
             .style("text-anchor", "middle")
             .text("Statistic Value");
-  let lineGenerator = d3.line()
-                            .x(d => xScale(d.i))
-                            .y(d => yScale(d.number));
-  battingDiv.select(".chart").selectAll("path").remove();
-  battingDiv.select(".chart")
-            .append("path")
-            .datum(playerOneObject)
-            .attr("class", "line")
-            .attr("fill", "none")
-            .attr("stroke", "skyblue")
-            .attr("stroke-width", 1)
-            .attr("d", lineGenerator);
-  if (JSON.stringify(playerOneVal) != JSON.stringify(playerTwoVal)) {
-    battingDiv.select(".chart")
-              .append("path")
-              .datum(playerTwoObject)
-              .attr("class", "line")
-              .attr("fill", "none")
-              .attr("stroke", "red")
-              .attr("stroke-width", 1)
-              .attr("d", lineGenerator);
-  }
 }

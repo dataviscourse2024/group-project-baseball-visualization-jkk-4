@@ -13,9 +13,7 @@ const SMALL_CHART_HEIGHT = 300;
  */
 export function setupWebsite() {
   setupAveragesChart();
-
-  let resultsChart = d3.select("#results-div").append("svg").style("width", SMALL_CHART_WIDTH).style("height", SMALL_CHART_HEIGHT);
-  resultsChart.append("g").classed("results-chart", true);
+  setupResultsChart();
 
   let statsChart = d3.select("#stat-div").append("svg").style("width", SMALL_CHART_WIDTH).style("height", SMALL_CHART_HEIGHT);
   statsChart.append("g").classed("stat-chart", true);
@@ -83,6 +81,10 @@ function setupAveragesChart() {
     .text("SLG");
 }
   
+function setupResultsChart() {
+  let resultsChart = d3.select("#results-div").append("svg").style("width", SMALL_CHART_WIDTH).style("height", SMALL_CHART_HEIGHT);
+}
+
 /**
  * Updates the players select box with all players.
  * @param {object[]} players player Info
@@ -181,7 +183,7 @@ export function updateTable(data) {
  */
 export function updateWebsite(hitterData, wobaWeights) {
   updateAveragesChart(hitterData);
-  updateResultsChart(hitterData);
+  updateResultsChart(hitterData[0]);
   updateStatsChart(hitterData);
   updateBattingChart(hitterData, wobaWeights);
   // Update the player image
@@ -196,12 +198,12 @@ export function updateWebsite(hitterData, wobaWeights) {
 function updateBattingChart(hitterData, weights) {
   let years = hitterData.map((season) => `'${season.yearID.toString().substring(2)}`);
   let totals = hitterData.map((season) => season.AB + season.BB - season.IBB + season.SF + season.HBP);
-  let homerunRate = hitterData.map((season, i) => season.HR / totals[i]);
-  let tripleRate = hitterData.map((season, i) => (season["3B"] + season.HR) / totals[i]);
-  let doubleRate = hitterData.map((season, i) => (season["2B"] + season["3B"] + season.HR) / totals[i]);
-  let singleRate = hitterData.map((season, i) => (season.H) / totals[i]);
-  let hbpRate = hitterData.map((season, i) => (season.HBP + season.H) / totals[i]);
-  let walkRate = hitterData.map((season, i) => (season.BB - season.IBB + season.HBP + season.H) / totals[i]);
+  let homerunRate = hitterData.map((season, i) => season.HR / totals[i] || 0);
+  let tripleRate = hitterData.map((season, i) => (season["3B"] + season.HR) / totals[i] || 0);
+  let doubleRate = hitterData.map((season, i) => (season["2B"] + season["3B"] + season.HR) / totals[i] || 0);
+  let singleRate = hitterData.map((season, i) => (season.H) / totals[i] || 0);
+  let hbpRate = hitterData.map((season, i) => (season.HBP + season.H) / totals[i] || 0);
+  let walkRate = hitterData.map((season, i) => (season.BB - season.IBB + season.HBP + season.H) / totals[i] || 0);
 
   // Construct the scales and axes.
   let xScale = d3.scaleBand()
@@ -377,7 +379,51 @@ function updateAveragesChart(hitterData) {
     .style("stroke-width", 4);
 }
 
-function updateResultsChart(hitterData) {
+function updateResultsChart(seasonData) {
+
+  let data;
+  if (seasonData.AB + seasonData.BB + seasonData.HBP + seasonData.SF > 0) {
+    data = [{stat: "GIDPs", amount: seasonData.GIDP},
+      {stat: "Ks", amount: seasonData.SO},
+      {stat: "BB Outs", amount: seasonData.AB - seasonData.H - seasonData.SO - seasonData.GIDP},
+      {stat: "Sacrifices", amount: seasonData.SF + seasonData.SH},
+      {stat: "HBPs", amount: seasonData.HBP},
+      {stat: "Walks", amount: seasonData.BB},
+      {stat: "Singles", amount: seasonData.H - seasonData["2B"] - seasonData["3B"] - seasonData.HR}, 
+      {stat: "Doubles", amount: seasonData["2B"]}, 
+      {stat: "Triples", amount: seasonData["3B"]}, 
+      {stat: "Homers", amount: seasonData.HR}];
+    }
+    else {
+      data = [{stat: "No Batting Data this season", amount: 1}];
+    }
+
+  let svg = d3.select("#results-div").select("svg")
+      .append("g")
+      .attr("transform", "translate(" + SMALL_CHART_WIDTH / 2 + "," + SMALL_CHART_HEIGHT / 2 + ")");
+
+  let color = d3.scaleOrdinal(d3.schemeRdBu[10]);
+
+  let pie = d3.pie();
+  pie.value(function (d) {
+      return d.amount;
+  });
+  let pieData = pie(data);
+  let arc = d3.arc();
+  arc.outerRadius(125);
+  arc.innerRadius(0);
+
+  let groups = svg.selectAll("g").data(pieData)
+      .join("g");
+  groups.append("path")
+      .attr("d", arc)
+      .style("fill", d => color(d.data.stat));
+  groups.append("text")
+      .text(d => d.data.stat)
+      .attr("transform", d => "translate(" + arc.centroid(d) + ")")
+      .attr("dy", ".35em")
+      .style("text-anchor", "middle")
+      .style("font-size", "10px");
 }
 
 function updateStatsChart(hitterData) {

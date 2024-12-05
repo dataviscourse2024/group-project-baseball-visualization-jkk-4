@@ -107,10 +107,11 @@ function setupStatsChart() {
  * Sets up the SVG for the modern chart having the WOBA or FIP towers.
  */
 function setupModernChart() {
-  let battingChart = d3.select("#modern-div").append("svg").style("width", CHART_WIDTH).style("height", CHART_HEIGHT);
-  battingChart.append("g").classed("batting-chart", true);
-  battingChart.append("g").classed("x-axis", true);
-  battingChart.append("g").classed("y-axis", true);
+  let modernChart = d3.select("#modern-div").append("svg").style("width", CHART_WIDTH).style("height", CHART_HEIGHT);
+  modernChart.append("g").classed("modern-chart", true);
+  modernChart.append("g").classed("x-axis", true);
+  modernChart.append("g").classed("y-axis", true);
+  modernChart.append("g").classed("detail-view", true);
 }
 
 /**
@@ -214,7 +215,7 @@ export function updateWebsite(hitterData, wobaWeights) {
   updateAveragesChart(hitterData, year, "Homers");
   updateResultsChart(hitterData, year, "Homers");
   updateStatsChart(hitterData, year, "Homers");
-  updateBattingChart(hitterData, wobaWeights);
+  updateModernChart(hitterData, wobaWeights);
   // Update the player image
   updatePlayerImage();
 }
@@ -420,7 +421,6 @@ function updateResultsChart(hitterData, selectedYear, selectedStat) {
   let arc = d3.arc();
   arc.outerRadius(125);
   arc.innerRadius(0);
-  console.log(pieData);
 
   svg.select(".slice-paths").selectAll("path")
     .data(pieData)
@@ -525,14 +525,20 @@ function updateStatsChart(hitterData, selectedYear, selectedStat) {
  * @param {object} hitterData JSON object with season by season batting data
  * @param {object} weights wOBA weights
  */
-function updateBattingChart(hitterData, weights) {
+function updateModernChart(hitterData, weights) {
   let years = hitterData.map((season) => `'${season.yearID.toString().substring(2)}`);
   let totals = hitterData.map((season) => season.AB + season.BB - season.IBB + season.SF + season.HBP);
+  let homers = hitterData.map((season) => season.HR);
   let homerunRate = hitterData.map((season, i) => season.HR / totals[i] || 0);
+  let triples = hitterData.map((season) => season["3B"]);  
   let tripleRate = hitterData.map((season, i) => (season["3B"] + season.HR) / totals[i] || 0);
+  let doubles = hitterData.map((season) => season["2B"]);
   let doubleRate = hitterData.map((season, i) => (season["2B"] + season["3B"] + season.HR) / totals[i] || 0);
+  let singles = hitterData.map((season) => season.H - season["2B"] - season["3B"] - season.HR);
   let singleRate = hitterData.map((season, i) => (season.H) / totals[i] || 0);
+  let hbps = hitterData.map((season) => season.HBP);
   let hbpRate = hitterData.map((season, i) => (season.HBP + season.H) / totals[i] || 0);
+  let walks = hitterData.map((season) => season.BB - season.IBB);
   let walkRate = hitterData.map((season, i) => (season.BB - season.IBB + season.HBP + season.H) / totals[i] || 0);
 
   // Construct the scales and axes.
@@ -550,66 +556,72 @@ function updateBattingChart(hitterData, weights) {
   yAxis.scale(yScale);
 
   // Draw each of the axes to the chart.
-  let battingDiv = d3.select("#modern-div");
-  battingDiv.select(".x-axis")
+  let modernDiv = d3.select("#modern-div");
+  modernDiv.select(".x-axis")
     .attr("transform", "translate(" + (MARGIN.left) + "," + (CHART_HEIGHT - MARGIN.bottom) + ")")
     .call(xAxis);
-  battingDiv.select(".y-axis")
+  modernDiv.select(".y-axis")
     .attr("transform", "translate(" + (MARGIN.left) + "," + (MARGIN.top) + ")")
     .call(yAxis);
 
   // Draw the rectangles for t
-  let walksRect = battingDiv.select(".batting-chart").selectAll(".walk")
-    .data(years.map((d, i) => {return {x: years[i], y: walkRate[i]}}))
+  let walksRect = modernDiv.select(".modern-chart").selectAll(".walk")
+    .data(years.map((d, i) => {return {x: years[i], y: walkRate[i], amount: walks[i], weight: weights["uBB"]}}))
     .join("rect")
-      .classed("walk", true)
-      .attr("x", (d) => MARGIN.left + xScale(d.x) + xScale.bandwidth() * (1 - weights["uBB"] / weights.hr) / 2)
-      .attr("y", (d) => CHART_HEIGHT - MARGIN.bottom - yScale(0) + yScale(d.y))
-      .attr("width", xScale.bandwidth() * weights["uBB"] / weights.hr)
-      .attr("height", (d) => yScale(0) - yScale(d.y));
+    .classed("walk", true)
+    .attr("x", (d) => MARGIN.left + xScale(d.x) + xScale.bandwidth() * (1 - weights["uBB"] / weights.hr) / 2)
+    .attr("y", (d) => CHART_HEIGHT - MARGIN.bottom - yScale(0) + yScale(d.y))
+    .attr("width", xScale.bandwidth() * weights["uBB"] / weights.hr)
+    .attr("height", (d) => yScale(0) - yScale(d.y))
+    .html((d) => `<title>${d.amount} Unintentional Walks x ${d.weight} Runs Created Each = ${(d.amount * d.weight).toFixed(2)} Runs</title>`);
 
-  let hbpRect = battingDiv.select(".batting-chart").selectAll(".hit-by-pitch")
-    .data(years.map((d, i) => {return {x: years[i], y: hbpRate[i]}}))
+  let hbpRect = modernDiv.select(".modern-chart").selectAll(".hit-by-pitch")
+    .data(years.map((d, i) => {return {x: years[i], y: hbpRate[i], amount: hbps[i], weight: weights["hbp"]}}))
     .join("rect")
-      .classed("hit-by-pitch", true)
-      .attr("x", (d) => MARGIN.left + xScale(d.x) + xScale.bandwidth() * (1 - weights["hbp"] / weights.hr) / 2)
-      .attr("y", (d) => CHART_HEIGHT - MARGIN.bottom - yScale(0) + yScale(d.y))
-      .attr("width", xScale.bandwidth() * weights["hbp"] / weights.hr)
-      .attr("height", (d) => yScale(0) - yScale(d.y));
+    .classed("hit-by-pitch", true)
+    .attr("x", (d) => MARGIN.left + xScale(d.x) + xScale.bandwidth() * (1 - weights["hbp"] / weights.hr) / 2)
+    .attr("y", (d) => CHART_HEIGHT - MARGIN.bottom - yScale(0) + yScale(d.y))
+    .attr("width", xScale.bandwidth() * weights["hbp"] / weights.hr)
+    .attr("height", (d) => yScale(0) - yScale(d.y))
+    .html((d) => `<title>${d.amount} Hit By Pitches x ${d.weight} Runs Created Each = ${(d.amount * d.weight).toFixed(2)} Runs</title>`);
 
-  let singlesRect = battingDiv.select(".batting-chart").selectAll(".single")
-    .data(years.map((d, i) => {return {x: years[i], y: singleRate[i]}}))
+  let singlesRect = modernDiv.select(".modern-chart").selectAll(".single")
+    .data(years.map((d, i) => {return {x: years[i], y: singleRate[i], amount: singles[i], weight: weights["1b"]}}))
     .join("rect")
-      .classed("single", true)
-      .attr("x", (d) => MARGIN.left + xScale(d.x) + xScale.bandwidth() * (1 - weights["1b"] / weights.hr) / 2)
-      .attr("y", (d) => CHART_HEIGHT - MARGIN.bottom - yScale(0) + yScale(d.y))
-      .attr("width", xScale.bandwidth() * weights["1b"] / weights.hr)
-      .attr("height", (d) => yScale(0) - yScale(d.y));
+    .classed("single", true)
+    .attr("x", (d) => MARGIN.left + xScale(d.x) + xScale.bandwidth() * (1 - weights["1b"] / weights.hr) / 2)
+    .attr("y", (d) => CHART_HEIGHT - MARGIN.bottom - yScale(0) + yScale(d.y))
+    .attr("width", xScale.bandwidth() * weights["1b"] / weights.hr)
+    .attr("height", (d) => yScale(0) - yScale(d.y))
+    .html((d) => `<title>${d.amount} Singles x ${d.weight} Runs Created Each = ${(d.amount * d.weight).toFixed(2)} Runs</title>`);
 
-  let doublesRect = battingDiv.select(".batting-chart").selectAll(".double")
-    .data(years.map((d, i) => {return {x: years[i], y: doubleRate[i]}}))
+  let doublesRect = modernDiv.select(".modern-chart").selectAll(".double")
+    .data(years.map((d, i) => {return {x: years[i], y: doubleRate[i], amount: doubles[i], weight: weights["2b"]}}))
     .join("rect")
-      .classed("double", true)
-      .attr("x", (d) => MARGIN.left + xScale(d.x) + xScale.bandwidth() * (1 - weights["2b"] / weights.hr) / 2)
-      .attr("y", (d) => CHART_HEIGHT - MARGIN.bottom - yScale(0) + yScale(d.y))
-      .attr("width", xScale.bandwidth() * weights["2b"] / weights.hr)
-      .attr("height", (d) => yScale(0) - yScale(d.y));
+    .classed("double", true)
+    .attr("x", (d) => MARGIN.left + xScale(d.x) + xScale.bandwidth() * (1 - weights["2b"] / weights.hr) / 2)
+    .attr("y", (d) => CHART_HEIGHT - MARGIN.bottom - yScale(0) + yScale(d.y))
+    .attr("width", xScale.bandwidth() * weights["2b"] / weights.hr)
+    .attr("height", (d) => yScale(0) - yScale(d.y))
+    .html((d) => `<title>${d.amount} Doubles x ${d.weight} Runs Created Each = ${(d.amount * d.weight).toFixed(2)} Runs</title>`);
 
-  let triplesRect = battingDiv.select(".batting-chart").selectAll(".triple")
-    .data(years.map((d, i) => {return {x: years[i], y: tripleRate[i]}}))
+  let triplesRect = modernDiv.select(".modern-chart").selectAll(".triple")
+    .data(years.map((d, i) => {return {x: years[i], y: tripleRate[i], amount: triples[i], weight: weights["3b"]}}))
     .join("rect")
-      .classed("triple", true)
-      .attr("x", (d) => MARGIN.left + xScale(d.x) + xScale.bandwidth() * (1 - weights["3b"] / weights.hr) / 2)
-      .attr("y", (d) => CHART_HEIGHT - MARGIN.bottom - yScale(0) + yScale(d.y))
-      .attr("width", xScale.bandwidth() * weights["3b"] / weights.hr)
-      .attr("height", (d) => yScale(0) - yScale(d.y));
+    .classed("triple", true)
+    .attr("x", (d) => MARGIN.left + xScale(d.x) + xScale.bandwidth() * (1 - weights["3b"] / weights.hr) / 2)
+    .attr("y", (d) => CHART_HEIGHT - MARGIN.bottom - yScale(0) + yScale(d.y))
+    .attr("width", xScale.bandwidth() * weights["3b"] / weights.hr)
+    .attr("height", (d) => yScale(0) - yScale(d.y))
+    .html((d) => `<title>${d.amount} Triples x ${d.weight} Runs Created Each = ${(d.amount * d.weight).toFixed(2)} Runs</title>`);
 
-  let homeRunRect = battingDiv.select(".batting-chart").selectAll(".home-run")
-    .data(years.map((d, i) => {return {x: years[i], y: homerunRate[i]}}))
+  let homeRunRect = modernDiv.select(".modern-chart").selectAll(".home-run")
+    .data(years.map((d, i) => {return {x: years[i], y: homerunRate[i], amount: homers[i], weight: weights["hr"]}}))
     .join("rect")
-      .classed("home-run", true)
-      .attr("x", (d) => MARGIN.left + xScale(d.x))
-      .attr("y", (d) => CHART_HEIGHT - MARGIN.bottom - yScale(0) + yScale(d.y))
-      .attr("width", xScale.bandwidth())
-      .attr("height", (d) => yScale(0) - yScale(d.y));
+    .classed("home-run", true)
+    .attr("x", (d) => MARGIN.left + xScale(d.x))
+    .attr("y", (d) => CHART_HEIGHT - MARGIN.bottom - yScale(0) + yScale(d.y))
+    .attr("width", xScale.bandwidth())
+    .attr("height", (d) => yScale(0) - yScale(d.y))
+    .html((d) => `<title>${d.amount} Home Runs x ${d.weight} Runs Created Each = ${(d.amount * d.weight).toFixed(2)} Runs</title>`);
 }

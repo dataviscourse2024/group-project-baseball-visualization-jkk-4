@@ -61,35 +61,6 @@ text {
     fill: black;
 }
 
-/* style of batting chart */
-.walk {
-    fill: rgb(116, 211, 79);
-}
-
-.hit-by-pitch {
-    fill: rgb(79, 211, 182);
-}
-
-.single {
-    fill: rgb(79, 154, 211);
-}
-
-.double {
-    fill: rgb(79, 105, 211);
-}
-
-.triple {
-    fill: rgb(118, 79, 211);
-}
-
-.home-run {
-    fill: rgb(191, 79, 211);
-}
-
-.total {
-    fill: rgb(174, 174, 174);
-}
-
 .hover-cursor {
     cursor: pointer;
 }

@@ -112,6 +112,51 @@ function setupModernChart() {
   modernChart.append("g").classed("x-axis", true);
   modernChart.append("g").classed("y-axis", true);
   modernChart.append("g").classed("detail-view", true);
+  modernChart.append("g").classed("x-label", true)
+    .append("text")
+    .attr("x", CHART_WIDTH / 2)
+    .attr("y", CHART_HEIGHT - MARGIN.bottom / 4)
+    .attr("text-anchor", "middle")
+    .text("Year");
+  modernChart.append("g").classed("y-label", true)
+    .append("text")
+    .attr("transform", "rotate(-90)")
+    .attr("x", -CHART_HEIGHT / 2)
+    .attr("y", MARGIN.left / 4)
+    .attr("text-anchor", "middle")
+    .text("Percentage of Plate Appearances");
+  modernChart.append("g").classed("title", true)
+    .append("text")
+    .attr("x", CHART_WIDTH / 2)
+    .attr("y", MARGIN.top)
+    .attr("text-anchor", "middle")
+    .style("font-size", 18)
+    .text("Runs Created");
+
+  let colorScale = d3.scaleOrdinal(d3.schemeYlOrBr[9]);
+  let colors = [];
+  for (let i = 0; i < 9; i++) {
+    let c = colorScale(i);
+    if (i >= 3)
+      colors.push(c);
+  }
+  let legendData = ["Walks", "Hit By Pitches", "Singles", "Doubles", "Triples", "Home Runs"];
+  let legend = modernChart.append("g").classed("legend", true);
+  legend.selectAll("rect")
+    .data(legendData)
+    .join("rect")
+    .attr("x", (d, i) => MARGIN.left + 20 + i * 150)
+    .attr("y", MARGIN.top + 20)
+    .attr("width", 20)
+    .attr("height", 20)
+    .style("fill", (d, i) => colors[i]);
+  legend.selectAll("text")
+    .data(legendData)
+    .join("text")
+    .attr("x", (d, i) => MARGIN.left + 50 + i * 150)
+    .attr("y", MARGIN.top + 35)
+    .attr("text-anchor", "start")
+    .text((d) => d);
 }
 
 /**
@@ -549,11 +594,19 @@ function updateModernChart(hitterData, weights) {
   let xAxis = d3.axisBottom();
   xAxis.scale(xScale);
   let yScale = d3.scaleLinear()
-                  .domain([0, d3.max(walkRate)])
+                  .domain([0, 0.6])
                   .range([CHART_HEIGHT - MARGIN.top - MARGIN.bottom, 0])
                   .nice();
   let yAxis = d3.axisLeft();
   yAxis.scale(yScale);
+
+  let colorScale = d3.scaleOrdinal(d3.schemeYlOrBr[9]);
+  let colors = [];
+  for (let i = 0; i < 9; i++) {
+    let c = colorScale(i);
+    if (i >= 3)
+      colors.push(c);
+  }
 
   // Draw each of the axes to the chart.
   let modernDiv = d3.select("#modern-div");
@@ -569,6 +622,7 @@ function updateModernChart(hitterData, weights) {
     .data(years.map((d, i) => {return {x: years[i], y: walkRate[i], amount: walks[i], weight: weights["uBB"]}}))
     .join("rect")
     .classed("walk", true)
+    .style("fill", colors[0])
     .attr("x", (d) => MARGIN.left + xScale(d.x) + xScale.bandwidth() * (1 - weights["uBB"] / weights.hr) / 2)
     .attr("y", (d) => CHART_HEIGHT - MARGIN.bottom - yScale(0) + yScale(d.y))
     .attr("width", xScale.bandwidth() * weights["uBB"] / weights.hr)
@@ -579,6 +633,7 @@ function updateModernChart(hitterData, weights) {
     .data(years.map((d, i) => {return {x: years[i], y: hbpRate[i], amount: hbps[i], weight: weights["hbp"]}}))
     .join("rect")
     .classed("hit-by-pitch", true)
+    .style("fill", colors[1])
     .attr("x", (d) => MARGIN.left + xScale(d.x) + xScale.bandwidth() * (1 - weights["hbp"] / weights.hr) / 2)
     .attr("y", (d) => CHART_HEIGHT - MARGIN.bottom - yScale(0) + yScale(d.y))
     .attr("width", xScale.bandwidth() * weights["hbp"] / weights.hr)
@@ -589,6 +644,7 @@ function updateModernChart(hitterData, weights) {
     .data(years.map((d, i) => {return {x: years[i], y: singleRate[i], amount: singles[i], weight: weights["1b"]}}))
     .join("rect")
     .classed("single", true)
+    .style("fill", colors[2])
     .attr("x", (d) => MARGIN.left + xScale(d.x) + xScale.bandwidth() * (1 - weights["1b"] / weights.hr) / 2)
     .attr("y", (d) => CHART_HEIGHT - MARGIN.bottom - yScale(0) + yScale(d.y))
     .attr("width", xScale.bandwidth() * weights["1b"] / weights.hr)
@@ -599,6 +655,7 @@ function updateModernChart(hitterData, weights) {
     .data(years.map((d, i) => {return {x: years[i], y: doubleRate[i], amount: doubles[i], weight: weights["2b"]}}))
     .join("rect")
     .classed("double", true)
+    .style("fill", colors[3])
     .attr("x", (d) => MARGIN.left + xScale(d.x) + xScale.bandwidth() * (1 - weights["2b"] / weights.hr) / 2)
     .attr("y", (d) => CHART_HEIGHT - MARGIN.bottom - yScale(0) + yScale(d.y))
     .attr("width", xScale.bandwidth() * weights["2b"] / weights.hr)
@@ -609,6 +666,7 @@ function updateModernChart(hitterData, weights) {
     .data(years.map((d, i) => {return {x: years[i], y: tripleRate[i], amount: triples[i], weight: weights["3b"]}}))
     .join("rect")
     .classed("triple", true)
+    .style("fill", colors[4])
     .attr("x", (d) => MARGIN.left + xScale(d.x) + xScale.bandwidth() * (1 - weights["3b"] / weights.hr) / 2)
     .attr("y", (d) => CHART_HEIGHT - MARGIN.bottom - yScale(0) + yScale(d.y))
     .attr("width", xScale.bandwidth() * weights["3b"] / weights.hr)
@@ -619,6 +677,7 @@ function updateModernChart(hitterData, weights) {
     .data(years.map((d, i) => {return {x: years[i], y: homerunRate[i], amount: homers[i], weight: weights["hr"]}}))
     .join("rect")
     .classed("home-run", true)
+    .style("fill", colors[5])
     .attr("x", (d) => MARGIN.left + xScale(d.x))
     .attr("y", (d) => CHART_HEIGHT - MARGIN.bottom - yScale(0) + yScale(d.y))
     .attr("width", xScale.bandwidth())

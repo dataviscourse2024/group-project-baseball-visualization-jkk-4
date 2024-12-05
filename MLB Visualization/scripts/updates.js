@@ -44,32 +44,6 @@ export function setupTable() {
               .append('th')
               .text(function (header) { return header; })
 } 
-
-/* Consulted ChatGpt on setting up this function */
-// export function updateTable(data) {
-//   d3.select("#Table-div").select("thead").remove();
-//   d3.select("#Table-div").select("tbody").remove();
-//   let tableHeaders = d3.select('#Table-div')
-//   tableHeaders.append("thead")
-//               .append("tr")
-//               .selectAll('th')
-//               .data(Object.keys(data[0]))
-//               .enter()
-//               .append('th')
-//               .text(d => d);
-//   let tableBody = tableHeaders.append('tbody')
-//                               .selectAll('tr')  
-//                               .data(data)
-//                               .enter()
-//                               .append('tr')  ; 
-//   tableBody.selectAll("td")
-//            .data(d => Object.values(d))
-//            .enter()
-//            .append("td") 
-//            .text(d => d);
-
-// }
-
 export function updateTable(data) {
   d3.select("#Table-div").select("tbody").remove();
   d3.select("#Table-div").select("thead").remove();

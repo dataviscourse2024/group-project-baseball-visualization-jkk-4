@@ -7,7 +7,14 @@ export function setupWebsite() {
   let comparisonChart = d3.select("#comparison").append("svg").style("width", CHART_WIDTH).style("height", CHART_HEIGHT);
   comparisonChart.append("g").classed("x-axis", true);
   comparisonChart.append("g").classed("y-axis", true);
+  comparisonChart.append("text")
+                 .attr("transform", `translate(${CHART_WIDTH / 2}, ${CHART_HEIGHT - MARGIN.bottom + 40})`)
+                 .attr("class", "x-axis-label")
+                 .style("text-anchor", "middle")
+                 .text("Season Number");
+  comparisonChart.append("text").classed("y-axis-label", true);
   comparisonChart.append("g").classed("chart", true);
+  comparisonChart.append("g").classed("legend", true). attr("transform", `translate(${CHART_WIDTH - 140}, 20)`);
 }
 export function updatePlayerSelect(players) {
     let playerSelect = d3.select('#players1');
@@ -73,31 +80,41 @@ export function updateChart(players, playerOne, playerTwo) {
       name2 = player.nameFirst + ' ' + player.nameLast;
     }
   });
-
   let selectedStat = d3.select('#statList').node().value;
-  let playerOneVal = playerOne.map(d => d[selectedStat]);
+  let playerOneVal = playerOne.map(d => { return {selectedStatVal: d[selectedStat], year: d.yearID}});
+  let tempVal = d3.rollup(playerOneVal,
+    (group) => d3.sum(group, d => d.selectedStatVal),
+    d => d.year
+  );
   let playerOneObject = [];
-  playerOneVal.forEach((number, i) => {
-    let tempPlayer = { number, i: i + 1 };
+  let i = 1
+  tempVal.forEach((number) => {
+    let tempPlayer = { number, i: i};
     playerOneObject.push(tempPlayer);
+    i += 1
   });
-
-  let playerTwoVal = playerTwo.map(d => d[selectedStat]);
+  let playerTwoVal = playerTwo.map(d => { return {selectedStatVal: d[selectedStat], year: d.yearID}});
+  tempVal = d3.rollup(playerTwoVal,
+    (group) => d3.sum(group, d => d.selectedStatVal),
+    d => d.year
+  );
   let playerTwoObject = [];
-  playerTwoVal.forEach((number, i) => {
-    let tempPlayer = { number, i: i + 1 };
+  i = 1
+  tempVal.forEach((number) => {
+    let tempPlayer = { number, i: i};
     playerTwoObject.push(tempPlayer);
+    i += 1
   });
-
   let battingDiv = d3.select("#comparison");
-
+  let playerOneNumber = playerOneObject.map(d => d.number)
+  let playerTwoNumber = playerTwoObject.map(d => d.number)
   // Scales
   let xScale = d3.scaleLinear()
-                 .domain([1, d3.max([playerOneVal.length, playerTwoVal.length])])
+                 .domain([1, d3.max([playerOneObject.length, playerTwoObject.length])])
                  .range([MARGIN.left, CHART_WIDTH - MARGIN.right]);
 
   let yScale = d3.scaleLinear()
-                 .domain([0, d3.max(playerOneVal.concat(playerTwoVal))])
+                 .domain([0, d3.max(playerOneNumber.concat(playerTwoNumber))])
                  .range([CHART_HEIGHT - MARGIN.bottom, MARGIN.top])
                  .nice();
 
@@ -120,7 +137,7 @@ export function updateChart(players, playerOne, playerTwo) {
             .attr("stroke-width", 0.5)
             .attr("d", areaGenerator);
 
-  if (JSON.stringify(playerOneVal) !== JSON.stringify(playerTwoVal)) {
+  if (JSON.stringify(playerOneVal) != JSON.stringify(playerTwoVal)) {
     battingDiv.select(".chart")
               .append("path")
               .datum(playerTwoObject)
@@ -134,7 +151,7 @@ export function updateChart(players, playerOne, playerTwo) {
 
   // Axes
   let xAxis = d3.axisBottom(xScale)
-                .ticks(playerOneVal.length - 1);
+                .ticks(d3.max([playerOneObject.length, playerTwoObject.length])- 1);
 
   let yAxis = d3.axisLeft(yScale);
 
@@ -148,20 +165,40 @@ export function updateChart(players, playerOne, playerTwo) {
             .attr("transform", `translate(${MARGIN.left}, 0)`)
             .call(yAxis);
 
-  // Axis Labels
-  battingDiv.select("text.x-axis-label").remove();
-  battingDiv.append("text")
-            .attr("transform", `translate(${CHART_WIDTH / 2}, ${CHART_HEIGHT - MARGIN.bottom + 40})`)
-            .attr("class", "x-axis-label")
-            .style("text-anchor", "middle")
-            .text("Year Number");
+  // Y Axis label
 
-  battingDiv.select("text.y-axis-label").remove();
-  battingDiv.append("text")
-            .attr("class", "y-axis-label")
+  battingDiv.select(".y-axis-label").selectAll("*").remove();
+  battingDiv.select(".y-axis-label")
             .attr("transform", "rotate(-90)")
             .attr("x", -(CHART_HEIGHT / 2))
             .attr("y", MARGIN.left - 40)
             .style("text-anchor", "middle")
-            .text("Statistic Value");
+            .text(d => `Number of ${selectedStat}'s for each player`);
+  let legend = battingDiv.select(".legend");
+  legend.selectAll("*").remove();
+  legend.append("rect")
+        .attr("x", 0)
+        .attr("y", 0)
+        .attr("width", 15)
+        .attr("height", 15)
+        .attr("fill", "skyblue")
+  legend.append("text")
+        .attr("x", 20)
+        .attr("y", 12)
+        .style("font-size", "12px")
+        .text(name1);
+  if (JSON.stringify(playerOneVal) != JSON.stringify(playerTwoVal)) {
+    legend.append("rect")
+          .attr("x", 0)
+          .attr("y", 20)
+          .attr("width", 15)
+          .attr("height", 15)
+          .attr("fill", "red")
+    legend.append("text")
+          .attr("x", 20)
+          .attr("y", 32)
+          .style("font-size", "12px")
+          .text(name2);
+  }
 }
+

@@ -6,7 +6,6 @@ const ANIMATION_DUATION = 1000;
 
 const SMALL_CHART_WIDTH = 300;
 const SMALL_CHART_HEIGHT = 300;
-
 /**
  * Set up the website with proper DOM elements.
  */
@@ -94,7 +93,7 @@ function setupStatsChart() {
   statsChart.append("g").classed("stats-chart", true);
   statsChart.append("g").classed("x-axis", true);
   statsChart.append("g").classed("y-axis", true);
-  statsChart.append("g").classed("y-label", true)
+  statsChart.append("g").classed("y-label", true);
   statsChart.append("g").classed("x-label", true)
     .append("text")
     .attr("x", SMALL_CHART_WIDTH / 2)
@@ -194,30 +193,42 @@ export function updateTable(data) {
   d3.select("#Table-div").select("thead").remove();
   let tableHeaders = d3.select('#Table-div');
   let headers = []
-  if (d3.select('#player-type').node().value == "Batting") {
-    headers = ["Year", "Team","G","AB","R","H","2B","3B","HR","RBI","SB","CS","BB","SO","IBB","HBP","SH","SF","GIDP"];
+  if (data.length == 0) {
+    headers = ["No Data Found for chosen player/stats"]
+    tableHeaders.append("thead")
+                .append("tr")
+                .selectAll('th')
+                .data(headers)
+                .enter()
+                .append('th')
+                .text(function (header) { return header; })
   }
   else {
-    headers = ["Year", "Team", "W","L","G","GS","CG","SHO","SV","IPouts","H","ER","HR","BB","SO","BAOpp","ERA","IBB","WP","HBP","BK","BFP","GF","R","SH","SF","GIDP"];
+    if (d3.select('#player-type').node().value == "Batting") {
+      headers = ["Year", "Team","G","AB","R","H","2B","3B","HR","RBI","SB","CS","BB","SO","IBB","HBP","SH","SF","GIDP"];
+    }
+    else {
+      headers = ["Year", "Team", "W","L","G","GS","CG","SHO","SV","IPouts","H","ER","HR","BB","SO","BAOpp","ERA","IBB","WP","HBP","BK","BFP","GF","R","SH","SF","GIDP"];
+    }
+    /* Consulted ChatGpt on setting up this function */
+    tableHeaders.append("thead")
+                .append("tr")
+                .selectAll('th')
+                .data(headers)
+                .enter()
+                .append('th')
+                .text(function (header) { return header; })
+    let tableBody = tableHeaders.append('tbody')
+                                .selectAll('tr')  
+                                .data(data)
+                                .enter()
+                                .append('tr'); 
+    tableBody.selectAll("td")
+            .data(d => Object.values(d))
+            .enter()
+            .append("td") 
+            .text(d => d);
   }
-  /* Consulted ChatGpt on setting up this function */
-  tableHeaders.append("thead")
-              .append("tr")
-              .selectAll('th')
-              .data(headers)
-              .enter()
-              .append('th')
-              .text(function (header) { return header; })
-  let tableBody = tableHeaders.append('tbody')
-                              .selectAll('tr')  
-                              .data(data)
-                              .enter()
-                              .append('tr'); 
-  tableBody.selectAll("td")
-           .data(d => Object.values(d))
-           .enter()
-           .append("td") 
-           .text(d => d);
 }
 
 
@@ -230,12 +241,78 @@ export function updateTable(data) {
  * @param playerName
  */
 export function updateWebsite(hitterData, wobaWeights) {
-  const year = parseInt(hitterData[0].yearID);
-  updateAveragesChart(hitterData, year, "Homers");
-  updateResultsChart(hitterData, year, "Homers");
-  updateStatsChart(hitterData, year, "Homers");
-  updateModernChart(hitterData, wobaWeights);
-  // Update the player image
+  let averagesChart = d3.select("#averages-div");
+  averagesChart.selectAll("text").remove();
+  averagesChart.selectAll("rect").remove();
+  averagesChart.select(".avg-line").selectAll("*").remove();
+  averagesChart.select(".obp-line").selectAll("*").remove();
+  averagesChart.select(".slg-line").selectAll("*").remove();
+  averagesChart.select(".line").selectAll("*").remove();
+  averagesChart.select(".x-axis").selectAll("*").remove();
+  averagesChart.select(".y-axis").selectAll("*").remove();
+  let resultsChart = d3.select("#results-div");
+  resultsChart.selectAll("text").remove();
+  resultsChart.select(".title").selectAll("*").remove();
+  resultsChart.select(".slice-paths").selectAll("*").remove();
+  resultsChart.select(".slice-texts").selectAll("*").remove();
+  let statsChart = d3.select("#stat-div")
+  statsChart.select(".stats-chart").selectAll("*").remove();
+  statsChart.select(".x-axis").selectAll("*").remove();
+  statsChart.select(".y-axis").selectAll("*").remove();
+  statsChart.select(".y-label").selectAll("*").remove();
+  statsChart.select(".x-label").selectAll("*").remove();
+  let modernChart = d3.select("#modern-div");
+  modernChart.select(".modern-chart").selectAll("*").remove();
+  modernChart.select(".x-axis").selectAll("*").remove();
+  modernChart.select(".y-axis").selectAll("*").remove();
+  modernChart.select(".detail-view").selectAll("*").remove();
+  modernChart.select(".x-label").selectAll("*").remove();
+  modernChart.select(".y-label").selectAll("*").remove();
+ //modernChart.select(".legend").selectAll("*").remove();
+  if (hitterData.length != 0) {
+    let modernChart = d3.select("#modern-div");
+    modernChart.selectAll(".title")
+               .selectAll("text")
+               .attr("x", CHART_WIDTH / 2)
+               .attr("y", MARGIN.top)
+               .attr("text-anchor", "middle")
+               .style("font-size", 18)
+               .text("Runs Created");
+    const year = parseInt(hitterData[0].yearID);
+    updateAveragesChart(hitterData, year, "Homers");
+    updateResultsChart(hitterData, year, "Homers");
+    updateStatsChart(hitterData, year, "Homers");
+    updateModernChart(hitterData, wobaWeights);
+    // Update the player image
+  }
+  else {
+    let svg = d3.select("#results-div").select("svg");
+    svg.selectAll(".title")
+        .data([0])
+        .join("text")
+        .attr("x", SMALL_CHART_WIDTH / 2)
+        .attr("y", 2 * MARGIN.top / 3)
+        .style('font-weight','bold')
+        .attr("text-anchor", "middle")
+        .text("No rate statistic tables due to missing data");
+    svg.selectAll(".title")
+        .data([0])
+        .join("text")
+        .attr("x", SMALL_CHART_WIDTH / 2)
+        .attr("y", 2 * MARGIN.top / 3 + 30)
+        .style('font-weight','bold')
+        .attr("text-anchor", "middle")
+        .text("for chosen player/position combination");
+    let modernChart = d3.select("#modern-div");
+    modernChart.selectAll(".title")
+               .selectAll("text")
+               .attr("x", CHART_WIDTH / 2)
+               .attr("y", MARGIN.top)
+               .attr("text-anchor", "middle")
+               .style('font-weight','bold')
+               .text("No modern statistic tables due to missing data for chosen player/position combination");
+    
+  }
   updatePlayerImage();
 }
 
@@ -401,7 +478,6 @@ function updateAveragesChart(hitterData, selectedYear, selectedStat) {
 }
 
 function updateResultsChart(hitterData, selectedYear, selectedStat) {
-
   let seasonData = hitterData.find((season) => parseInt(season.yearID) === selectedYear);
   let data;
   if (seasonData.AB + seasonData.BB + seasonData.HBP + seasonData.SF > 0) {

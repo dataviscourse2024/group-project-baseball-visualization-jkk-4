@@ -7,8 +7,7 @@ from fastapi.staticfiles import StaticFiles
 app = FastAPI()
 
 origins = [
-    "http://localhost:8080",
-    "http://localhost:8000" 
+    "*"
 ]
 
 app.add_middleware(

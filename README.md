@@ -5,8 +5,16 @@ This project focuses on creating interactive and insightful visualizations repre
 
 ## Project Links
 - **[Project Website](https://dataviscourse2024.github.io/group-project-baseball-visualization-jkk-4/MLB%20Visualization/index.html)**
-- **[YouTube Presentation](https://youtu.be/ZIOLiJTlYgI?si=EUUn-D4yslHIewt6)**
 - **[GitHub Repository](https://github.com/dataviscourse2024/group-project-baseball-visualization-jkk-4)**
+
+## YouTube Video
+Watch the project presentation directly here:
+
+[![MLB Visualizations](https://img.youtube.com/vi/ZIOLiJTlYgI/0.jpg)](https://youtu.be/ZIOLiJTlYgI?si=EUUn-D4yslHIewt6)
+
+Click on the image to play the video on YouTube, or use the embedded player below:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZIOLiJTlYgI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Details
 - **Group**: baseball-visualization-jkk-4

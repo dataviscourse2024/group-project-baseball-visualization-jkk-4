@@ -80,7 +80,7 @@ function setupAveragesChart() {
  */
 function setupResultsChart() {
   let resultsChart = d3.select("#results-div").append("svg").style("width", SMALL_CHART_WIDTH).style("height", SMALL_CHART_HEIGHT);
-  resultsChart.append("text").classed("title", true);
+  resultsChart.append("g").classed("title", true);
   resultsChart.append("g").classed("slice-paths", true);
   resultsChart.append("g").classed("slice-texts", true);
 }
@@ -110,7 +110,6 @@ function setupModernChart() {
   modernChart.append("g").classed("modern-chart", true);
   modernChart.append("g").classed("x-axis", true);
   modernChart.append("g").classed("y-axis", true);
-  modernChart.append("g").classed("detail-view", true);
   modernChart.append("g").classed("x-label", true)
     .append("text")
     .attr("x", CHART_WIDTH / 2)
@@ -129,6 +128,7 @@ function setupModernChart() {
     .attr("x", CHART_WIDTH / 2)
     .attr("y", MARGIN.top)
     .attr("text-anchor", "middle")
+    .style('font-weight','bold')
     .style("font-size", 18)
     .text("Runs Created");
 
@@ -241,35 +241,10 @@ export function updateTable(data) {
  * @param playerName
  */
 export function updateWebsite(hitterData, wobaWeights) {
-  let averagesChart = d3.select("#averages-div");
-  averagesChart.selectAll("text").remove();
-  averagesChart.selectAll("rect").remove();
-  averagesChart.select(".avg-line").selectAll("*").remove();
-  averagesChart.select(".obp-line").selectAll("*").remove();
-  averagesChart.select(".slg-line").selectAll("*").remove();
-  averagesChart.select(".line").selectAll("*").remove();
-  averagesChart.select(".x-axis").selectAll("*").remove();
-  averagesChart.select(".y-axis").selectAll("*").remove();
-  let resultsChart = d3.select("#results-div");
-  resultsChart.selectAll("text").remove();
-  resultsChart.select(".title").selectAll("*").remove();
-  resultsChart.select(".slice-paths").selectAll("*").remove();
-  resultsChart.select(".slice-texts").selectAll("*").remove();
-  let statsChart = d3.select("#stat-div")
-  statsChart.select(".stats-chart").selectAll("*").remove();
-  statsChart.select(".x-axis").selectAll("*").remove();
-  statsChart.select(".y-axis").selectAll("*").remove();
-  statsChart.select(".y-label").selectAll("*").remove();
-  statsChart.select(".x-label").selectAll("*").remove();
-  let modernChart = d3.select("#modern-div");
-  modernChart.select(".modern-chart").selectAll("*").remove();
-  modernChart.select(".x-axis").selectAll("*").remove();
-  modernChart.select(".y-axis").selectAll("*").remove();
-  modernChart.select(".detail-view").selectAll("*").remove();
-  modernChart.select(".x-label").selectAll("*").remove();
-  modernChart.select(".y-label").selectAll("*").remove();
- //modernChart.select(".legend").selectAll("*").remove();
+
   if (hitterData.length != 0) {
+    showVisualizations();
+
     let modernChart = d3.select("#modern-div");
     modernChart.selectAll(".title")
                .selectAll("text")
@@ -285,24 +260,20 @@ export function updateWebsite(hitterData, wobaWeights) {
     updateModernChart(hitterData, wobaWeights);
     // Update the player image
   }
-  else {
+  else {    
+    hideVisualizations();
+
     let svg = d3.select("#results-div").select("svg");
-    svg.selectAll(".title")
-        .data([0])
+    svg.select(".title").selectAll("text")
+        .data(["No rate statistic tables due to missing data",
+          "for chosen player/position combination"])
         .join("text")
         .attr("x", SMALL_CHART_WIDTH / 2)
-        .attr("y", 2 * MARGIN.top / 3)
+        .attr("y", (d, i) => SMALL_CHART_HEIGHT / 2 - 10 + i * 20)
         .style('font-weight','bold')
         .attr("text-anchor", "middle")
-        .text("No rate statistic tables due to missing data");
-    svg.selectAll(".title")
-        .data([0])
-        .join("text")
-        .attr("x", SMALL_CHART_WIDTH / 2)
-        .attr("y", 2 * MARGIN.top / 3 + 30)
-        .style('font-weight','bold')
-        .attr("text-anchor", "middle")
-        .text("for chosen player/position combination");
+        .text((d) => d);
+
     let modernChart = d3.select("#modern-div");
     modernChart.selectAll(".title")
                .selectAll("text")
@@ -314,6 +285,40 @@ export function updateWebsite(hitterData, wobaWeights) {
     
   }
   updatePlayerImage();
+}
+
+/**
+ * Shows the visualizations when there is data for a player.
+ */
+function showVisualizations() {
+  d3.select("#averages-div").style("display", "block");
+  d3.select("#results-div").select(".slice-paths").style("display", "block");
+  d3.select("#results-div").select(".slice-texts").style("display", "block");
+  d3.select("#stat-div").style("display", "block");
+
+  d3.select("#modern-div").select(".modern-chart").style("display", "block");
+  d3.select("#modern-div").select(".x-axis").style("display", "block");
+  d3.select("#modern-div").select(".y-axis").style("display", "block");
+  d3.select("#modern-div").select(".x-label").style("display", "block");
+  d3.select("#modern-div").select(".y-label").style("display", "block");
+  d3.select("#modern-div").select(".legend").style("display", "block");
+}
+
+/**
+ * Hides the visualizations when there is no data for a player.
+ */
+function hideVisualizations() {
+  d3.select("#averages-div").style("display", "none");
+  d3.select("#stat-div").style("display", "none");
+  d3.select("#results-div").select(".slice-texts").style("display", "none");
+  d3.select("#stat-div").style("display", "none");
+
+  d3.select("#modern-div").select(".modern-chart").style("display", "none");
+  d3.select("#modern-div").select(".x-axis").style("display", "none");
+  d3.select("#modern-div").select(".y-axis").style("display", "none");
+  d3.select("#modern-div").select(".x-label").style("display", "none");
+  d3.select("#modern-div").select(".y-label").style("display", "none");
+  d3.select("#modern-div").select(".legend").style("display", "none");
 }
 
 /**
@@ -497,12 +502,13 @@ function updateResultsChart(hitterData, selectedYear, selectedStat) {
     }
   
   let svg = d3.select("#results-div").select("svg");
-  svg.selectAll(".title")
+  svg.selectAll(".title").selectAll("text")
     .data([0])
     .join("text")
     .attr("x", SMALL_CHART_WIDTH / 2)
     .attr("y", 2 * MARGIN.top / 3)
     .attr("text-anchor", "middle")
+    .style('font-weight','bold')
     .text("Plate Appearance Results for " + selectedYear);
 
   let color = d3.scaleOrdinal(d3.schemeRdBu[10]);

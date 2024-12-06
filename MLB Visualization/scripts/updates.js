@@ -92,7 +92,10 @@ function setupStatsChart() {
  * Sets up the SVG for the modern chart having the WOBA or FIP towers.
  */
 function setupModernChart() {
+  // Create the SVG with the normal dimensions.
   let modernChart = d3.select("#modern-div").append("svg").style("width", CHART_WIDTH).style("height", CHART_HEIGHT);
+
+  // Append groups for each of the main components of the bar chart.
   modernChart.append("g").classed("modern-chart", true);
   modernChart.append("g").classed("x-axis", true);
   modernChart.append("g").classed("y-axis", true);
@@ -109,39 +112,8 @@ function setupModernChart() {
     .attr("y", MARGIN.left / 4)
     .attr("text-anchor", "middle")
     .text("Percentage of Plate Appearances");
-  modernChart.append("g").classed("title", true)
-    .append("text")
-    .attr("x", CHART_WIDTH / 2)
-    .attr("y", MARGIN.top)
-    .attr("text-anchor", "middle")
-    .style('font-weight','bold')
-    .style("font-size", 18)
-    .text("Runs Created");
-
-  let colorScale = d3.scaleOrdinal(d3.schemeYlOrBr[9]);
-  let colors = [];
-  for (let i = 0; i < 9; i++) {
-    let c = colorScale(i);
-    if (i >= 3)
-      colors.push(c);
-  }
-  let legendData = ["Walks", "Hit By Pitches", "Singles", "Doubles", "Triples", "Home Runs"];
-  let legend = modernChart.append("g").classed("legend", true);
-  legend.selectAll("rect")
-    .data(legendData)
-    .join("rect")
-    .attr("x", (d, i) => MARGIN.left + 20 + i * 150)
-    .attr("y", MARGIN.top + 20)
-    .attr("width", 20)
-    .attr("height", 20)
-    .style("fill", (d, i) => colors[i]);
-  legend.selectAll("text")
-    .data(legendData)
-    .join("text")
-    .attr("x", (d, i) => MARGIN.left + 50 + i * 150)
-    .attr("y", MARGIN.top + 35)
-    .attr("text-anchor", "start")
-    .text((d) => d);
+  modernChart.append("g").classed("title", true);
+  modernChart.append("g").classed("legend", true);
 }
 
 /**
@@ -219,7 +191,6 @@ export function updateTable(data) {
   }
 }
 
-
 /**
  * Updates the visualizations based on the given data.
  * Updates the bar chart using the x and y data provided.
@@ -243,7 +214,7 @@ export function updateWebsite(playerData, wobaWeights) {
                .text("Runs Created");
     const year = parseInt(playerData[0].yearID);
     const dataIsBatting = d3.select('#player-type').node().value === "Batting";
-    let selectedStat = dataIsBatting ? "Homers" : "Homers";
+    let selectedStat = dataIsBatting ? "Homers" : "Strikeouts";
 
     updateAveragesChart(playerData, year, selectedStat, dataIsBatting);
     updateResultsChart(playerData, year, selectedStat, dataIsBatting);
@@ -689,25 +660,86 @@ function updateStatsChart(playerData, selectedYear, selectedStat, dataIsBatting)
 
 /**
  * Updates the batting chart using the hitter data provided.
- * @param {object} hitterData JSON object with season by season batting data
+ * @param {object} playerData JSON object with season by season batting data
  * @param {object} weights wOBA weights
+ * @param {*} dataIsBatting true if the playerData is for hitting, false if it for pitching
  */
-function updateModernChart(hitterData, weights, dataIsBatting) {
-  let years = hitterData.map((season) => `'${season.yearID.toString().substring(2)}`);
-  let totals = hitterData.map((season) => season.AB + season.BB - season.IBB + season.SF + season.HBP);
-  let homers = hitterData.map((season) => season.HR);
-  let homerunRate = hitterData.map((season, i) => season.HR / totals[i] || 0);
-  let triples = hitterData.map((season) => season["3B"]);  
-  let tripleRate = hitterData.map((season, i) => (season["3B"] + season.HR) / totals[i] || 0);
-  let doubles = hitterData.map((season) => season["2B"]);
-  let doubleRate = hitterData.map((season, i) => (season["2B"] + season["3B"] + season.HR) / totals[i] || 0);
-  let singles = hitterData.map((season) => season.H - season["2B"] - season["3B"] - season.HR);
-  let singleRate = hitterData.map((season, i) => (season.H) / totals[i] || 0);
-  let hbps = hitterData.map((season) => season.HBP);
-  let hbpRate = hitterData.map((season, i) => (season.HBP + season.H) / totals[i] || 0);
-  let walks = hitterData.map((season) => season.BB - season.IBB);
-  let walkRate = hitterData.map((season, i) => (season.BB - season.IBB + season.HBP + season.H) / totals[i] || 0);
+function updateModernChart(playerData, weights, dataIsBatting) {
 
+  // Create the title for the modern chart.
+  let modernChart = d3.select("#modern-div").select("svg");
+  modernChart.select(".title")
+    .selectAll("text")
+    .data([0])
+    .join("text")
+    .attr("x", CHART_WIDTH / 2)
+    .attr("y", MARGIN.top)
+    .attr("text-anchor", "middle")
+    .style('font-weight','bold')
+    .style("font-size", 18)
+    .text(dataIsBatting ? "Expected Runs Created" : "Expected Runs Allowed");
+  
+  // Create the color scale for the data.
+  let colorScale = d3.scaleOrdinal(d3.schemeYlOrBr[9]);
+  let colors = [];
+  for (let i = 0; i < 9; i++) {
+    let c = colorScale(i);
+    if (i >= (dataIsBatting ? 3 : 5))
+      colors.push(c);
+  }
+  
+  // Create the legend for the modern chart.
+  let legendData = dataIsBatting ? ["Walks", "Hit By Pitches", "Singles", "Doubles", "Triples", "Home Runs"] : ["Strikeouts", "Walks", "Hit By Pitches", "Home Runs"];
+  modernChart.select(".legend")
+    .selectAll("rect")
+    .data(legendData)
+    .join("rect")
+    .attr("x", (d, i) => MARGIN.left + 20 + i * 150)
+    .attr("y", MARGIN.top + 20)
+    .attr("width", 20)
+    .attr("height", 20)
+    .style("fill", (d, i) => colors[i]);
+  modernChart.select(".legend")
+    .selectAll("text")
+    .data(legendData)
+    .join("text")
+    .attr("x", (d, i) => MARGIN.left + 50 + i * 150)
+    .attr("y", MARGIN.top + 35)
+    .attr("text-anchor", "start")
+    .text((d) => d);
+
+  // Retrieve data for the chart.
+  if (!dataIsBatting)
+    weights = {"hr": 13, "uBB": 3, "hbp": 3, "k": 2}
+  let years = playerData.map((season) => `'${season.yearID.toString().substring(2)}`);
+  let totals, walks, walkRate, hbps, hbpRate;
+  let homers, homerunRate, triples, tripleRate, doubles, doubleRate, singles, singleRate;
+  let strikeouts, strikeoutRate;
+  walks = playerData.map((season) => season.BB - season.IBB);
+  hbps = playerData.map((season) => season.HBP);
+  if (dataIsBatting) {
+    totals = playerData.map((season) => season.AB + season.BB - season.IBB + season.SF + season.HBP);
+    homers = playerData.map((season) => season.HR);
+    homerunRate = playerData.map((season, i) => season.HR / totals[i] || 0);
+    triples = playerData.map((season) => season["3B"]);  
+    tripleRate = playerData.map((season, i) => (season["3B"] + season.HR) / totals[i] || 0);
+    doubles = playerData.map((season) => season["2B"]);
+    doubleRate = playerData.map((season, i) => (season["2B"] + season["3B"] + season.HR) / totals[i] || 0);
+    singles = playerData.map((season) => season.H - season["2B"] - season["3B"] - season.HR);
+    singleRate = playerData.map((season, i) => (season.H) / totals[i] || 0);
+    walkRate = playerData.map((season, i) => (season.BB - season.IBB + season.HBP + season.H) / totals[i] || 0);
+    hbpRate = playerData.map((season, i) => (season.HBP + season.H) / totals[i] || 0);
+  }
+  else {
+    totals = playerData.map((season) => season.BFP);
+    homers = playerData.map((season) => season.HR);
+    homerunRate = playerData.map((season, i) => season.HR / totals[i] || 0);
+    walkRate = playerData.map((season, i) => (season.BB - season.IBB + season.HBP + season.HR) / totals[i] || 0);
+    hbpRate = playerData.map((season, i) => (season.HBP + season.HR) / totals[i] || 0);
+    strikeouts = playerData.map((season) => season.SO);
+    strikeoutRate = playerData.map((season, i) => season.SO / totals[i] || 0);
+  }
+  
   // Construct the scales and axes.
   let xScale = d3.scaleBand()
                   .domain(years)
@@ -716,93 +748,104 @@ function updateModernChart(hitterData, weights, dataIsBatting) {
   let xAxis = d3.axisBottom();
   xAxis.scale(xScale);
   let yScale = d3.scaleLinear()
-                  .domain([0, 0.6])
+                  .domain(dataIsBatting ? [0, 0.6] : [-0.4, 0.4])
                   .range([CHART_HEIGHT - MARGIN.top - MARGIN.bottom, 0])
                   .nice();
   let yAxis = d3.axisLeft();
   yAxis.scale(yScale);
 
-  let colorScale = d3.scaleOrdinal(d3.schemeYlOrBr[9]);
-  let colors = [];
-  for (let i = 0; i < 9; i++) {
-    let c = colorScale(i);
-    if (i >= 3)
-      colors.push(c);
-  }
-
   // Draw each of the axes to the chart.
-  let modernDiv = d3.select("#modern-div");
-  modernDiv.select(".x-axis")
-    .attr("transform", "translate(" + (MARGIN.left) + "," + (CHART_HEIGHT - MARGIN.bottom) + ")")
+  modernChart.select(".x-axis")
+    .attr("transform", "translate(" + (MARGIN.left) + "," + (MARGIN.top + yScale(0)) + ")")
     .call(xAxis);
-  modernDiv.select(".y-axis")
+  modernChart.select(".y-axis")
     .attr("transform", "translate(" + (MARGIN.left) + "," + (MARGIN.top) + ")")
     .call(yAxis);
 
-  // Draw the rectangles for t
-  let walksRect = modernDiv.select(".modern-chart").selectAll(".walk")
+  // Remove existing rectangles before adding the new ones.
+  modernChart.select(".modern-chart").selectAll("rect").remove();
+
+  // Draw the rectangles for the visualization.
+  modernChart.select(".modern-chart").selectAll(".walk")
     .data(years.map((d, i) => {return {x: years[i], y: walkRate[i], amount: walks[i], weight: weights["uBB"]}}))
     .join("rect")
     .classed("walk", true)
-    .style("fill", colors[0])
+    .style("fill", dataIsBatting ? colors[0] : colors[1])
     .attr("x", (d) => MARGIN.left + xScale(d.x) + xScale.bandwidth() * (1 - weights["uBB"] / weights.hr) / 2)
-    .attr("y", (d) => CHART_HEIGHT - MARGIN.bottom - yScale(0) + yScale(d.y))
+    .attr("y", (d) => MARGIN.top + yScale(d.y))
     .attr("width", xScale.bandwidth() * weights["uBB"] / weights.hr)
     .attr("height", (d) => yScale(0) - yScale(d.y))
-    .html((d) => `<title>${d.amount} Unintentional Walks x ${d.weight} Runs Created Each = ${(d.amount * d.weight).toFixed(2)} Runs</title>`);
-
-  let hbpRect = modernDiv.select(".modern-chart").selectAll(".hit-by-pitch")
+    .html((d) => dataIsBatting ? 
+      `<title>${d.amount} Unintentional Walks x ${d.weight} Runs Created Each = ${(d.amount * d.weight).toFixed(2)} Runs</title>`
+      : `<title>${d.amount} Unintentional Walks x ${d.weight} Expected Runs Allowed Each = ${(d.amount * d.weight).toFixed(2)} Expected Runs Allowed</title>`);
+  
+  modernChart.select(".modern-chart").selectAll(".hit-by-pitch")
     .data(years.map((d, i) => {return {x: years[i], y: hbpRate[i], amount: hbps[i], weight: weights["hbp"]}}))
     .join("rect")
     .classed("hit-by-pitch", true)
-    .style("fill", colors[1])
+    .style("fill", dataIsBatting ? colors[1] : colors[2])
     .attr("x", (d) => MARGIN.left + xScale(d.x) + xScale.bandwidth() * (1 - weights["hbp"] / weights.hr) / 2)
-    .attr("y", (d) => CHART_HEIGHT - MARGIN.bottom - yScale(0) + yScale(d.y))
+    .attr("y", (d) => MARGIN.top + yScale(d.y))
     .attr("width", xScale.bandwidth() * weights["hbp"] / weights.hr)
     .attr("height", (d) => yScale(0) - yScale(d.y))
-    .html((d) => `<title>${d.amount} Hit By Pitches x ${d.weight} Runs Created Each = ${(d.amount * d.weight).toFixed(2)} Runs</title>`);
+    .html((d) => dataIsBatting ?
+      `<title>${d.amount} Hit By Pitches x ${d.weight} Runs Created Each = ${(d.amount * d.weight).toFixed(2)} Runs</title>`
+      : `<title>${d.amount} Hit By Pitches x ${d.weight} Expected Runs Allowed Each = ${(d.amount * d.weight).toFixed(2)} Expected Runs Allowed</title>`);
 
-  let singlesRect = modernDiv.select(".modern-chart").selectAll(".single")
-    .data(years.map((d, i) => {return {x: years[i], y: singleRate[i], amount: singles[i], weight: weights["1b"]}}))
+  modernChart.select(".modern-chart").selectAll(".single")
+    .data(dataIsBatting ? years.map((d, i) => {return {x: years[i], y: singleRate[i], amount: singles[i], weight: weights["1b"]}}) : [])
     .join("rect")
     .classed("single", true)
     .style("fill", colors[2])
     .attr("x", (d) => MARGIN.left + xScale(d.x) + xScale.bandwidth() * (1 - weights["1b"] / weights.hr) / 2)
-    .attr("y", (d) => CHART_HEIGHT - MARGIN.bottom - yScale(0) + yScale(d.y))
+    .attr("y", (d) => MARGIN.top + yScale(d.y))
     .attr("width", xScale.bandwidth() * weights["1b"] / weights.hr)
     .attr("height", (d) => yScale(0) - yScale(d.y))
     .html((d) => `<title>${d.amount} Singles x ${d.weight} Runs Created Each = ${(d.amount * d.weight).toFixed(2)} Runs</title>`);
 
-  let doublesRect = modernDiv.select(".modern-chart").selectAll(".double")
-    .data(years.map((d, i) => {return {x: years[i], y: doubleRate[i], amount: doubles[i], weight: weights["2b"]}}))
+  modernChart.select(".modern-chart").selectAll(".double")
+    .data(dataIsBatting ? years.map((d, i) => {return {x: years[i], y: doubleRate[i], amount: doubles[i], weight: weights["2b"]}}) : [])
     .join("rect")
     .classed("double", true)
     .style("fill", colors[3])
     .attr("x", (d) => MARGIN.left + xScale(d.x) + xScale.bandwidth() * (1 - weights["2b"] / weights.hr) / 2)
-    .attr("y", (d) => CHART_HEIGHT - MARGIN.bottom - yScale(0) + yScale(d.y))
+    .attr("y", (d) => MARGIN.top + yScale(d.y))
     .attr("width", xScale.bandwidth() * weights["2b"] / weights.hr)
     .attr("height", (d) => yScale(0) - yScale(d.y))
     .html((d) => `<title>${d.amount} Doubles x ${d.weight} Runs Created Each = ${(d.amount * d.weight).toFixed(2)} Runs</title>`);
 
-  let triplesRect = modernDiv.select(".modern-chart").selectAll(".triple")
-    .data(years.map((d, i) => {return {x: years[i], y: tripleRate[i], amount: triples[i], weight: weights["3b"]}}))
+  modernChart.select(".modern-chart").selectAll(".triple")
+    .data(dataIsBatting ? years.map((d, i) => {return {x: years[i], y: tripleRate[i], amount: triples[i], weight: weights["3b"]}}) : [])
     .join("rect")
     .classed("triple", true)
     .style("fill", colors[4])
     .attr("x", (d) => MARGIN.left + xScale(d.x) + xScale.bandwidth() * (1 - weights["3b"] / weights.hr) / 2)
-    .attr("y", (d) => CHART_HEIGHT - MARGIN.bottom - yScale(0) + yScale(d.y))
+    .attr("y", (d) => MARGIN.top + yScale(d.y))
     .attr("width", xScale.bandwidth() * weights["3b"] / weights.hr)
     .attr("height", (d) => yScale(0) - yScale(d.y))
     .html((d) => `<title>${d.amount} Triples x ${d.weight} Runs Created Each = ${(d.amount * d.weight).toFixed(2)} Runs</title>`);
 
-  let homeRunRect = modernDiv.select(".modern-chart").selectAll(".home-run")
+  modernChart.select(".modern-chart").selectAll(".home-run")
     .data(years.map((d, i) => {return {x: years[i], y: homerunRate[i], amount: homers[i], weight: weights["hr"]}}))
     .join("rect")
     .classed("home-run", true)
-    .style("fill", colors[5])
+    .style("fill", dataIsBatting ? colors[5] : colors[3])
     .attr("x", (d) => MARGIN.left + xScale(d.x))
-    .attr("y", (d) => CHART_HEIGHT - MARGIN.bottom - yScale(0) + yScale(d.y))
+    .attr("y", (d) => MARGIN.top + yScale(d.y))
     .attr("width", xScale.bandwidth())
     .attr("height", (d) => yScale(0) - yScale(d.y))
-    .html((d) => `<title>${d.amount} Home Runs x ${d.weight} Runs Created Each = ${(d.amount * d.weight).toFixed(2)} Runs</title>`);
+    .html((d) => dataIsBatting ? 
+      `<title>${d.amount} Home Runs x ${d.weight} Runs Created Each = ${(d.amount * d.weight).toFixed(2)} Runs</title>`
+      : `<title>${d.amount} Home Runs x ${d.weight} Expected Runs Allowed Each = ${(d.amount * d.weight).toFixed(2)} Expected Runs Allowed</title>`);
+
+  modernChart.select(".modern-chart").selectAll(".strikeout")
+    .data(dataIsBatting ? [] : years.map((d, i) => {return {x: years[i], y: strikeoutRate[i], amount: strikeouts[i], weight: weights["k"]}}))
+    .join("rect")
+    .classed("strikeout", true)
+    .style("fill", colors[0])
+    .attr("x", (d) => MARGIN.left + xScale(d.x) + xScale.bandwidth() * (1 - weights["k"] / weights.hr) / 2)
+    .attr("y", (d) => MARGIN.top + yScale(0))
+    .attr("width", xScale.bandwidth() * weights["k"] / weights.hr)
+    .attr("height", (d) => yScale(0) - yScale(d.y))
+    .html((d) => `<title>${d.amount} Strikeouts x ${d.weight} Expected Runs Saved Each = ${(d.amount * d.weight).toFixed(2)} Expected Runs Saved</title>`);
 }

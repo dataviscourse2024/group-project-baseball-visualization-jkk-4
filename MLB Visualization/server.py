@@ -1,13 +1,11 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 import pandas as pd
-
 from fastapi.staticfiles import StaticFiles
 
 app = FastAPI()
 
 origins = [
-    "https://baseballviscs5630-be7f73410b80.herokuapp.com",
     "https://dataviscourse2024.github.io"
 ]
 

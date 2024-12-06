@@ -62,7 +62,7 @@ function setupResultsChart() {
   // Create the SVG with the small dimensions.
   let resultsChart = d3.select("#results-div").append("svg").style("width", SMALL_CHART_WIDTH).style("height", SMALL_CHART_HEIGHT);
     
-  // Append groups for each of the main components of the line chart.
+  // Append groups for each of the main components of the pie chart.
   resultsChart.append("g").classed("title", true);
   resultsChart.append("g").classed("slice-paths", true);
   resultsChart.append("g").classed("slice-texts", true);
@@ -72,7 +72,10 @@ function setupResultsChart() {
  * Sets up the SVG with labels for the stats bar chart.
  */
 function setupStatsChart() {
+  // Create the SVG with the small dimensions.
   let statsChart = d3.select("#stat-div").append("svg").style("width", SMALL_CHART_WIDTH).style("height", SMALL_CHART_HEIGHT);
+  
+  // Append groups for each of the main components of the bar chart.
   statsChart.append("g").classed("stats-chart", true);
   statsChart.append("g").classed("x-axis", true);
   statsChart.append("g").classed("y-axis", true);
@@ -501,7 +504,14 @@ function updateAveragesChart(playerData, selectedYear, selectedStat, dataIsBatti
   }
 }
 
-function updateResultsChart(hitterData, selectedYear, selectedStat, dataIsBatting) {
+/**
+ * Updates the visualization that displays a pie chart of plate appearance results for the selected season.
+ * @param {*} playerData hitting or pitching data
+ * @param {*} selectedYear the selected year to highlight numbers for
+ * @param {*} selectedStat selected statistic of results chart
+ * @param {*} dataIsBatting true if the playerData is for hitting, false if it for pitching
+ */
+function updateResultsChart(playerData, selectedYear, selectedStat, dataIsBatting) {
 
   // Update the title with the selected year.
   let resultsChart = d3.select("#results-div").select("svg");
@@ -515,12 +525,12 @@ function updateResultsChart(hitterData, selectedYear, selectedStat, dataIsBattin
     .text("Plate Appearance Results for " + selectedYear);
 
   // Retrieve data to fill the pie chart.
-  let seasonData = hitterData.find((season) => parseInt(season.yearID) === selectedYear);
+  let seasonData = playerData.find((season) => parseInt(season.yearID) === selectedYear);
   let data;
   if (dataIsBatting) {
     if (seasonData.AB + seasonData.BB + seasonData.HBP + seasonData.SF > 0) {
       data = [{stat: "GIDPs", amount: seasonData.GIDP},
-        {stat: "Ks", amount: seasonData.SO},
+        {stat: "Strikeouts", amount: seasonData.SO},
         {stat: "Ball in Play Outs", amount: seasonData.AB - seasonData.H - seasonData.SO - seasonData.GIDP},
         {stat: "Sacrifices", amount: seasonData.SF + seasonData.SH},
         {stat: "HBPs", amount: seasonData.HBP},
@@ -538,10 +548,10 @@ function updateResultsChart(hitterData, selectedYear, selectedStat, dataIsBattin
     if (seasonData.IPouts + seasonData.H + seasonData.BB + seasonData.HBP > 0) {
       data = [{stat: "Homers", amount: seasonData.HR},
         {stat: "Base Hits", amount: seasonData.H - seasonData.HR},
-        {stat: "Hit By Pitches", amount: seasonData.HBP},
+        {stat: "HBPs", amount: seasonData.HBP},
         {stat: "Walks", amount: seasonData.BB},
         {stat: "Sacrifices", amount: seasonData.SH + seasonData.SF},
-        {stat: "Ball In Play Outs", amount: seasonData.IPouts - seasonData.SH - seasonData.SF - seasonData.SO},
+        {stat: "Ball in Play Outs", amount: seasonData.IPouts - seasonData.SH - seasonData.SF - seasonData.SO},
         {stat: "Strikeouts", amount: seasonData.SO}, 
         {stat: "GIDPs", amount: seasonData.GIDP}];
     }
@@ -571,9 +581,9 @@ function updateResultsChart(hitterData, selectedYear, selectedStat, dataIsBattin
     .style("stroke-width", (d) => d.data.stat === selectedStat ? 4 : 1)
     .classed("hover-cursor", true)
     .on("click", (event, d) => {
-      updateAveragesChart(hitterData, selectedYear, d.data.stat, dataIsBatting);
-      updateResultsChart(hitterData, selectedYear, d.data.stat, dataIsBatting);
-      updateStatsChart(hitterData, selectedYear, d.data.stat, dataIsBatting);
+      updateAveragesChart(playerData, selectedYear, d.data.stat, dataIsBatting);
+      updateResultsChart(playerData, selectedYear, d.data.stat, dataIsBatting);
+      updateStatsChart(playerData, selectedYear, d.data.stat, dataIsBatting);
   });
   resultsChart.select(".slice-texts").selectAll("text")
     .data(pieData)
@@ -585,33 +595,18 @@ function updateResultsChart(hitterData, selectedYear, selectedStat, dataIsBattin
     .style("font-size", "10px");
 }
 
-function updateStatsChart(hitterData, selectedYear, selectedStat, dataIsBatting) {
+/**
+ * Updates the visualization that displays bars for the selected statistic.
+ * @param {*} playerData hitting or pitching data
+ * @param {*} selectedYear the selected year to highlight numbers for
+ * @param {*} selectedStat selected statistic of results chart
+ * @param {*} dataIsBatting true if the playerData is for hitting, false if it for pitching
+ */
+function updateStatsChart(playerData, selectedYear, selectedStat, dataIsBatting) {
 
-  let years = hitterData.map((season) => new Date(parseInt(season.yearID), 0));
-  let stats;
-  if (selectedStat === "GIDPs") {
-    stats = hitterData.map((season) => season.GIDP);
-  } else if (selectedStat === "Ks") {
-    stats = hitterData.map((season) => season.SO);
-  } else if (selectedStat === "Ball in Play Outs") {
-    stats = hitterData.map((season) => season.AB - season.H - season.SO - season.GIDP);
-  } else if (selectedStat === "Sacrifices") {
-    stats = hitterData.map((season) => season.SF + season.SH);
-  } else if (selectedStat === "HBPs") {
-    stats = hitterData.map((season) => season.HBP);
-  } else if (selectedStat === "Walks") {
-    stats = hitterData.map((season) => season.BB);
-  } else if (selectedStat === "Singles") {
-    stats = hitterData.map((season) => season.H - season["2B"] - season["3B"] - season.HR);
-  } else if (selectedStat === "Doubles") {
-    stats = hitterData.map((season) => season["2B"]);
-  } else if (selectedStat === "Triples") {
-    stats = hitterData.map((season) => season["3B"]);
-  } else if (selectedStat === "Homers") {
-    stats = hitterData.map((season) => season.HR);
-  }
-
-  d3.select("#stat-div").select(".y-label").selectAll("text")
+  // Update the y-axis label with the proper label.
+  let statsChart = d3.select("#stat-div").select("svg");
+  statsChart.select(".y-label").selectAll("text")
     .data([selectedStat])
     .join("text")
     .attr("transform", "rotate(-90)")
@@ -620,6 +615,37 @@ function updateStatsChart(hitterData, selectedYear, selectedStat, dataIsBatting)
     .attr("text-anchor", "middle")
     .text((d) => d);
 
+  // Retrieve the data for the given statistic.
+  let years = playerData.map((season) => new Date(parseInt(season.yearID), 0));
+  let stats;
+  if (selectedStat === "GIDPs") {
+    stats = playerData.map((season) => season.GIDP);
+  } else if (selectedStat === "Strikeouts") {
+    stats = playerData.map((season) => season.SO);
+  } else if (selectedStat === "Ball in Play Outs") {
+    if (dataIsBatting)
+      stats = playerData.map((season) => season.AB - season.H - season.SO - season.GIDP);
+    else 
+      stats = playerData.map((season) => season.IPouts - season.SH - season.SF - season.SO);
+  } else if (selectedStat === "Sacrifices") {
+    stats = playerData.map((season) => season.SF + season.SH);
+  } else if (selectedStat === "HBPs") {
+    stats = playerData.map((season) => season.HBP);
+  } else if (selectedStat === "Walks") {
+    stats = playerData.map((season) => season.BB);
+  } else if (selectedStat === "Singles") {
+    stats = playerData.map((season) => season.H - season["2B"] - season["3B"] - season.HR);
+  } else if (selectedStat === "Doubles") {
+    stats = playerData.map((season) => season["2B"]);
+  } else if (selectedStat === "Triples") {
+    stats = playerData.map((season) => season["3B"]);
+  } else if (selectedStat === "Homers") {
+    stats = playerData.map((season) => season.HR);
+  } else if (selectedStat === "Base Hits") {
+    stats = playerData.map((season) => season.H - season.HR);
+  }
+
+  // Create the scales for the axis.
   let xScale = d3.scaleBand()
                   .domain(years)
                   .range([MARGIN.left, SMALL_CHART_WIDTH - MARGIN.right])
@@ -628,7 +654,6 @@ function updateStatsChart(hitterData, selectedYear, selectedStat, dataIsBatting)
   let xAxis = d3.axisBottom()
     .ticks(numTicks).tickFormat(d3.timeFormat('\'%y'));
   xAxis.scale(xScale);
-
   let yScale = d3.scaleLinear()
       .domain([0, d3.max([1, ...stats])])
       .range([SMALL_CHART_HEIGHT - MARGIN.bottom, MARGIN.top])
@@ -636,14 +661,17 @@ function updateStatsChart(hitterData, selectedYear, selectedStat, dataIsBatting)
   let yAxis = d3.axisLeft();
   yAxis.scale(yScale);
 
-  d3.select("#stat-div").select(".x-axis")
+  // Create the axes.
+  statsChart.select(".x-axis")
     .attr("transform", "translate(0," + (SMALL_CHART_HEIGHT - MARGIN.bottom) + ")")
     .call(xAxis);
-  d3.select("#stat-div").select(".y-axis")
+  statsChart.select(".y-axis")
     .attr("transform", "translate(" + (MARGIN.left) + ",0)")
     .call(yAxis);
+
+  // Create the bars.
   const statData = years.map((year, index) => {return {x: years[index], y: stats[index]}});
-  d3.select(".stats-chart").selectAll("rect")
+  statsChart.selectAll("rect")
     .data(statData)
     .join("rect")
     .attr("x", (d) => xScale(d.x))
@@ -653,9 +681,9 @@ function updateStatsChart(hitterData, selectedYear, selectedStat, dataIsBatting)
     .attr("fill", (d) => d.x.getFullYear() === selectedYear ? "orange" : "green")
     .classed("hover-cursor", true)
     .on("click", (e, d) => {
-      updateAveragesChart(hitterData, d.x.getFullYear(), selectedStat, dataIsBatting);
-      updateResultsChart(hitterData, d.x.getFullYear(), selectedStat, dataIsBatting);
-      updateStatsChart(hitterData, d.x.getFullYear(), selectedStat, dataIsBatting);
+      updateAveragesChart(playerData, d.x.getFullYear(), selectedStat, dataIsBatting);
+      updateResultsChart(playerData, d.x.getFullYear(), selectedStat, dataIsBatting);
+      updateStatsChart(playerData, d.x.getFullYear(), selectedStat, dataIsBatting);
     });
 }
 

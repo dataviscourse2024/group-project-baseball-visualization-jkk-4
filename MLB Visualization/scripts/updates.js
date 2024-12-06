@@ -59,7 +59,10 @@ function setupAveragesChart() {
  * Sets up the SVG for the season results pie chart.
  */
 function setupResultsChart() {
+  // Create the SVG with the small dimensions.
   let resultsChart = d3.select("#results-div").append("svg").style("width", SMALL_CHART_WIDTH).style("height", SMALL_CHART_HEIGHT);
+    
+  // Append groups for each of the main components of the line chart.
   resultsChart.append("g").classed("title", true);
   resultsChart.append("g").classed("slice-paths", true);
   resultsChart.append("g").classed("slice-texts", true);
@@ -499,26 +502,10 @@ function updateAveragesChart(playerData, selectedYear, selectedStat, dataIsBatti
 }
 
 function updateResultsChart(hitterData, selectedYear, selectedStat, dataIsBatting) {
-  let seasonData = hitterData.find((season) => parseInt(season.yearID) === selectedYear);
-  let data;
-  if (seasonData.AB + seasonData.BB + seasonData.HBP + seasonData.SF > 0) {
-    data = [{stat: "GIDPs", amount: seasonData.GIDP},
-      {stat: "Ks", amount: seasonData.SO},
-      {stat: "Ball in Play Outs", amount: seasonData.AB - seasonData.H - seasonData.SO - seasonData.GIDP},
-      {stat: "Sacrifices", amount: seasonData.SF + seasonData.SH},
-      {stat: "HBPs", amount: seasonData.HBP},
-      {stat: "Walks", amount: seasonData.BB},
-      {stat: "Singles", amount: seasonData.H - seasonData["2B"] - seasonData["3B"] - seasonData.HR}, 
-      {stat: "Doubles", amount: seasonData["2B"]}, 
-      {stat: "Triples", amount: seasonData["3B"]}, 
-      {stat: "Homers", amount: seasonData.HR}];
-    }
-    else {
-      data = [{stat: "No Batting Data this season", amount: 1}];
-    }
-  
-  let svg = d3.select("#results-div").select("svg");
-  svg.selectAll(".title").selectAll("text")
+
+  // Update the title with the selected year.
+  let resultsChart = d3.select("#results-div").select("svg");
+  resultsChart.selectAll(".title").selectAll("text")
     .data([0])
     .join("text")
     .attr("x", SMALL_CHART_WIDTH / 2)
@@ -527,19 +514,54 @@ function updateResultsChart(hitterData, selectedYear, selectedStat, dataIsBattin
     .style('font-weight','bold')
     .text("Plate Appearance Results for " + selectedYear);
 
-  let color = d3.scaleOrdinal(d3.schemeRdBu[10]);
+  // Retrieve data to fill the pie chart.
+  let seasonData = hitterData.find((season) => parseInt(season.yearID) === selectedYear);
+  let data;
+  if (dataIsBatting) {
+    if (seasonData.AB + seasonData.BB + seasonData.HBP + seasonData.SF > 0) {
+      data = [{stat: "GIDPs", amount: seasonData.GIDP},
+        {stat: "Ks", amount: seasonData.SO},
+        {stat: "Ball in Play Outs", amount: seasonData.AB - seasonData.H - seasonData.SO - seasonData.GIDP},
+        {stat: "Sacrifices", amount: seasonData.SF + seasonData.SH},
+        {stat: "HBPs", amount: seasonData.HBP},
+        {stat: "Walks", amount: seasonData.BB},
+        {stat: "Singles", amount: seasonData.H - seasonData["2B"] - seasonData["3B"] - seasonData.HR}, 
+        {stat: "Doubles", amount: seasonData["2B"]}, 
+        {stat: "Triples", amount: seasonData["3B"]}, 
+        {stat: "Homers", amount: seasonData.HR}];
+    }
+    else {
+      data = [{stat: "No Batting Data this season", amount: 1}];
+    }
+  }
+  else {
+    if (seasonData.IPouts + seasonData.H + seasonData.BB + seasonData.HBP > 0) {
+      data = [{stat: "Homers", amount: seasonData.HR},
+        {stat: "Base Hits", amount: seasonData.H - seasonData.HR},
+        {stat: "Hit By Pitches", amount: seasonData.HBP},
+        {stat: "Walks", amount: seasonData.BB},
+        {stat: "Sacrifices", amount: seasonData.SH + seasonData.SF},
+        {stat: "Ball In Play Outs", amount: seasonData.IPouts - seasonData.SH - seasonData.SF - seasonData.SO},
+        {stat: "Strikeouts", amount: seasonData.SO}, 
+        {stat: "GIDPs", amount: seasonData.GIDP}];
+    }
+    else {
+      data = [{stat: "No Batting Data this season", amount: 1}];
+    }
+  }
 
-  let pie = d3.pie();
-  pie.value(function (d) {
-      return d.amount;
-  });
-  pie.padAngle(0.02);
+  // Create the color scale and pie chart data.
+  let color = d3.scaleOrdinal(d3.schemeRdBu[dataIsBatting ? 10 : 8]);
+  let pie = d3.pie()
+    .value((d) => d.amount)
+    .padAngle(0.02);
   let pieData = pie(data);
-  let arc = d3.arc();
-  arc.outerRadius(125);
-  arc.innerRadius(0);
+  let arc = d3.arc()
+    .outerRadius(125)
+    .innerRadius(0);
 
-  svg.select(".slice-paths").selectAll("path")
+  // Create the actual pie slices and the accompanying text.
+  resultsChart.select(".slice-paths").selectAll("path")
     .data(pieData)
     .join("path")
     .attr("transform", "translate(" + SMALL_CHART_WIDTH / 2 + "," + SMALL_CHART_HEIGHT / 2 + ")")
@@ -553,7 +575,7 @@ function updateResultsChart(hitterData, selectedYear, selectedStat, dataIsBattin
       updateResultsChart(hitterData, selectedYear, d.data.stat, dataIsBatting);
       updateStatsChart(hitterData, selectedYear, d.data.stat, dataIsBatting);
   });
-  svg.select(".slice-texts").selectAll("text")
+  resultsChart.select(".slice-texts").selectAll("text")
     .data(pieData)
     .join("text")
     .text(d => d.data.stat)

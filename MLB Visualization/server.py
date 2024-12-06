@@ -7,8 +7,7 @@ from fastapi.staticfiles import StaticFiles
 app = FastAPI()
 
 origins = [
-    "http://localhost:8080",
-    "http://localhost:8000",
+    "https://baseballviscs5630-be7f73410b80.herokuapp.com",
     "https://dataviscourse2024.github.io"
 ]
 

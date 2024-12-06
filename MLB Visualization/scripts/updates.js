@@ -6,6 +6,7 @@ const ANIMATION_DUATION = 1000;
 
 const SMALL_CHART_WIDTH = 300;
 const SMALL_CHART_HEIGHT = 300;
+
 /**
  * Set up the website with proper DOM elements.
  */
@@ -20,59 +21,38 @@ export function setupWebsite() {
  * Sets up the SVG for the season averages line chart.
  */
 function setupAveragesChart() {
+  // Create the SVG with the small dimensions.
   let averagesChart = d3.select("#averages-div").append("svg").style("width", SMALL_CHART_WIDTH).style("height", SMALL_CHART_HEIGHT);
-  averagesChart.append("g").classed("avg-line", true);
-  averagesChart.append("g").classed("obp-line", true);
-  averagesChart.append("g").classed("slg-line", true);
+
+  // Append groups for each of the main components of the line chart.
+  averagesChart.append("g").classed("avg-line-1", true);
+  averagesChart.append("g").classed("avg-line-2", true);
+  averagesChart.append("g").classed("avg-line-3", true);
   averagesChart.append("g").classed("line", true);
   averagesChart.append("g").classed("x-axis", true);
   averagesChart.append("g").classed("y-axis", true);
-
-  averagesChart.append("text")
+  averagesChart.append("g").classed("x-label", true)
+    .append("text")
     .attr("x", SMALL_CHART_WIDTH / 2)
     .attr("y", SMALL_CHART_HEIGHT - MARGIN.bottom / 4)
     .attr("text-anchor", "middle")
     .text("Year");
-  
-  averagesChart.append("text")
+  averagesChart.append("g").classed("y-label", true)
+    .append("text")
     .attr("transform", "rotate(-90)")
     .attr("x", -SMALL_CHART_HEIGHT / 2)
     .attr("y", MARGIN.left / 3)
     .attr("text-anchor", "start")
     .text("Averages");
-
-  averagesChart.append("rect")
-    .attr("x", SMALL_CHART_WIDTH / 2 - 85)
+  averagesChart.append("g").classed("legend", true)
+    .selectAll("rect")
+    .data(["blue", "red", "green"])
+    .join("rect")
+    .attr("x", (d, i) => SMALL_CHART_WIDTH / 2 - 85 + 60 * i)
     .attr("y", MARGIN.top)
     .attr("width", 50)
     .attr("height", 10)
-    .style("fill", "blue")
-  averagesChart.append("text")
-    .attr("text-anchor", "middle")
-    .attr("transform", "translate(" + (SMALL_CHART_WIDTH / 2 - 60) + ", " + (3 * MARGIN.top / 4) + ")")
-    .text("BAA");
-  
-  averagesChart.append("rect")
-    .attr("x", SMALL_CHART_WIDTH / 2 - 25)
-    .attr("y", MARGIN.top)
-    .attr("width", 50)
-    .attr("height", 10)
-    .style("fill", "red")
-  averagesChart.append("text")
-    .attr("text-anchor", "middle")
-    .attr("transform", "translate(" + (SMALL_CHART_WIDTH / 2) + ", " + (3 * MARGIN.top / 4) + ")")
-    .text("OBP");
-
-  averagesChart.append("rect")
-    .attr("x", SMALL_CHART_WIDTH / 2 + 35)
-    .attr("y", MARGIN.top)
-    .attr("width", 50)
-    .attr("height", 10)
-    .style("fill", "green")
-  averagesChart.append("text")
-    .attr("text-anchor", "middle")
-    .attr("transform", "translate(" + (SMALL_CHART_WIDTH / 2 + 60) + ", " + (3 * MARGIN.top / 4) + ")")
-    .text("SLG");
+    .style("fill", (d) => d)
 }
   
 /**
@@ -179,6 +159,7 @@ export function updatePlayerSelect(players) {
     }
   });
 }
+
 export function setupTable() {
   let tableHeaders = d3.select('#Table-div').append("thead").append("tr");
   let headers = ["yearID", "Team", "W","L","G","GS","CG","SHO","SV","IPouts","H","ER","HR","BB","SO","BAOpp","ERA","IBB","WP","HBP","BK","BFP","GF","R","SH","SF","GIDP"];
@@ -188,6 +169,7 @@ export function setupTable() {
               .append('th')
               .text(function (header) { return header; })
 } 
+
 export function updateTable(data) {
   d3.select("#Table-div").select("tbody").remove();
   d3.select("#Table-div").select("thead").remove();
@@ -240,9 +222,9 @@ export function updateTable(data) {
  * @param data 
  * @param playerName
  */
-export function updateWebsite(hitterData, wobaWeights) {
+export function updateWebsite(playerData, wobaWeights) {
 
-  if (hitterData.length != 0) {
+  if (playerData.length != 0) {
     showVisualizations();
 
     let modernChart = d3.select("#modern-div");
@@ -253,12 +235,14 @@ export function updateWebsite(hitterData, wobaWeights) {
                .attr("text-anchor", "middle")
                .style("font-size", 18)
                .text("Runs Created");
-    const year = parseInt(hitterData[0].yearID);
-    updateAveragesChart(hitterData, year, "Homers");
-    updateResultsChart(hitterData, year, "Homers");
-    updateStatsChart(hitterData, year, "Homers");
-    updateModernChart(hitterData, wobaWeights);
-    // Update the player image
+    const year = parseInt(playerData[0].yearID);
+    const dataIsBatting = d3.select('#player-type').node().value === "Batting";
+    let selectedStat = dataIsBatting ? "Homers" : "Homers";
+
+    updateAveragesChart(playerData, year, selectedStat, dataIsBatting);
+    updateResultsChart(playerData, year, selectedStat, dataIsBatting);
+    updateStatsChart(playerData, year, selectedStat, dataIsBatting);
+    updateModernChart(playerData, wobaWeights, dataIsBatting);
   }
   else {    
     hideVisualizations();
@@ -281,9 +265,9 @@ export function updateWebsite(hitterData, wobaWeights) {
                .attr("y", MARGIN.top)
                .attr("text-anchor", "middle")
                .style('font-weight','bold')
-               .text("No modern statistic tables due to missing data for chosen player/position combination");
-    
+               .text("No modern statistic tables due to missing data for chosen player/position combination");    
   }
+  // Update the player image
   updatePlayerImage();
 }
 
@@ -311,7 +295,7 @@ function hideVisualizations() {
   d3.select("#averages-div").style("display", "none");
   d3.select("#stat-div").style("display", "none");
   d3.select("#results-div").select(".slice-texts").style("display", "none");
-  d3.select("#stat-div").style("display", "none");
+  d3.select("#results-div").select(".slice-paths").style("display", "none");
 
   d3.select("#modern-div").select(".modern-chart").style("display", "none");
   d3.select("#modern-div").select(".x-axis").style("display", "none");
@@ -360,12 +344,41 @@ function hideVisualizations() {
     };
 }
 
-function updateAveragesChart(hitterData, selectedYear, selectedStat) {
-  let years = hitterData.map((season) => new Date(parseInt(season.yearID), 0));
-  let battingAvgs = hitterData.map((season) => season.H / season.AB || 0);
-  let onBaseAvgs = hitterData.map((season) => (season.H + season.BB + season.HBP) / (season.AB + season.BB + season.HBP + season.SF) || 0);
-  let sluggingAvgs = hitterData.map((season) => (season.H + season["2B"] + 2*season["3B"] + 3*season.HR) / season.AB || 0);
+/**
+ * Updates the visualization that displays averages of popular statistics.
+ * @param {*} playerData hitting or pitching data
+ * @param {*} selectedYear the selected year to highlight numbers for
+ * @param {*} selectedStat selected statistic of results chart
+ * @param {*} dataIsBatting true if the playerData is for hitting, false if it for pitching
+ */
+function updateAveragesChart(playerData, selectedYear, selectedStat, dataIsBatting) {
 
+  let averagesChart = d3.select("#averages-div").select("svg");
+
+  // Add the labels to the legend.
+  averagesChart.select(".legend")
+    .selectAll("text")
+    .data(dataIsBatting ? ["BAA", "OBP", "SLG"] : ["ERA", "BB/9", "K/9"])
+    .join("text")
+    .attr("text-anchor", "middle")
+    .attr("transform", (d, i) => "translate(" + (SMALL_CHART_WIDTH / 2 - 60 + 60 * i) + ", " + (3 * MARGIN.top / 4) + ")")
+    .text((d) => d)
+
+  // Retrieve the data for the correct visualization.
+  let years = playerData.map((season) => new Date(parseInt(season.yearID), 0));
+  let line1Avgs, line2Avgs, line3Avgs;
+  if (dataIsBatting) {
+    line1Avgs = playerData.map((season) => season.H / season.AB || 0); // BAA
+    line2Avgs = playerData.map((season) => (season.H + season.BB + season.HBP) / (season.AB + season.BB + season.HBP + season.SF) || 0); // OBP
+    line3Avgs = playerData.map((season) => (season.H + season["2B"] + 2*season["3B"] + 3*season.HR) / season.AB || 0); // SLG
+  }
+  else {
+    line1Avgs = playerData.map((season) => season.ER / season.IPouts * 27 || 0); // ERA
+    line2Avgs = playerData.map((season) => season.BB / season.IPouts * 27 || 0); // BB/9
+    line3Avgs = playerData.map((season) => season.SO / season.IPouts * 27 || 0); // K/9
+  }
+
+  // Create the scales for the data.
   let xScale = d3.scaleTime()
                   .domain([d3.min(years), d3.max(years)])
                   .range([0, SMALL_CHART_WIDTH - MARGIN.left - MARGIN.right]);
@@ -373,33 +386,35 @@ function updateAveragesChart(hitterData, selectedYear, selectedStat) {
   let xAxis = d3.axisBottom()
     .ticks(numTicks).tickFormat(d3.timeFormat('\'%y'));
   xAxis.scale(xScale);
-
   let yScale = d3.scaleLinear()
-                  .domain([0, 1])
+                  .domain(dataIsBatting ? [0, 1] : [0, 15])
                   .range([SMALL_CHART_HEIGHT - MARGIN.top - MARGIN.bottom, 0])
                   .nice();
   let yAxis = d3.axisLeft();
   yAxis.scale(yScale);
 
+  // Draw the axes.
   d3.select("#averages-div").select(".x-axis")
     .attr("transform", "translate(" + (MARGIN.left) + "," + (SMALL_CHART_HEIGHT - MARGIN.bottom) + ")")
     .call(xAxis);
   d3.select("#averages-div").select(".y-axis")
     .attr("transform", "translate(" + (MARGIN.left) + "," + (MARGIN.top) + ")")
     .call(yAxis);
+
+  // Draw the lines of the chart.
   let lineGenerator = d3.line()
     .x((d) => MARGIN.left + xScale(d.x))
     .y((d) => SMALL_CHART_HEIGHT - MARGIN.bottom - yScale(0) + yScale(d.y));
-  let avgData = years.map((year, index) => {return {x: years[index], y: battingAvgs[index]}});
-  d3.select(".avg-line").selectAll("path")
-    .data([avgData])
+  let line1Data = years.map((year, index) => {return {x: years[index], y: line1Avgs[index]}});
+  d3.select(".avg-line-1").selectAll("path")
+    .data([line1Data])
     .join("path")
     .attr("d", lineGenerator)
     .style("fill", "none")
     .style("stroke", "blue")
     .style("stroke-width", 4);
-  d3.select(".avg-line").selectAll("circle")
-    .data(avgData)
+  d3.select(".avg-line-1").selectAll("circle")
+    .data(line1Data)
     .join("circle")
     .attr("cx", (d) => MARGIN.left + xScale(d.x))
     .attr("cy", (d) => MARGIN.top + yScale(d.y))
@@ -407,20 +422,20 @@ function updateAveragesChart(hitterData, selectedYear, selectedStat) {
     .style("fill", "blue")
     .classed("hover-cursor", true)
     .on("click", (e, d) => {
-      updateAveragesChart(hitterData, d.x.getFullYear(), selectedStat);
-      updateResultsChart(hitterData, d.x.getFullYear(), selectedStat);
-      updateStatsChart(hitterData, d.x.getFullYear(), selectedStat);
+      updateAveragesChart(playerData, d.x.getFullYear(), selectedStat, dataIsBatting);
+      updateResultsChart(playerData, d.x.getFullYear(), selectedStat, dataIsBatting);
+      updateStatsChart(playerData, d.x.getFullYear(), selectedStat, dataIsBatting);
     });
-  let obpData = years.map((year, index) => {return {x: years[index], y: onBaseAvgs[index]}});
-  d3.select(".obp-line").selectAll("path")
-    .data([obpData])
+  let line2Data = years.map((year, index) => {return {x: years[index], y: line2Avgs[index]}});
+  d3.select(".avg-line-2").selectAll("path")
+    .data([line2Data])
     .join("path")
     .attr("d", lineGenerator)
     .style("fill", "none")
     .style("stroke", "red")
     .style("stroke-width", 4);
-  d3.select(".obp-line").selectAll("circle")
-    .data(obpData)
+  d3.select(".avg-line-2").selectAll("circle")
+    .data(line2Data)
     .join("circle")
     .attr("cx", (d) => MARGIN.left + xScale(d.x))
     .attr("cy", (d) => MARGIN.top + yScale(d.y))
@@ -428,20 +443,20 @@ function updateAveragesChart(hitterData, selectedYear, selectedStat) {
     .style("fill", "red")
     .classed("hover-cursor", true)
     .on("click", (e, d) => {
-      updateAveragesChart(hitterData, d.x.getFullYear(), selectedStat);
-      updateResultsChart(hitterData, d.x.getFullYear(), selectedStat);
-      updateStatsChart(hitterData, d.x.getFullYear(), selectedStat);
+      updateAveragesChart(playerData, d.x.getFullYear(), selectedStat, dataIsBatting);
+      updateResultsChart(playerData, d.x.getFullYear(), selectedStat, dataIsBatting);
+      updateStatsChart(playerData, d.x.getFullYear(), selectedStat, dataIsBatting);
     });
-  let slgData = years.map((year, index) => {return {x: years[index], y: sluggingAvgs[index]}});
-  d3.select(".slg-line").selectAll("path")
-    .data([slgData])
+  let line3Data = years.map((year, index) => {return {x: years[index], y: line3Avgs[index]}});
+  d3.select(".avg-line-3").selectAll("path")
+    .data([line3Data])
     .join("path")
     .attr("d", lineGenerator)
     .style("fill", "none")
     .style("stroke", "green")
     .style("stroke-width", 4);
-  d3.select(".slg-line").selectAll("circle")
-    .data(slgData)
+  d3.select(".avg-line-3").selectAll("circle")
+    .data(line3Data)
     .join("circle")
     .attr("cx", (d) => MARGIN.left + xScale(d.x))
     .attr("cy", (d) => MARGIN.top + yScale(d.y))
@@ -449,11 +464,12 @@ function updateAveragesChart(hitterData, selectedYear, selectedStat) {
     .style("fill", "green")
     .classed("hover-cursor", true)
     .on("click", (e, d) => {
-      updateAveragesChart(hitterData, d.x.getFullYear(), selectedStat);
-      updateResultsChart(hitterData, d.x.getFullYear(), selectedStat);
-      updateStatsChart(hitterData, d.x.getFullYear(), selectedStat);
+      updateAveragesChart(playerData, d.x.getFullYear(), selectedStat, dataIsBatting);
+      updateResultsChart(playerData, d.x.getFullYear(), selectedStat, dataIsBatting);
+      updateStatsChart(playerData, d.x.getFullYear(), selectedStat, dataIsBatting);
     });
 
+  // Draw the line with labels of the stats.
   if (selectedYear) {
     let line = d3.select(".line")
     line.selectAll("line")
@@ -465,24 +481,24 @@ function updateAveragesChart(hitterData, selectedYear, selectedStat) {
       .attr("y2", SMALL_CHART_HEIGHT - MARGIN.bottom)
       .style("stroke", "gray")
       .style("stroke-width", 2);
-    const yearIndex = avgData.findIndex((d) => d.x.getFullYear() === selectedYear);
+    const yearIndex = line1Data.findIndex((d) => d.x.getFullYear() === selectedYear);
     line.selectAll("text")
-      .data(["AVG = " + avgData[yearIndex].y.toFixed(3),
-        "OBP = " + obpData[yearIndex].y.toFixed(3),
-        "SLG = " + slgData[yearIndex].y.toFixed(3)
+      .data([(dataIsBatting ? "AVG" : "ERA") + " = " + (dataIsBatting ? line1Data[yearIndex].y.toFixed(3) : line1Data[yearIndex].y.toPrecision(3)),
+        (dataIsBatting ? "OBP" : "BB/9") + " = " + (dataIsBatting ? line2Data[yearIndex].y.toFixed(3) : line2Data[yearIndex].y.toPrecision(3)),
+        (dataIsBatting ? "SLG" : "K/9") + " = " + (dataIsBatting ? line3Data[yearIndex].y.toFixed(3) : line3Data[yearIndex].y.toPrecision(3))
       ])
       .join("text")
       .text((d) => d)
       .attr("transform", "translate(" + (MARGIN.left + xScale(new Date(selectedYear, 0))) + "," + (MARGIN.top + 30) + ")")
-      .attr("dx", yearIndex < avgData.length / 2 ? 10 : -10)
+      .attr("dx", yearIndex < line1Data.length / 2 ? 10 : -10)
       .attr("dy", (d, i) => 15 * i)
-      .style("text-anchor", yearIndex < avgData.length / 2 ? "start" : "end")
+      .style("text-anchor", yearIndex < line1Data.length / 2 ? "start" : "end")
       .style("font-size", "10px")
       .style("stroke", (d, i) => i == 0 ? "blue" : (i == 1 ? "red" : "green"));
   }
 }
 
-function updateResultsChart(hitterData, selectedYear, selectedStat) {
+function updateResultsChart(hitterData, selectedYear, selectedStat, dataIsBatting) {
   let seasonData = hitterData.find((season) => parseInt(season.yearID) === selectedYear);
   let data;
   if (seasonData.AB + seasonData.BB + seasonData.HBP + seasonData.SF > 0) {
@@ -533,9 +549,9 @@ function updateResultsChart(hitterData, selectedYear, selectedStat) {
     .style("stroke-width", (d) => d.data.stat === selectedStat ? 4 : 1)
     .classed("hover-cursor", true)
     .on("click", (event, d) => {
-      updateAveragesChart(hitterData, selectedYear, d.data.stat);
-      updateResultsChart(hitterData, selectedYear, d.data.stat);
-      updateStatsChart(hitterData, selectedYear, d.data.stat);
+      updateAveragesChart(hitterData, selectedYear, d.data.stat, dataIsBatting);
+      updateResultsChart(hitterData, selectedYear, d.data.stat, dataIsBatting);
+      updateStatsChart(hitterData, selectedYear, d.data.stat, dataIsBatting);
   });
   svg.select(".slice-texts").selectAll("text")
     .data(pieData)
@@ -547,7 +563,7 @@ function updateResultsChart(hitterData, selectedYear, selectedStat) {
     .style("font-size", "10px");
 }
 
-function updateStatsChart(hitterData, selectedYear, selectedStat) {
+function updateStatsChart(hitterData, selectedYear, selectedStat, dataIsBatting) {
 
   let years = hitterData.map((season) => new Date(parseInt(season.yearID), 0));
   let stats;
@@ -615,9 +631,9 @@ function updateStatsChart(hitterData, selectedYear, selectedStat) {
     .attr("fill", (d) => d.x.getFullYear() === selectedYear ? "orange" : "green")
     .classed("hover-cursor", true)
     .on("click", (e, d) => {
-      updateAveragesChart(hitterData, d.x.getFullYear(), selectedStat);
-      updateResultsChart(hitterData, d.x.getFullYear(), selectedStat);
-      updateStatsChart(hitterData, d.x.getFullYear(), selectedStat);
+      updateAveragesChart(hitterData, d.x.getFullYear(), selectedStat, dataIsBatting);
+      updateResultsChart(hitterData, d.x.getFullYear(), selectedStat, dataIsBatting);
+      updateStatsChart(hitterData, d.x.getFullYear(), selectedStat, dataIsBatting);
     });
 }
 
@@ -626,7 +642,7 @@ function updateStatsChart(hitterData, selectedYear, selectedStat) {
  * @param {object} hitterData JSON object with season by season batting data
  * @param {object} weights wOBA weights
  */
-function updateModernChart(hitterData, weights) {
+function updateModernChart(hitterData, weights, dataIsBatting) {
   let years = hitterData.map((season) => `'${season.yearID.toString().substring(2)}`);
   let totals = hitterData.map((season) => season.AB + season.BB - season.IBB + season.SF + season.HBP);
   let homers = hitterData.map((season) => season.HR);

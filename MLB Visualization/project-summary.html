@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Project Summary Page</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- d3 script -->
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+  <div>
+    <img src="./datasets/mlb-logo.png" alt="MLB Logo" style="height:100px"> 
+    <h1>CS-5630 / CS-6630 MLB Visualizations</h1>
+    <address>
+      <span>Name: Jaden Lee, Kendall Ruth, Kacey Abbott </span>
+    </address>
+  </div>
+  <hr />
+  <div>
+    <h1>
+    <button onclick="window.location.href='index.html'">Back to Main</button>
+    <button onclick="window.location.href='comparison.html'">Player Comparison</button>
+    <button onclick="window.location.href='context.html'">Additional Context</button>
+    </h1>
+</div>
+    <hr />
+    <h3 style="text-align: center;">Data Sources</h3>
+    <div class="container">
+        <p>Player data came from the <a href="http://seanlahman.com/">Lahman Database</a> and the images were scraped from <a href="https://www.baseball-almanac.com/">Baseball Almanac</a>.</p>
+    </div> 
+    <hr />
+    <h3 style="text-align: center;">Process Book</h3>
+    <div class="container">
+        <iframe src="../Project Proposal/Visualization for Data Science Project Process Book.pdf" width="100%" height="600px" allow="autoplay"></iframe>
+    </div>
+    <hr />
+    <h3 style="text-align: center;">Project Screencast</h3>
+    <div class="container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ZIOLiJTlYgI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+    </div>
+</body>
+<script type="module" src="./scripts/comparisonMain.js"></script>
+
+</html>

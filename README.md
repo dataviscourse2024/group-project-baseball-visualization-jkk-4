@@ -2,7 +2,10 @@
 
 ## DS-4630 / CS-5630 / CS-6630 Visualization Project
 
-See https://www.dataviscourse.net/2024/project/ for detailed instructions.
+See (https://dataviscourse2024.github.io/group-project-baseball-visualization-jkk-4/MLB%20Visualization/index.html) for project website
+
+Youtube Video:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZIOLiJTlYgI?si=wMXi08fh5Now47ZZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ### Details
 

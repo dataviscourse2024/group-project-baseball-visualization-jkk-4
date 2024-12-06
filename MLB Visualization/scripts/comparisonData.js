@@ -1,4 +1,5 @@
-const API_HOST = "http://localhost:8000";
+const API_HOST = "https://baseballviscs5630-be7f73410b80.herokuapp.com";
+
 export function getPlayers() {
     return d3.json(`${API_HOST}/players`)
         .then((players) => players)

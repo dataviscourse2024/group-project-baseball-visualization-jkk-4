@@ -23,7 +23,7 @@ app.add_middleware(
 @app.get("/")
 async def root():
     return {"message": "Welcome to our baseball API. Open the '/docs' page to see the API.",
-            "link": "http://localhost:8000/docs"}
+            "link": "/docs"}
 
 app.mount("/datasets", StaticFiles(directory="MLB Visualization/datasets"), name="datasets")
 

@@ -10,8 +10,6 @@ This project focuses on creating interactive and insightful visualizations repre
 ## Project Process Book
 Our project process book documents the planning, implementation, and reflection phases of the MLB Visualizations project.
 
-[📄 View the Process Book (PDF)](https://github.com/dataviscourse2024/group-project-baseball-visualization-jkk-4/blob/main/Project%20Proposal/Visualization%20for%20Data%20Science%20Project%20Process%20Book.pdf)
-
 <iframe src="https://docs.google.com/document/d/1X0YOF7Xuc1rjW79ehWb5NFP2PI3OB1oxrM6s10vvAMs/preview" width="100%" height="600px" allow="autoplay"></iframe>
 
 ## YouTube Video

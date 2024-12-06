@@ -11,7 +11,7 @@ https://youtu.be/ZIOLiJTlYgI?si=EUUn-D4yslHIewt6
 ### Details
 
 - Group: baseball-visualization-jkk-4
-- Author: Jaden Lee, Kendall Ruth, Kacey Abbott
+- Author: Jaden Lee u1417827, Kendall Ruth u1481623, Kacey Abbott u0692178
 - Affiliation: University of Utah
 - Professor: Paul Rosen
 - Created Date: September 13, 2024

@@ -342,7 +342,7 @@ export function updateWebsite(hitterData, wobaWeights) {
     }
 
     const imageName = `${firstName}_${lastName}.jpg`;
-    const imageUrl = `http://localhost:8000/datasets/Card Images/${imageFolder}/${imageName}`;
+    const imageUrl = `https://baseballviscs5630-be7f73410b80.herokuapp.com/datasets/Card%20Images/${imageFolder}/${imageName}`;
 
     const imgElement = document.getElementById("player-image");
     imgElement.src = imageUrl;
@@ -350,7 +350,7 @@ export function updateWebsite(hitterData, wobaWeights) {
 
     imgElement.onerror = function () {
         imgElement.onerror = null;
-        imgElement.src = `http://localhost:8000/datasets/Card Images/FirstNameD/default.jpg`;
+        imgElement.src = `https://baseballviscs5630-be7f73410b80.herokuapp.com/datasets/Card%20Images/FirstNameD/default.jpg`;
         imgElement.alt = "Default image";
     };
 }

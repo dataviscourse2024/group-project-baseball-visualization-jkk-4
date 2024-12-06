@@ -6,6 +6,7 @@ This project focuses on creating interactive and insightful visualizations repre
 ## Project Links
 - **[Project Website](https://dataviscourse2024.github.io/group-project-baseball-visualization-jkk-4/MLB%20Visualization/index.html)**
 - **[GitHub Repository](https://github.com/dataviscourse2024/group-project-baseball-visualization-jkk-4)**
+- **[GitHub Pages Main Page](https://dataviscourse2024.github.io/group-project-baseball-visualization-jkk-4/)**
 
 ## Project Process Book
 Our project process book documents the planning, implementation, and reflection phases of the MLB Visualizations project.

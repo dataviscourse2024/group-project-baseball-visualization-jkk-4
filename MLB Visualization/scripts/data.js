@@ -1,4 +1,4 @@
-const API_HOST = "http://localhost:8000";
+const API_HOST = "https://baseballviscs5630-be7f73410b80.herokuapp.com";
 
 /**
  * Gets data for all the MLB players.

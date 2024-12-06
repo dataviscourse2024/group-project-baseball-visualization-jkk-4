@@ -132,7 +132,7 @@ export function updatePlayerSelect(players) {
       playerSelect.append("option")
         .text(nameString)
         .property("value", player.playerID)
-        .property("selected", i == 0);
+        .property("selected", i == 1);
       addedValues.push(nameString);
     }
   });
@@ -204,18 +204,11 @@ export function updateWebsite(playerData, wobaWeights) {
   if (playerData.length != 0) {
     showVisualizations();
 
-    let modernChart = d3.select("#modern-div");
-    modernChart.selectAll(".title")
-               .selectAll("text")
-               .attr("x", CHART_WIDTH / 2)
-               .attr("y", MARGIN.top)
-               .attr("text-anchor", "middle")
-               .style("font-size", 18)
-               .text("Runs Created");
     const year = parseInt(playerData[0].yearID);
     const dataIsBatting = d3.select('#player-type').node().value === "Batting";
     let selectedStat = dataIsBatting ? "Homers" : "Strikeouts";
 
+    updateDescriptions(dataIsBatting);
     updateAveragesChart(playerData, year, selectedStat, dataIsBatting);
     updateResultsChart(playerData, year, selectedStat, dataIsBatting);
     updateStatsChart(playerData, year, selectedStat, dataIsBatting);
@@ -320,6 +313,22 @@ function hideVisualizations() {
         imgElement.alt = "Default image";
     };
 }
+
+function updateDescriptions(dataIsBatting) {
+  if (dataIsBatting) {
+    d3.select("#rate-stat-description")
+      .text("For batters, this evolved into rate statistics like Batting Average (BAA), On-Base Percentage (OBP), and Slugging (SLG) that attempted to quantify a batter's performance on a per opportunity basis.")
+    d3.select("#modern-stat-description")
+      .text("However, modern sabermetricians are focused on winning behaviors. Thus, we redefined our offensive production metrics not to evaluate hits or bases, but runs and wins. wOBA (Weighted On-Base Average) is a stat that uses linear weights to assign expected run values to each type of event when players attempt to reach via a hit. Home runs are the most valuable, triples next, etc.")
+  }
+  else {
+    d3.select("#rate-stat-description")
+      .text("For pitchers, counting stats evolved into rate statistics that quantify how well a pitcher performs per nine innings. These include but are not limited to Earned Run Average (ERA), Walks per 9 Innings (BB/9), and Strikeouts per 9 Innings (K/9).")
+    d3.select("#modern-stat-description")
+      .text("New pitching metrics take into account that the frequency of batted ball results (singles, doubles, etc.) for pitchers is not consistent season to season. Fielding Independent Pitching (FIP) is a new stat that attempts to rectify the randomness of balls in play by only accounting for the three true outcomes where the defense doesn't affect the play and hence that pitchers can control: walks, strikeouts, and home runs.")
+  }
+}
+
 
 /**
  * Updates the visualization that displays averages of popular statistics.
